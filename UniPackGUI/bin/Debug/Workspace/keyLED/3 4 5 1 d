@@ -1,0 +1,138 @@
+on 5 5 auto 63
+delay 1
+on 4 5 auto 63
+on 5 4 auto 63
+delay 1
+on 4 4 auto 63
+delay 20
+on 6 5 auto 63
+delay 1
+on 3 5 auto 63
+delay 1
+on 6 4 auto 63
+delay 1
+on 3 4 auto 63
+delay 2
+off 5 5
+delay 1
+off 4 5
+off 5 4
+off 4 4
+delay 7
+on 7 5 auto 63
+delay 1
+on 2 5 auto 63
+on 7 4 auto 63
+delay 1
+on 2 4 auto 63
+delay 3
+off 6 5
+off 3 5
+delay 1
+off 6 4
+off 3 4
+delay 6
+on 8 5 auto 63
+delay 1
+on 1 5 auto 63
+delay 1
+on 8 4 auto 63
+delay 1
+on 1 4 auto 63
+delay 2
+off 7 5
+delay 1
+off 2 5
+delay 1
+off 7 4
+off 2 4
+delay 7
+on 8 6 auto 63
+delay 1
+on 1 6 auto 63
+delay 1
+on 8 3 auto 63
+delay 1
+on 1 3 auto 63
+delay 1
+off 8 5
+delay 1
+off 1 5
+off 8 4
+delay 1
+off 1 4
+delay 7
+on 8 7 auto 63
+delay 1
+on 1 7 auto 63
+on 8 2 auto 63
+delay 1
+on 1 2 auto 63
+delay 3
+off 8 6
+off 1 6
+delay 1
+off 8 3
+off 1 3
+delay 16
+on 8 8 auto 63
+delay 1
+on 1 8 auto 63
+delay 1
+on 8 1 auto 63
+delay 1
+on 1 1 auto 63
+delay 3
+off 8 7
+delay 1
+off 1 7
+off 8 2
+delay 1
+off 1 2
+delay 5
+on 7 7 auto 63
+delay 1
+on 2 7 auto 63
+delay 2
+on 7 2 auto 63
+on 2 2 auto 63
+delay 3
+off 8 8
+off 1 8
+delay 1
+off 8 1
+off 1 1
+delay 7
+on 6 6 auto 63
+on 3 6 auto 63
+delay 1
+on 6 3 auto 63
+delay 1
+on 3 3 auto 63
+delay 3
+off 7 7
+off 2 7
+delay 1
+off 7 2
+off 2 2
+delay 7
+on 5 5 auto 63
+delay 1
+on 4 5 auto 63
+delay 1
+on 5 4 auto 63
+delay 1
+on 4 4 auto 63
+delay 1
+off 6 6
+delay 1
+off 3 6
+off 6 3
+delay 1
+off 3 3
+delay 20
+off 5 5
+off 4 5
+delay 1
+off 5 4
+off 4 4

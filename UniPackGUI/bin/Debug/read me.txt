@@ -1,0 +1,23 @@
+Fixed on v2.0.4.0
+-For your opinion, Raw Text Editor (keySound and autoPlay) added! (Not very recommended..)
+(If there is something error with keySound, it is strongly recommended to fix that before closing the dialog.)
+-Fixed fatal bug of LED Editor. (If you delete LED, you can't play LED during testing.)
+
+v2.0.4.0 에서 수정된 것
+-의견을 받아들여, keySound와 autoPlay를 직접 수정할 수 있는 도구가 추가되었습니다! (하지만 유니팩 문법에 맞지 않을 경우 유니터가 읽을 수 없어 최악의 경우 작업한 내용이 모두 날라갈 수 있습니다.
+(만약 에러가 발생한다면 대화상자를 닫기 전에 반드시 오류를 고치기를 바랍니다.)
+-LED Editor의 치명적인 버그를 수정하였습니다. (LED 삭제시 이름 바꾸기 및 변수 처리 코드가 미흡하여 동일 항목에 링크되거나 플레이 할 수 없게 되는 버그)
+
+Q&A Top
+
+Q: Any plan for Unitor for Mobile?
+A: Yes, I "was"... I tried to found Framework but I do not know C# so... You need to work with Unitor "Windows" now... And issues of my UniPack playing code, it can be a problem with copyright issue. (It means you can play UniPack with Unitor for Mobile instead of UniPad.)
+
+Q: To laggy...
+A: Sorry but .NET Framework uses pretty much resources. So it will not fast as a program made with C or C++ or Python, etc.
+
+Q: A lot of ERRORS!!!
+A: I am a very "fresh" developer. So sometimes it would show a lot of errors to you. Please send me some emails (followthejb@gmail.com) so that I can fix the errors. 
+
+-----Notice for Saving ISSUE-----
+I checked that it is okay when I tried to save on my PC. I can't guess what is wrong... I didn't change any code about saving since first release of Unitor. (Beta Test) If you have same error while trying to save, please email me with the message. (Screenshot)

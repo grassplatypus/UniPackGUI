@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{238107BB-92B9-4845-96CA-CF20E9F26149}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>UniPackGUI.My.MyApplication</StartupObject>
+    <RootNamespace>UniPackGUI</RootNamespace>
+    <AssemblyName>Unitor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Unitor.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Unitor.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logounitor_256px.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AndroidLib">
+      <HintPath>..\..\..\..\..\Downloads\AndroidLib-master\AndroidLib-master\AndroidLib\bin\Debug\AndroidLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="NAudio, Version=1.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.1.7.3\lib\net35\NAudio.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable, Version=1.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adbPush.Designer.vb">
+      <DependentUpon>adbPush.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adbPush.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="AutoPlayControler.Designer.vb">
+      <DependentUpon>AutoPlayControler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPlayControler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autoPlayEdit.Designer.vb">
+      <DependentUpon>autoPlayEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="autoPlayEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dotLEDEdit.Designer.vb">
+      <DependentUpon>dotLEDEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dotLEDEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoubleTrackBar.Designer.vb">
+      <DependentUpon>DoubleTrackBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DoubleTrackBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="editsound.Designer.vb">
+      <DependentUpon>editsound.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editsound.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStart.Designer.vb">
+      <DependentUpon>frmStart.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLED.Designer.vb">
+      <DependentUpon>frmLED.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLED.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="keySoundEdit.Designer.vb">
+      <DependentUpon>keySoundEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="keySoundEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LEDClass.vb" />
+    <Compile Include="ledReturn.vb" />
+    <Compile Include="Loadingfrm.Designer.vb">
+      <DependentUpon>Loadingfrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loadingfrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainProjectLoader.Designer.vb">
+      <DependentUpon>MainProjectLoader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainProjectLoader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiSounds.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NoticesNAd.Designer.vb">
+      <DependentUpon>NoticesNAd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NoticesNAd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setting.Designer.vb">
+      <DependentUpon>setting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="setting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundCutter.Designer.vb">
+      <DependentUpon>SoundCutter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SoundCutter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="unipackww.Designer.vb">
+      <DependentUpon>unipackww.vb</DependentUpon>
+    </Compile>
+    <Compile Include="unipackww.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wavConvert.Designer.vb">
+      <DependentUpon>wavConvert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="wavConvert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WavFileUtils.vb" />
+    <Compile Include="WavTools.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="adbPush.resx">
+      <DependentUpon>adbPush.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoPlayControler.resx">
+      <DependentUpon>AutoPlayControler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="autoPlayEdit.resx">
+      <DependentUpon>autoPlayEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dotLEDEdit.resx">
+      <DependentUpon>dotLEDEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoubleTrackBar.resx">
+      <DependentUpon>DoubleTrackBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editsound.resx">
+      <DependentUpon>editsound.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLED.resx">
+      <DependentUpon>frmLED.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStart.resx">
+      <DependentUpon>frmStart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="keySoundEdit.resx">
+      <DependentUpon>keySoundEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loadingfrm.resx">
+      <DependentUpon>Loadingfrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainProjectLoader.resx">
+      <DependentUpon>MainProjectLoader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoticesNAd.resx">
+      <DependentUpon>NoticesNAd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setting.resx">
+      <DependentUpon>setting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoundCutter.resx">
+      <DependentUpon>SoundCutter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unipackww.resx">
+      <DependentUpon>unipackww.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wavConvert.resx">
+      <DependentUpon>wavConvert.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logounitor_256px.ico" />
+    <None Include="Resources\unitorBlur.png" />
+    <None Include="Resources\logounitor.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
