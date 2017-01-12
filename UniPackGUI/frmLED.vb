@@ -157,13 +157,6 @@ Public Class frmLED
         End If
 
     End Sub
-    Private Sub txtOn_X_TextChanged(sender As Object, e As EventArgs) Handles txtOn_X.TextChanged
-
-    End Sub
-
-    Private Sub txtOn_Y_TextChanged(sender As Object, e As EventArgs) Handles txtOn_Y.TextChanged
-
-    End Sub
 
     Private Sub checkUseLaunchColor_CheckedChanged(sender As Object, e As EventArgs) Handles checkUseLaunchColor.CheckedChanged
         If (Me.checkUseLaunchColor.CheckState = CheckState.Checked) Then
@@ -1550,5 +1543,16 @@ Public Class frmLED
     End Sub
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
         MsgBox(changed)
+    End Sub
+
+    Private Sub frmLED_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If (MainProjectLoader.ishaveLED = False) Then
+            Dim result = MessageBox.Show("LED is not enabled in this project. Do you want to enable?", "LED Not enabled", MessageBoxButtons.YesNo, MessageBoxIcon.Stop)
+            If (result = Windows.Forms.DialogResult.Yes) Then
+                MainProjectLoader.ishaveLED = True
+            Else
+                Me.Close()
+            End If
+        End If
     End Sub
 End Class

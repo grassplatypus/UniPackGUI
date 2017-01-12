@@ -200,140 +200,140 @@ Public Class MainProjectLoader
                       Me.tbPackDirInfo.Text = projectpath
                   End Sub)
         If (projectType = "reopen") Then
-            'Try
-            Me.Invoke(Sub()
-                          Loadingfrm.workPgLabel.Text = "Checking for Auto Play Existence..."
-                          Loadingfrm.Update()
-                      End Sub)
-            If (My.Computer.FileSystem.FileExists("Workspace\autoPlay") = True) Then
+            Try
                 Me.Invoke(Sub()
-                              Me.AutoPlayBetaToolStripMenuItem.Enabled = True
-                              Loadingfrm.workPgLabel.Text = "Auto Play Found! Continuing..."
+                              Loadingfrm.workPgLabel.Text = "Checking for Auto Play Existence..."
                               Loadingfrm.Update()
                           End Sub)
-            Else
-                Me.Invoke(Sub()
-                              Loadingfrm.workPgLabel.Text = "Auto Play Not Found! Continuing..."
-                              Loadingfrm.Update()
-                          End Sub)
-            End If
-            Me.Invoke(Sub()
-                          Loadingfrm.workPgLabel.Text = "Stat: Reading info file"
-                          Loadingfrm.Update()
-                      End Sub)
-
-
-            Me.Invoke(Sub()
-                          Loadingfrm.workPgLabel.Text = "Stat: Reading Info file... => Counting and Setting..."
-                          'Loadingfrm.Update()
-                      End Sub)
-
-
-
-
-            Dim strTmp() As String
-            Dim linesInfo As New List(Of String)(IO.File.ReadAllLines("Workspace\info"))
-            linesInfo.RemoveAll(Function(s) s.Trim = "")
-            Dim filereadbyline() As String = linesInfo.ToArray
-            For index = 0 To filereadbyline.Count - 1
-                strTmp = Split(filereadbyline(index), "=")
-                If (strTmp(0) = "title") Then
+                If (My.Computer.FileSystem.FileExists("Workspace\autoPlay") = True) Then
                     Me.Invoke(Sub()
-                                  Me.tbPackName.Text = strTmp(1)
+                                  Me.AutoPlayBetaToolStripMenuItem.Enabled = True
+                                  Loadingfrm.workPgLabel.Text = "Auto Play Found! Continuing..."
+                                  Loadingfrm.Update()
                               End Sub)
-                    Pack_title = strTmp(1)
-                ElseIf (strTmp(0) = "producerName") Then
+                Else
                     Me.Invoke(Sub()
-                                  Me.tbPackAuthor.Text = strTmp(1)
+                                  Loadingfrm.workPgLabel.Text = "Auto Play Not Found! Continuing..."
+                                  Loadingfrm.Update()
                               End Sub)
-                    Pack_author = strTmp(1)
-                ElseIf (strTmp(0) = "buttonX") Then
-                    pack_bx = strTmp(1)
-                ElseIf (strTmp(0) = "buttonY") Then
-                    pack_by = strTmp(1)
-                ElseIf (strTmp(0) = "chain") Then
-                    Pack_chains = strTmp(1)
-                ElseIf (strTmp(0) = "squareButton") Then
-                    pack_squarebtn = strTmp(1)
-                ElseIf (strTmp(0) = "landscape") Then
-                    pack_landscape = strTmp(1)
-
                 End If
-
-            Next
-            'SOUND
-            Me.Invoke(Sub()
-                          Loadingfrm.workPgLabel.Text = "Stat: Checking UniPack info Requirement.."
-                          'Loadingfrm.Update()
-                      End Sub)
-            If (pack_bx <> 8 Or pack_by <> 8 Or pack_squarebtn <> "true" Or pack_landscape <> "true") Then
-                Throw New AggregateException("Not supported UniPack type! Only support 8 x 8 & Squarebutton & Landscape mode!")
-            End If
-            Me.Invoke(Sub()
-                          Loadingfrm.workPgLabel.Text = "Stat: Loading Sounds... => Counting..."
-                          'Loadingfrm.Update()
-                      End Sub)
-            Dim lines As New List(Of String)(IO.File.ReadAllLines("Workspace\keySound"))
-            lines.RemoveAll(Function(s) s.Trim = "")
-            Dim keysounds() As String = lines.ToArray
-            Dim keysounds_tmp() As String
-            Me.Invoke(Sub()
-                          Loadingfrm.LoadingPg.Style = ProgressBarStyle.Blocks
-                          Loadingfrm.LoadingPg.Maximum = keysounds.Length
-                          Loadingfrm.LoadingPg.Value = 0
-                      End Sub)
-            For index = 0 To keysounds.Length - 1
                 Me.Invoke(Sub()
-                              Loadingfrm.workPgLabel.Text = "Stat: Loading Sounds... => " & index & "/" & keysounds.Length
-                              ' Loadingfrm.Update()
+                              Loadingfrm.workPgLabel.Text = "Stat: Reading info file"
+                              Loadingfrm.Update()
                           End Sub)
-                keysounds_tmp = keysounds(index).Trim.Split(" ")
-                If (keysounds_tmp.Length = 5) Then
-                    Throw New AggregateException("Unsupported UniPack type: We don't support 5th parameter. (loop number)")
-                ElseIf (keysounds_tmp.Length = 4) Then
-                    If (keysounds_tmp(0) > Pack_chains) Then
-                        Throw New AggregateException("Bad chain number (bigger than maximum the number of chians  on Line " & index)
-                    End If
-                    Dim tmp As Integer = keysounds_max(keysounds_tmp(0), keysounds_tmp(1), keysounds_tmp(2))
-                    If (My.Computer.FileSystem.FileExists("Workspace\sounds\" & keysounds_tmp(3)) = True) Then
-                        soundfiles(keysounds_tmp(0), keysounds_tmp(1), keysounds_tmp(2), tmp) = "Workspace\sounds\" & keysounds_tmp(3)
 
-                        keysounds_max(keysounds_tmp(0), keysounds_tmp(1), keysounds_tmp(2)) += 1
+
+                Me.Invoke(Sub()
+                              Loadingfrm.workPgLabel.Text = "Stat: Reading Info file... => Counting and Setting..."
+                              'Loadingfrm.Update()
+                          End Sub)
+
+
+
+
+                Dim strTmp() As String
+                Dim linesInfo As New List(Of String)(IO.File.ReadAllLines("Workspace\info"))
+                linesInfo.RemoveAll(Function(s) s.Trim = "")
+                Dim filereadbyline() As String = linesInfo.ToArray
+                For index = 0 To filereadbyline.Count - 1
+                    strTmp = Split(filereadbyline(index), "=")
+                    If (strTmp(0) = "title") Then
                         Me.Invoke(Sub()
-                                      Snds.AddSound(keysounds_tmp(0) & " " & keysounds_tmp(1) & " " & keysounds_tmp(2) & " " & tmp, "Workspace\sounds\" & keysounds_tmp(3))
+                                      Me.tbPackName.Text = strTmp(1)
                                   End Sub)
+                        Pack_title = strTmp(1)
+                    ElseIf (strTmp(0) = "producerName") Then
+                        Me.Invoke(Sub()
+                                      Me.tbPackAuthor.Text = strTmp(1)
+                                  End Sub)
+                        Pack_author = strTmp(1)
+                    ElseIf (strTmp(0) = "buttonX") Then
+                        pack_bx = strTmp(1)
+                    ElseIf (strTmp(0) = "buttonY") Then
+                        pack_by = strTmp(1)
+                    ElseIf (strTmp(0) = "chain") Then
+                        Pack_chains = strTmp(1)
+                    ElseIf (strTmp(0) = "squareButton") Then
+                        pack_squarebtn = strTmp(1)
+                    ElseIf (strTmp(0) = "landscape") Then
+                        pack_landscape = strTmp(1)
+
+                    End If
+
+                Next
+                'SOUND
+                Me.Invoke(Sub()
+                              Loadingfrm.workPgLabel.Text = "Stat: Checking UniPack info Requirement.."
+                              'Loadingfrm.Update()
+                          End Sub)
+                If (pack_bx <> 8 Or pack_by <> 8 Or pack_squarebtn <> "true" Or pack_landscape <> "true") Then
+                    Throw New AggregateException("Not supported UniPack type! Only support 8 x 8 & Squarebutton & Landscape mode!")
+                End If
+                Me.Invoke(Sub()
+                              Loadingfrm.workPgLabel.Text = "Stat: Loading Sounds... => Counting..."
+                              'Loadingfrm.Update()
+                          End Sub)
+                Dim lines As New List(Of String)(IO.File.ReadAllLines("Workspace\keySound"))
+                lines.RemoveAll(Function(s) s.Trim = "")
+                Dim keysounds() As String = lines.ToArray
+                Dim keysounds_tmp() As String
+                Me.Invoke(Sub()
+                              Loadingfrm.LoadingPg.Style = ProgressBarStyle.Blocks
+                              Loadingfrm.LoadingPg.Maximum = keysounds.Length
+                              Loadingfrm.LoadingPg.Value = 0
+                          End Sub)
+                For index = 0 To keysounds.Length - 1
+                    Me.Invoke(Sub()
+                                  Loadingfrm.workPgLabel.Text = "Stat: Loading Sounds... => " & index & "/" & keysounds.Length
+                                  ' Loadingfrm.Update()
+                              End Sub)
+                    keysounds_tmp = keysounds(index).Trim.Split(" ")
+                    If (keysounds_tmp.Length = 5) Then
+                        Throw New AggregateException("Unsupported UniPack type: We don't support 5th parameter. (loop number)")
+                    ElseIf (keysounds_tmp.Length = 4) Then
+                        If (keysounds_tmp(0) > Pack_chains) Then
+                            Throw New AggregateException("Bad chain number (bigger than maximum the number of chians  on Line " & index)
+                        End If
+                        Dim tmp As Integer = keysounds_max(keysounds_tmp(0), keysounds_tmp(1), keysounds_tmp(2))
+                        If (My.Computer.FileSystem.FileExists("Workspace\sounds\" & keysounds_tmp(3)) = True) Then
+                            soundfiles(keysounds_tmp(0), keysounds_tmp(1), keysounds_tmp(2), tmp) = "Workspace\sounds\" & keysounds_tmp(3)
+
+                            keysounds_max(keysounds_tmp(0), keysounds_tmp(1), keysounds_tmp(2)) += 1
+                            Me.Invoke(Sub()
+                                          Snds.AddSound(keysounds_tmp(0) & " " & keysounds_tmp(1) & " " & keysounds_tmp(2) & " " & tmp, "Workspace\sounds\" & keysounds_tmp(3))
+                                      End Sub)
+                        Else
+                            Throw New AggregateException(keysounds_tmp(3) & " doesn't exists on Line " & index + 1)
+                            Exit For
+                        End If
                     Else
-                        Throw New AggregateException(keysounds_tmp(3) & " doesn't exists on Line " & index + 1)
+                        Throw New AggregateException("Invaild keySound structure on Line " & index + 1)
                         Exit For
                     End If
-                Else
-                    Throw New AggregateException("Invaild keySound structure on Line " & index + 1)
-                    Exit For
-                End If
-                Me.Invoke(Sub()
-                              Loadingfrm.LoadingPg.Value += 1
-                          End Sub)
+                    Me.Invoke(Sub()
+                                  Loadingfrm.LoadingPg.Value += 1
+                              End Sub)
 
-            Next
-            Me.Invoke(Sub()
-                          Me.tbPackChains.Text = Pack_chains
-                      End Sub)
-            For index = 1 To Pack_chains
+                Next
                 Me.Invoke(Sub()
-                              Me.listChain.Items.Add(index.ToString)
+                              Me.tbPackChains.Text = Pack_chains
                           End Sub)
-            Next
-            'Catch
-            'MessageBox.Show("Error Occured! For stability, loading process will be terminated. Message:" & Err.Description, "Error Occured!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            'Me.Invoke(Sub()
-            '              frmStart.Show()
+                For index = 1 To Pack_chains
+                    Me.Invoke(Sub()
+                                  Me.listChain.Items.Add(index.ToString)
+                              End Sub)
+                Next
+            Catch
+                MessageBox.Show("Error Occured! For stability, loading process will be terminated. Message:" & Err.Description, "Error Occured!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Me.Invoke(Sub()
+                              frmStart.Show()
 
-            '              Loadingfrm.Close()
-            '              frmStart.Enabled = True
-            '              Me.Close()
-            '          End Sub)
-            'Exit Sub
-            'End Try
+                              Loadingfrm.Close()
+                              frmStart.Enabled = True
+                              Me.Close()
+                          End Sub)
+                Exit Sub
+            End Try
 
             Me.Invoke(Sub()
                           'NOW...LED!!
@@ -343,6 +343,7 @@ Public Class MainProjectLoader
                       End Sub)
 
             If (My.Computer.FileSystem.DirectoryExists("Workspace\keyLED")) Then
+                ishaveLED = True
                 Dim tmp2() As String
                 Dim tmpint As Integer
                 Dim files() As String
@@ -483,31 +484,26 @@ Public Class MainProjectLoader
             'End Try
 
         Else
-            Dim path As String = "Workspace\info"
-
-            ' Create or overwrite the file.
-            Dim fs As FileStream = File.Create(path)
-
-            ' Add text to the file.
-            Dim info As Byte() = New UTF8Encoding(True).GetBytes("title=Hello World!" & vbNewLine & "buttonX=8" & vbNewLine & "buttonY=8" & vbNewLine & "producerName=UniPackGUI Editor" & vbNewLine & "chain=1" & vbNewLine & "squareButton=true" & vbNewLine & "landscape=true")
-            fs.Write(info, 0, info.Length)
-            fs.Close()
+            ishaveLED = False 'LED 없음
 
 
-            path = "Workspace\keySound"
-            fs = File.Create(path)
-            info = New UTF8Encoding(True).GetBytes("")
-            fs.Write(info, 0, info.Length)
-            fs.Close()
-            My.Computer.FileSystem.CreateDirectory("Workspace\sounds")
+            'Common File Stream Requirement
+
+
+
             Me.Invoke(Sub()
                           Me.listChain.Items.Add(1)
                           Me.tbPackAuthor.Text = "UniPackGUI Editor"
                           Me.tbPackChains.Text = "1"
                           Me.tbPackName.Text = "Hello World!"
                           Me.tbPackDirInfo.Text = projectpath
+                          Loadingfrm.workPgLabel.Text = "Saving Initial project..."
+                          MsgBox(projectpath)
                       End Sub)
-            isSaved = False
+            isSaved = True
+
+            ZipFile.CreateFromDirectory("Workspace\", Me.tbPackDirInfo.Text, CompressionLevel.Fastest, False)
+
         End If
         If (isErr = True) Then
             Me.Invoke(Sub()
@@ -532,9 +528,15 @@ Public Class MainProjectLoader
                       Me.listChain.SelectedIndex = 0
                       Me.Text = Me.tbPackName.Text & " - Unitor v" & My.Application.Info.Version.ToString
                       frmStart.Enabled = True
+                      Me.Enabled = True
+                      If (ishaveLED = True) Then
+                          Me.ledisableenable.Text = "Disable LED"
+                      Else
+                          Me.ledisableenable.Text = "Enable LED"
+                      End If
                   End Sub)
-        Me.Enabled = True
-        'Dim a = Snds.Snds("ffff")
+
+
         Exit Sub
     End Sub
 
@@ -2313,7 +2315,7 @@ Public Class MainProjectLoader
             'pHelp.UseShellExecute = True
             'pHelp.WindowStyle = ProcessWindowStyle.Normal
             'Dim proc As Process = Process.Start(pHelp)
-            ' ZipFile.CreateFromDirectory("Workspace\", Me.tbPackDirInfo.Text, CompressionLevel.Fastest, False)
+            ZipFile.CreateFromDirectory("Workspace\", Me.tbPackDirInfo.Text, CompressionLevel.Fastest, False)
         Catch ex As Exception
             MessageBox.Show("There was a problem creating project file. Error message from system: " & ex.Message, "Project Release Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
@@ -2898,6 +2900,21 @@ Public Class MainProjectLoader
 
     Private Sub CreditToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CreditToolStripMenuItem.Click
         MsgBox("Unitor" & vbNewLine & "Unitor, the best UniPack IDE." & vbNewLine & "Developer: FollowJB" & vbNewLine & "Icon: K1A2" & vbNewLine & "Unitor is the official project of UniPad.")
+    End Sub
+
+    Private Sub ledisableenable_Click(sender As Object, e As EventArgs) Handles ledisableenable.Click
+        If (ishaveLED = True) Then
+            Dim result = MessageBox.Show("Do you want to REMOVE ALL LED FILES in this project? You should know what you are doing!", "LED Remove", MessageBoxButtons.YesNo, MessageBoxIcon.Stop)
+            If (result = Windows.Forms.DialogResult.Yes) Then
+                ishaveLED = False
+                My.Computer.FileSystem.DeleteDirectory("Workspace\keyLED", FileIO.DeleteDirectoryOption.DeleteAllContents)
+            Else
+
+            End If
+        Else
+            ishaveLED = True
+            My.Computer.FileSystem.CreateDirectory("Workspace\keyLED")
+        End If
     End Sub
 End Class
 

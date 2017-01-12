@@ -31,3 +31,4 @@ C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGU
 C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.autoPlayEdit.resources
 C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.DoubleTrackBar.resources
 C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.unipackww.resources
+C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.vbprojResolveAssemblyReference.cache

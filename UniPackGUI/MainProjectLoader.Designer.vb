@@ -95,10 +95,12 @@ Partial Class MainProjectLoader
         Me.menuMainProj = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenProjectToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SaveProjectToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DeleteProjectToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveProjectToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.Mp3ToWavConverterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.UploadToUniPackWWToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SoundsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SoundCutterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -112,6 +114,7 @@ Partial Class MainProjectLoader
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InformationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SettingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenSettingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RestoreDefaultWindowSizeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -140,9 +143,7 @@ Partial Class MainProjectLoader
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.ofdOpenAgain = New System.Windows.Forms.OpenFileDialog()
-        Me.UploadToUniPackWWToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.CreditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ledisableenable = New System.Windows.Forms.ToolStripMenuItem()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.menuMainProj.SuspendLayout()
@@ -1082,17 +1083,17 @@ Partial Class MainProjectLoader
         Me.OpenProjectToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
         Me.OpenProjectToolStripMenuItem.Text = "Open Project"
         '
-        'SaveProjectToolStripMenuItem
-        '
-        Me.SaveProjectToolStripMenuItem.Name = "SaveProjectToolStripMenuItem"
-        Me.SaveProjectToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.SaveProjectToolStripMenuItem.Text = "Save Project"
-        '
         'DeleteProjectToolStripMenuItem
         '
         Me.DeleteProjectToolStripMenuItem.Name = "DeleteProjectToolStripMenuItem"
         Me.DeleteProjectToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
         Me.DeleteProjectToolStripMenuItem.Text = "Delete Project"
+        '
+        'SaveProjectToolStripMenuItem
+        '
+        Me.SaveProjectToolStripMenuItem.Name = "SaveProjectToolStripMenuItem"
+        Me.SaveProjectToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.SaveProjectToolStripMenuItem.Text = "Save Project"
         '
         'ToolStripSeparator2
         '
@@ -1105,9 +1106,20 @@ Partial Class MainProjectLoader
         Me.Mp3ToWavConverterToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
         Me.Mp3ToWavConverterToolStripMenuItem.Text = "Mp3 to Wav Converter"
         '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(194, 6)
+        '
+        'UploadToUniPackWWToolStripMenuItem
+        '
+        Me.UploadToUniPackWWToolStripMenuItem.Name = "UploadToUniPackWWToolStripMenuItem"
+        Me.UploadToUniPackWWToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
+        Me.UploadToUniPackWWToolStripMenuItem.Text = "Upload to UniPackWW"
+        '
         'EditToolStripMenuItem
         '
-        Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SoundsToolStripMenuItem, Me.SoundCutterToolStripMenuItem, Me.KeySoundTextEditorToolStripMenuItem, Me.AutoPlayTextEditorToolStripMenuItem})
+        Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SoundsToolStripMenuItem, Me.SoundCutterToolStripMenuItem, Me.KeySoundTextEditorToolStripMenuItem, Me.AutoPlayTextEditorToolStripMenuItem, Me.ledisableenable})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
         Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
@@ -1177,16 +1189,22 @@ Partial Class MainProjectLoader
         'InformationToolStripMenuItem
         '
         Me.InformationToolStripMenuItem.Name = "InformationToolStripMenuItem"
-        Me.InformationToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.InformationToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.InformationToolStripMenuItem.Text = "Information"
         Me.InformationToolStripMenuItem.Visible = False
         '
         'HelpToolStripMenuItem1
         '
         Me.HelpToolStripMenuItem1.Name = "HelpToolStripMenuItem1"
-        Me.HelpToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.HelpToolStripMenuItem1.Size = New System.Drawing.Size(137, 22)
         Me.HelpToolStripMenuItem1.Text = "Help"
         Me.HelpToolStripMenuItem1.Visible = False
+        '
+        'CreditToolStripMenuItem
+        '
+        Me.CreditToolStripMenuItem.Name = "CreditToolStripMenuItem"
+        Me.CreditToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.CreditToolStripMenuItem.Text = "Credit"
         '
         'SettingToolStripMenuItem
         '
@@ -1454,22 +1472,11 @@ Partial Class MainProjectLoader
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(146, 615)
         Me.TableLayoutPanel3.TabIndex = 17
         '
-        'UploadToUniPackWWToolStripMenuItem
+        'ledisableenable
         '
-        Me.UploadToUniPackWWToolStripMenuItem.Name = "UploadToUniPackWWToolStripMenuItem"
-        Me.UploadToUniPackWWToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
-        Me.UploadToUniPackWWToolStripMenuItem.Text = "Upload to UniPackWW"
-        '
-        'ToolStripSeparator3
-        '
-        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(194, 6)
-        '
-        'CreditToolStripMenuItem
-        '
-        Me.CreditToolStripMenuItem.Name = "CreditToolStripMenuItem"
-        Me.CreditToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.CreditToolStripMenuItem.Text = "Credit"
+        Me.ledisableenable.Name = "ledisableenable"
+        Me.ledisableenable.Size = New System.Drawing.Size(188, 22)
+        Me.ledisableenable.Text = "LED En/Dis"
         '
         'MainProjectLoader
         '
@@ -1618,4 +1625,5 @@ Partial Class MainProjectLoader
     Friend WithEvents ToolStripSeparator3 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents UploadToUniPackWWToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CreditToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ledisableenable As System.Windows.Forms.ToolStripMenuItem
 End Class

@@ -183,37 +183,11 @@ Public Class frmStart
             Loadingfrm.Show()
             Me.Enabled = False
             'MessageBox.Show(Me.newProject.FileName)
-            Loadingfrm.workPgLabel.Text = "Flushing Workspace directory..."
-            My.Computer.FileSystem.DeleteDirectory("Workspace", FileIO.DeleteDirectoryOption.DeleteAllContents)
+            ThreadPool.QueueUserWorkItem(AddressOf MakeProject_Part1, Me.newProject.FileName)
 
-            My.Computer.FileSystem.CreateDirectory("Workspace")
+           
 
-            Loadingfrm.workPgLabel.Text = "Creating Necessary Files..."
-            My.Computer.FileSystem.CreateDirectory(Me.newProject.FileName)
-            Dim fs As FileStream
-            fs = File.Create(Me.newProject.FileName & "\autoPlay")
-
-            ' Add text to the file.
-            Dim info As Byte()
-            info = New UTF8Encoding(True).GetBytes("")
-            fs.Write(info, 0, info.Length)
-            fs.Close()
-
-            fs = File.Create(Me.newProject.FileName & "\info")
-            info = New UTF8Encoding(True).GetBytes("")
-            fs.Write(info, 0, info.Length)
-            fs.Close()
-
-            fs = File.Create(Me.newProject.FileName & "\keySound")
-            info = New UTF8Encoding(True).GetBytes("")
-            fs.Write(info, 0, info.Length)
-            fs.Close()
-
-            My.Computer.FileSystem.CreateDirectory(Me.newProject.FileName & "\sounds")
-            Me.Enabled = True
-            Loadingfrm.Close()
-            ' ThreadPool.QueueUserWorkItem(AddressOf MainProjectLoader.ElementLoader, Me.newProject.FileName & ";new")
-            MainProjectLoader.ElementLoader(Me.newProject.FileName & ";new")
+          
         End If
     End Sub
 
@@ -223,8 +197,8 @@ Public Class frmStart
             MainProjectLoader.Show()
             MainProjectLoader.Update()
             MainProjectLoader.Hide()
-            'ThreadPool.QueueUserWorkItem(AddressOf LoadProject_Part1, Me.readProject.FileName)
-            LoadProject_Part1(Me.readProject.FileName)
+            ThreadPool.QueueUserWorkItem(AddressOf LoadProject_Part1, Me.readProject.FileName)
+            'LoadProject_Part1(Me.readProject.FileName)
         End If
 
     End Sub
@@ -285,11 +259,63 @@ Public Class frmStart
             Me.Invoke(Sub()
                           Loadingfrm.Close()
                           Me.Enabled = True
+                          ThreadPool.QueueUserWorkItem(AddressOf MainProjectLoader.ElementLoader, Me.readProject.FileName & ";reopen")
+
                       End Sub)
-            ThreadPool.QueueUserWorkItem(AddressOf MainProjectLoader.ElementLoader, Me.readProject.FileName & ";reopen")
             'MainProjectLoader.ElementLoader(Me.readProject.FileName & ";reopen")
             'MainProjectLoader.Show()
         End If
+    End Sub
+
+    Public Sub MakeProject_Part1(ByVal FilePath As Object)
+        Me.Invoke(Sub()
+                      Loadingfrm.Show()
+                      Loadingfrm.LoadingPg.Style = ProgressBarStyle.Marquee
+                      Loadingfrm.Update()
+                  End Sub)
+        Me.Invoke(Sub()
+                      Me.Enabled = False
+                  End Sub)
+
+        Me.Invoke(Sub()
+                      Loadingfrm.workPgLabel.Text = "Flushing Workspace directory..."
+                      Loadingfrm.Update()
+                  End Sub)
+        If (My.Computer.FileSystem.DirectoryExists("Workspace") = True) Then
+            My.Computer.FileSystem.DeleteDirectory("Workspace", FileIO.DeleteDirectoryOption.DeleteAllContents)
+        End If
+        My.Computer.FileSystem.CreateDirectory("Workspace")
+        Me.Invoke(Sub()
+                      Loadingfrm.workPgLabel.Text = "Creating Necessary Files..."
+                  End Sub)
+        'Common File Stream
+        Dim fs As FileStream
+        Dim info As Byte()
+
+
+        fs = File.Create("Workspace\info")
+        info = New UTF8Encoding(True).GetBytes("title=Hello World!" & vbNewLine & "buttonX=8" & vbNewLine & "buttonY=8" & vbNewLine & "producerName=UniPackGUI Editor" & vbNewLine & "chain=1" & vbNewLine & "squareButton=true" & vbNewLine & "landscape=true")
+        fs.Write(info, 0, info.Length)
+        fs.Close()
+
+        fs = File.Create("Workspace\keySound")
+        info = New UTF8Encoding(True).GetBytes("")
+        fs.Write(info, 0, info.Length)
+        fs.Close()
+
+        My.Computer.FileSystem.CreateDirectory("Workspace\sounds")
+
+       
+        Me.Invoke(Sub()
+                      Me.Enabled = True
+                      Loadingfrm.Close()
+                      MainProjectLoader.Show()
+                      MainProjectLoader.Hide()
+                      ThreadPool.QueueUserWorkItem(AddressOf MainProjectLoader.ElementLoader, Me.newProject.FileName & ";new")
+
+                  End Sub)
+
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
