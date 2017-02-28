@@ -8,7 +8,7 @@
         Me.Cursor = Cursors.WaitCursor
     End Sub
 
-    Private Sub close(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+    Private Sub MeClose(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Me.Cursor = Cursors.Arrow
     End Sub
 End Class

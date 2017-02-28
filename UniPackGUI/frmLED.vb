@@ -34,6 +34,9 @@ Public Class frmLED
     Dim WrongColors() As String = {"Red", "Yellow", "Aqua", "Fuchsia", "Lime", "Teal", "Maroon", "Green", "Blue", "Purple", "Navy", "Black", "Olive", "Gray", "Silver", "White"}
 
     Public Sub LoadLED(chain As Integer, xcode As Integer, ycode As Integer)
+        If (MainProjectLoader.ishaveLED = False) Then
+            Exit Sub
+        End If
         MainProjectLoader.isSaved = False
         Me.rtbLED.Enabled = True
         Me.tabHelper.Enabled = True
@@ -131,17 +134,8 @@ Public Class frmLED
             Me.rtbLED.Text = fileReader
             recent = 0
         ElseIf (MainProjectLoader.ledfiles_max(chain, xcode, ycode) = 1) Then
-
-            If (MainProjectLoader.ledfiles(chain, xcode, ycode, 0).Split("\").Last.Split(" ").Last = 0) Then
-                Me.listMultiMaps.Items.Add("Single;0")
-            ElseIf (MainProjectLoader.ledfiles(chain, xcode, ycode, 0).Split("\").Last.Split(" ").Last = 1) Then
-                Me.listMultiMaps.Items.Add("Single;1")
-            Else
-                Me.Invoke(Sub()
-                              MessageBox.Show("Wrong Loop number '" & MainProjectLoader.ledfiles(chain, xcode, ycode, 0).Split("\").Last.Split(" ").Last & "'! If you want to do Multi Mapping, add like 1 1 1 0 a, 1 1 2 b!", "Loop number error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                          End Sub)
-                Exit Sub
-            End If
+            Me.listMultiMaps.Items.Add("Single;" & MainProjectLoader.ledfiles(chain, xcode, ycode, 0).Split("\").Last.Split(" ").Last)
+           
             fileReader = My.Computer.FileSystem.ReadAllText(MainProjectLoader.ledfiles(chain, xcode, ycode, 0))
             'MsgBox(fileReader)
             Me.rtbLED.Text = fileReader
@@ -171,20 +165,7 @@ Public Class frmLED
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles textColor.TextChanged
         Try
             Dim htmlcode As String = Me.textColor.Text
-            If (Me.checkUseLaunchColor.CheckState = CheckState.Checked) Then
-                If (IsNumeric(Me.textColor.Text) = False) Then
-                    If (Me.textColor.Text = Not "") Then
-                        MessageBox.Show("Only numbers available when enabled 'Use Launchpad Colors'! (0~128)", "Value Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
-                        'Me.textColor.Undo()
-                        Exit Sub
-                    End If
-                End If
 
-            ElseIf (Me.checkUseLaunchColor.CheckState = CheckState.Unchecked) Then
-                MessageBox.Show("Launchpad color is 0~128!!", "Value Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
-                Me.textColor.Undo()
-                Exit Sub
-            End If
 
             Me.btnColorTest.BackColor = System.Drawing.ColorTranslator.FromHtml("#" & htmlcode)
 
@@ -710,7 +691,7 @@ Public Class frmLED
             Dim result = MessageBox.Show("You didn't save this opened LED script. Do you want to save?", "Not Saved", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question)
             If (result = Windows.Forms.DialogResult.Yes) Then
                 Dim path As String
-                path = MainProjectLoader.ledfiles(nowchain, xc, yc, recent)
+                path = "Workspace/keyLED/" & nowchain & " " & xc & " " & yc & " " & Me.listMultiMaps.SelectedItem.ToString.Split(";").Last
 
                 ' Create or overwrite the file.
                 Dim fs As FileStream = File.Create(path)
@@ -726,7 +707,7 @@ Public Class frmLED
                 Exit Sub
             End If
         End If
-        
+
         Me.Close()
     End Sub
 
@@ -829,12 +810,12 @@ Public Class frmLED
 
     Private Sub LEDHandler()
         Try
-             Dim linesInfo As New List(Of String)(IO.File.ReadAllLines("TmpLED\tmp"))
+            Dim linesInfo As New List(Of String)(IO.File.ReadAllLines("TmpLED\tmp"))
             linesInfo.RemoveAll(Function(s) s.Trim = "")
             Dim Lines() As String = linesInfo.ToArray
             Dim linescounter As Integer = Lines.Length
             Dim stopwatch__1 As Stopwatch = Stopwatch.StartNew()
-           
+
             Dim sp() As String
             For i = 0 To linescounter - 1
 
@@ -1284,8 +1265,8 @@ Public Class frmLED
 
 
 
-            fileReader = My.Computer.FileSystem.ReadAllText(MainProjectLoader.ledfiles(nowchain, xc, yc, Me.listMultiMaps.SelectedIndex))
-            Me.rtbLED.Text = fileReader
+            filereader = My.Computer.FileSystem.ReadAllText(MainProjectLoader.ledfiles(nowchain, xc, yc, Me.listMultiMaps.SelectedIndex))
+            Me.rtbLED.Text = filereader
 
         Catch
         End Try
@@ -1347,7 +1328,7 @@ Public Class frmLED
 
             MainProjectLoader.ledfiles(nowchain, xc, yc, q) = "Workspace\keyLED\" & sp(0) & " " & sp(1) & " " & sp(2) & " " & sp(3) & strAdd
         Next
-       
+
         'IO.File.Delete(MainProjectLoader.ledfiles(nowchain, xc, yc, Me.listMultiMaps.Items.Count - 1))
         Me.rtbLED.Clear()
         If (Me.listMultiMaps.Items.Count = 0) Then
@@ -1372,7 +1353,7 @@ Public Class frmLED
 
 
     Private Sub btnAddTurnOff_Click(sender As Object, e As EventArgs) Handles btnAddTurnOff.Click
-        Me.rtbLED.AppendText(vbNewLine & "f " & Me.tbTurnOffY.Text & " " & Me.tbTurnOffX.Text)
+        Me.rtbLED.AppendText(vbNewLine & "f " & Me.tbTurnOffX.Text & " " & Me.tbTurnOffY.Text)
 
     End Sub
 
@@ -1424,7 +1405,7 @@ Public Class frmLED
 
     End Sub
 
-    Private Sub btnAdd0_Click(sender As Object, e As EventArgs) Handles btnAdd0.Click
+    Private Sub btnAdd0_Click(sender As Object, e As EventArgs)
         If (Me.listMultiMaps.Items.Count > 27) Then
             MessageBox.Show("You reached maximum size of Multi Mapper!", "Maximum exceed!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             Exit Sub
@@ -1476,18 +1457,18 @@ Public Class frmLED
     Private Sub btnAddTurnOn_Click(sender As Object, e As EventArgs) Handles btnAddTurnOn.Click
         If (Me.checkUseLaunchColor.Checked = True) Then
             If (Me.cbLaunchPadColor.SelectedItem.ToString <> "Not Set") Then
-                Me.rtbLED.AppendText(vbNewLine & "o " & Me.tbTurnOffY.Text & " " & Me.tbTurnOffX.Text & " " & "auto " & Me.cbLaunchPadColor.SelectedItem)
+                Me.rtbLED.AppendText(vbNewLine & "o " & Me.tbTurnOffX.Text & " " & Me.tbTurnOffY.Text & " " & "auto " & Me.cbLaunchPadColor.SelectedItem)
             End If
         Else
 
-            Me.rtbLED.AppendText(vbNewLine & "o " & Me.tbTurnOffY.Text & " " & Me.tbTurnOffX.Text & " " & Me.textColor.Text)
+            Me.rtbLED.AppendText(vbNewLine & "o " & Me.tbTurnOffX.Text & " " & Me.tbTurnOffY.Text & " " & Me.textColor.Text)
         End If
     End Sub
 
     'Support for Line Numbers
     'https://www.codeproject.com/Articles/14566/Line-Numbering-of-RichTextBox-in-NET
     Private Sub rtbLED_Resize(sender As Object, e As EventArgs) Handles rtbLED.Resize
-        Me.rtbLED.Invalidate
+        Me.rtbLED.Invalidate()
     End Sub
 
     Private Sub rtbLED_VsCroll(sender As Object, e As EventArgs) Handles rtbLED.VScroll
@@ -1545,11 +1526,67 @@ Public Class frmLED
         MsgBox(changed)
     End Sub
 
+    Private Sub frmLED_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.A And e.Modifiers = Keys.ControlKey Then
+            Dim loopKey As String = InputBox("Please enter loop number. Only Numbers are available", "Loop Number", 1)
+            If (IsNumeric(loopKey) = False) Then
+                MessageBox.Show("Loop number must be number, not characters.", "Invaild Data", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                Exit Sub
+            End If
+
+            If (Me.listMultiMaps.Items.Count > 27) Then
+                MessageBox.Show("You reached maximum size of Multi Mapper!", "Maximum exceed!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                Exit Sub
+            End If
+
+
+            If (Me.listMultiMaps.Items.Count = 0) Then
+                Me.listMultiMaps.Items.Add("Single;" & loopKey)
+                Dim a = IO.File.Create("Workspace\keyLED\" & nowchain & " " & xc & " " & yc & " 0")
+                a.Close()
+                MainProjectLoader.ledfiles(nowchain, xc, yc, Me.listMultiMaps.Items.Count - 1) = "Workspace\keyLED\" & nowchain & " " & xc & " " & yc & " 0"
+                isFirst = True
+                Me.listMultiMaps.SelectedIndex = 0
+                Me.rtbLED.Enabled = True
+
+                Me.rtbLED.ReadOnly = False
+                Me.btnLEDtest.Enabled = True
+                Me.tabHelper.Enabled = True
+            Else
+                Me.listMultiMaps.Items.Add(Chr(96 + Me.listMultiMaps.Items.Count) & ";" & loopKey)
+                Dim a = IO.File.Create("Workspace\keyLED\" & nowchain & " " & xc & " " & yc & " 0 " & Chr(96 + Me.listMultiMaps.Items.Count))
+                a.Close()
+                MainProjectLoader.ledfiles(nowchain, xc, yc, Me.listMultiMaps.Items.Count - 1) = "Workspace\keyLED\" & nowchain & " " & xc & " " & yc & " 0 " & Chr(95 + Me.listMultiMaps.Items.Count)
+
+            End If
+            MainProjectLoader.ledfiles_max(nowchain, xc, yc) = Me.listMultiMaps.Items.Count
+            If (Me.listMultiMaps.Items.Count = 2) Then
+                MainProjectLoader.ledfiles_max(nowchain, xc, yc) = 2
+                Dim sp As String = MainProjectLoader.ledfiles(nowchain, xc, yc, 0).Split("\")(MainProjectLoader.ledfiles(nowchain, xc, yc, 0).Split("\").Count - 1).Split(" ")(MainProjectLoader.ledfiles(nowchain, xc, yc, 0).Split("\")(MainProjectLoader.ledfiles(nowchain, xc, yc, 0).Split("\").Count - 1).Split(" ").Count - 1)
+                If (sp = 1) Then
+                    Me.listMultiMaps.Items(0) = "Single" & ";1"
+                    MainProjectLoader.ledfiles(nowchain, xc, yc, 0) = "Workspace\keyLED\" & nowchain & " " & xc & " " & yc & " 1"
+                    'My.Computer.FileSystem.RenameFile("Workspace\keyLED\" & nowchain & " " & xc & " " & yc & " 1", nowchain & " " & xc & " " & yc & " 1")
+                Else
+                    MainProjectLoader.ledfiles(nowchain, xc, yc, 0) = "Workspace\keyLED\" & nowchain & " " & xc & " " & yc & " 0"
+                    ' My.Computer.FileSystem.RenameFile("Workspace\keyLED\" & nowchain & " " & xc & " " & yc & " 0", nowchain & " " & xc & " " & yc & " 0")
+                    Me.listMultiMaps.Items(0) = "Single" & ";0"
+                End If
+
+            End If
+
+        End If
+    End Sub
+
     Private Sub frmLED_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If (MainProjectLoader.ishaveLED = False) Then
-            Dim result = MessageBox.Show("LED is not enabled in this project. Do you want to enable?", "LED Not enabled", MessageBoxButtons.YesNo, MessageBoxIcon.Stop)
+        If (MainProjectLoader.ishaveLED = True) Then
+            Dim result = MessageBox.Show("Do you want to enable LED for this project?", "Enable LED", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
             If (result = Windows.Forms.DialogResult.Yes) Then
                 MainProjectLoader.ishaveLED = True
+                If (My.Computer.FileSystem.DirectoryExists("Workspace/keyLED") = False) Then
+                    My.Computer.FileSystem.CreateDirectory("Workspace/keyLED")
+                End If
+                MainProjectLoader.ledisableenable.Text = "Disable LED"
             Else
                 Me.Close()
             End If

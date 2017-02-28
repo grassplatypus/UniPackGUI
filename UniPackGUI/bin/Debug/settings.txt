@@ -1,3 +1,5 @@
 ZeroLEDSupport 0
 GetURLFromServer 1
 CustomURL http://example.com/unipackww/
+StrictSoundLen 1
+ZeroSoundSupport 1

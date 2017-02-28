@@ -6,7 +6,6 @@ C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGU
 C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.Loadingfrm.resources
 C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.MainProjectLoader.resources
 C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.Resources.resources
-C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.setting.resources
 C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.frmStart.resources
 C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.wavConvert.resources
 C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\bin\Debug\NAudio.dll
@@ -32,3 +31,81 @@ C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGU
 C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.DoubleTrackBar.resources
 C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.unipackww.resources
 C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.vbprojResolveAssemblyReference.cache
+C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\bin\Debug\MidiServices.dll
+C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\bin\Debug\MidiServices.pdb
+C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\bin\Debug\MidiServices.xml
+C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.midiConnect.resources
+C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\bin\Debug\Midi.dll
+C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\bin\Debug\Midi.xml
+C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.LowQualAutoPlay.resources
+C:\Users\Lee Jae gyun\Documents\Visual Studio 2013\Projects\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.setting_unitor.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\bin\Debug\Unitor.exe.config
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\Unitor.exe
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\Unitor.xml
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\Unitor.pdb
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\bin\Debug\Unitor.exe
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\bin\Debug\Unitor.pdb
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\bin\Debug\Unitor.xml
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\bin\Debug\NAudio.dll
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\bin\Debug\System.Collections.Immutable.dll
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\bin\Debug\NAudio.xml
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\bin\Debug\System.Collections.Immutable.xml
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.adbPush.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.AutoPlayControler.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.autoPlayEdit.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.dotLEDEdit.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.DoubleTrackBar.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.editsound.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.frmLED.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.frmStart.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.keySoundEdit.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.Loadingfrm.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.LowQualAutoPlay.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.MainProjectLoader.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.midiConnect.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.Resources.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.NoticesNAd.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.setting_unitor.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.SoundCutter.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.SplashScreen.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.unipackww.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.wavConvert.resources
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.vbproj.GenerateResource.Cache
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.DebugTable.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\bin\Debug\Unitor.exe.config
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\Unitor.exe
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\Unitor.xml
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\Unitor.pdb
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\bin\Debug\Unitor.exe
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\bin\Debug\Unitor.pdb
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\bin\Debug\Unitor.xml
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\bin\Debug\NAudio.dll
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\bin\Debug\NAudio.xml
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.adbPush.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.AutoPlayControler.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.autoPlayEdit.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.DebugTable.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.dotLEDEdit.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.DoubleTrackBar.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.editsound.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.frmLED.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.frmStart.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.keySoundEdit.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.Loadingfrm.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.LowQualAutoPlay.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.MainProjectLoader.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.midiConnect.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.Resources.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.NoticesNAd.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.setting_unitor.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.SoundCutter.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.SplashScreen.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.unipackww.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.wavConvert.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.vbproj.GenerateResource.Cache
+C:\Users\FollowJB\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.vbprojResolveAssemblyReference.cache
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.vbprojResolveAssemblyReference.cache
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.VerticalTabControl.resources
+C:\Users\Lee Jae gyun\Google 드라이브\UniPackGUI\UniPackGUI\obj\Debug\UniPackGUI.ButtonModified.resources

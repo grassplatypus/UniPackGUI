@@ -37,7 +37,7 @@ Public Class keySoundEdit
                     For t3 = 0 To 8
                         For t4 = 0 To 150
                             Try
-                                MainProjectLoader.Snds.Close(t1 & " " & t2 & " " & t3 & " " & t4)
+                                MainProjectLoader.CloseSound(t1 & " " & t2 & " " & t3 & " " & t4)
 
                             Catch
                             End Try
@@ -88,7 +88,7 @@ Public Class keySoundEdit
 
                     MainProjectLoader.keysounds_max(keysounds_tmp(0), keysounds_tmp(1), keysounds_tmp(2)) += 1
                     MainProjectLoader.Invoke(Sub()
-                                                 MainProjectLoader.Snds.AddSound(keysounds_tmp(0) & " " & keysounds_tmp(1) & " " & keysounds_tmp(2) & " " & tmp, "Workspace\sounds\" & keysounds_tmp(3))
+                                                 MainProjectLoader.AddSound(keysounds_tmp(0) & " " & keysounds_tmp(1) & " " & keysounds_tmp(2) & " " & tmp, "Workspace\sounds\" & keysounds_tmp(3))
                                              End Sub)
 
                 Else

@@ -89,8 +89,9 @@ Public Class LEDClass
                 Next
                 Thread.Sleep(50)
                 For i = 0 To turnOffDict.Count - 1
+                    Dim index = i
                     MainProjectLoader.Invoke(Sub()
-                                                 MainProjectLoader.ctrlDict(turnOffDict(i)).BackColor = Color.Gray
+                                                 MainProjectLoader.ctrlDict(turnOffDict(index)).BackColor = Color.Gray
                                              End Sub)
                 Next
             End If

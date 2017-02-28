@@ -13,8 +13,26 @@ Public Class frmStart
     'Declare Function GetWinFlags Lib "Kernel" () As Long
     Dim VersionCode = My.Application.Info.Version.ToString
     Private Sub frmStart_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'MsgBox(Environment.GetCommandLineArgs())
+        Dim strTmp() As String
+        Dim linesInfo As New List(Of String)(IO.File.ReadAllLines("settings.txt"))
+        linesInfo.RemoveAll(Function(s) s.Trim = "")
+        Dim filereadbyline() As String = linesInfo.ToArray
+        For index = 0 To filereadbyline.Count - 1
+            strTmp = Split(filereadbyline(index), " ")
+            If (strTmp(0) = "ZeroLEDSupport") Then
+                MainProjectLoader.init = True
+                MainProjectLoader.settings(0) = strTmp(1)
+            ElseIf (strTmp(0) = "GetURLFromServer") Then
+                MainProjectLoader.settings(1) = strTmp(1)
+            ElseIf (strTmp(0) = "CustomURL") Then
 
+                MainProjectLoader.settings(2) = strTmp(1)
+
+
+            End If
+
+        Next
+        ThreadPool.QueueUserWorkItem(AddressOf ShowNotice)
         Me.Text = "Unitor (S channel) v" & VersionCode.ToString
         If (isFirst = True) Then
             With MainProjectLoader
@@ -168,8 +186,6 @@ Public Class frmStart
 
             End With
         End If
-        Me.Focus()
-        NoticesNAd.ShowDialog()
 
     End Sub
 
@@ -245,6 +261,8 @@ Public Class frmStart
             Loadingfrm.workPgLabel.Text = "Flushing Workspace directory and initializing..."
             Loadingfrm.Update()
             'My.Computer.FileSystem.DeleteDirectory("Workspace", FileIO.DeleteDirectoryOption.DeleteAllContents)
+            Me.Enabled = True
+            Loadingfrm.Close()
         End Try
 
         'Dim pHelp As New ProcessStartInfo
@@ -326,4 +344,11 @@ Public Class frmStart
     Private Sub btnSoundCut_Click(sender As Object, e As EventArgs) Handles btnSoundCut.Click
         SoundCutter.ShowDialog()
     End Sub
+
+    Private Sub ShowNotice()
+        Me.Invoke(Sub()
+                      NoticesNAd.ShowDialog()
+                  End Sub)
+    End Sub
+
 End Class

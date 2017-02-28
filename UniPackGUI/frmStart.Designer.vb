@@ -48,36 +48,36 @@ Partial Class frmStart
         '
         'rtbInfoMain
         '
-        Me.rtbInfoMain.Location = New System.Drawing.Point(16, 48)
+        Me.rtbInfoMain.Location = New System.Drawing.Point(14, 52)
         Me.rtbInfoMain.Name = "rtbInfoMain"
         Me.rtbInfoMain.ReadOnly = True
-        Me.rtbInfoMain.Size = New System.Drawing.Size(305, 126)
+        Me.rtbInfoMain.Size = New System.Drawing.Size(262, 136)
         Me.rtbInfoMain.TabIndex = 4
         Me.rtbInfoMain.Text = resources.GetString("rtbInfoMain.Text")
         '
         'btnClose
         '
-        Me.btnClose.Location = New System.Drawing.Point(223, 277)
+        Me.btnClose.Location = New System.Drawing.Point(206, 311)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(98, 23)
+        Me.btnClose.Size = New System.Drawing.Size(84, 25)
         Me.btnClose.TabIndex = 3
         Me.btnClose.Text = "Bye Bye!(&E)"
         Me.btnClose.UseVisualStyleBackColor = True
         '
         'btnReadProject
         '
-        Me.btnReadProject.Location = New System.Drawing.Point(173, 180)
+        Me.btnReadProject.Location = New System.Drawing.Point(148, 195)
         Me.btnReadProject.Name = "btnReadProject"
-        Me.btnReadProject.Size = New System.Drawing.Size(148, 55)
+        Me.btnReadProject.Size = New System.Drawing.Size(127, 60)
         Me.btnReadProject.TabIndex = 2
         Me.btnReadProject.Text = "Read A Project"
         Me.btnReadProject.UseVisualStyleBackColor = True
         '
         'btnAddProject
         '
-        Me.btnAddProject.Location = New System.Drawing.Point(19, 180)
+        Me.btnAddProject.Location = New System.Drawing.Point(16, 195)
         Me.btnAddProject.Name = "btnAddProject"
-        Me.btnAddProject.Size = New System.Drawing.Size(148, 55)
+        Me.btnAddProject.Size = New System.Drawing.Size(127, 60)
         Me.btnAddProject.TabIndex = 1
         Me.btnAddProject.Text = "Make A Project"
         Me.btnAddProject.UseVisualStyleBackColor = True
@@ -86,7 +86,7 @@ Partial Class frmStart
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("맑은 고딕", 13.0!)
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(10, 10)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(280, 25)
         Me.Label1.TabIndex = 0
@@ -94,29 +94,28 @@ Partial Class frmStart
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("굴림", 7.9!)
         Me.Label2.ForeColor = System.Drawing.Color.Coral
-        Me.Label2.Location = New System.Drawing.Point(1, 277)
+        Me.Label2.Location = New System.Drawing.Point(12, 299)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(216, 22)
+        Me.Label2.Size = New System.Drawing.Size(185, 37)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Copyright 2016~ UniPad Team (Unitor)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Copyright 2015~ Kim JS (UniPad)"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(19, 241)
+        Me.Button1.Location = New System.Drawing.Point(16, 261)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(148, 23)
+        Me.Button1.Size = New System.Drawing.Size(127, 25)
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "Mp32Wav Converter"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'btnSoundCut
         '
-        Me.btnSoundCut.Location = New System.Drawing.Point(173, 241)
+        Me.btnSoundCut.Location = New System.Drawing.Point(148, 261)
         Me.btnSoundCut.Name = "btnSoundCut"
-        Me.btnSoundCut.Size = New System.Drawing.Size(148, 23)
+        Me.btnSoundCut.Size = New System.Drawing.Size(127, 25)
         Me.btnSoundCut.TabIndex = 6
         Me.btnSoundCut.Text = "Sound Cutter"
         Me.btnSoundCut.UseVisualStyleBackColor = True
@@ -124,9 +123,9 @@ Partial Class frmStart
         '
         'frmStart
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(343, 310)
+        Me.ClientSize = New System.Drawing.Size(294, 358)
         Me.Controls.Add(Me.btnSoundCut)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)

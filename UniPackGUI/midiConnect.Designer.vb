@@ -24,6 +24,7 @@ Partial Class midiConnect
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.listmidis = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'Button1
@@ -42,11 +43,21 @@ Partial Class midiConnect
         Me.TextBox1.Size = New System.Drawing.Size(100, 21)
         Me.TextBox1.TabIndex = 1
         '
+        'listmidis
+        '
+        Me.listmidis.FormattingEnabled = True
+        Me.listmidis.ItemHeight = 12
+        Me.listmidis.Location = New System.Drawing.Point(60, 120)
+        Me.listmidis.Name = "listmidis"
+        Me.listmidis.Size = New System.Drawing.Size(120, 88)
+        Me.listmidis.TabIndex = 2
+        '
         'midiConnect
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.listmidis)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Name = "midiConnect"
@@ -57,4 +68,5 @@ Partial Class midiConnect
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents listmidis As System.Windows.Forms.ListBox
 End Class

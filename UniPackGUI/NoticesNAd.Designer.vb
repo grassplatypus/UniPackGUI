@@ -40,7 +40,6 @@ Partial Class NoticesNAd
         '
         'webInfo
         '
-        Me.webInfo.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.webInfo.Location = New System.Drawing.Point(0, 194)
         Me.webInfo.MinimumSize = New System.Drawing.Size(20, 20)
         Me.webInfo.Name = "webInfo"
@@ -50,7 +49,7 @@ Partial Class NoticesNAd
         '
         'btnClose
         '
-        Me.btnClose.Location = New System.Drawing.Point(269, 287)
+        Me.btnClose.Location = New System.Drawing.Point(269, 294)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(117, 34)
         Me.btnClose.TabIndex = 2
@@ -59,7 +58,7 @@ Partial Class NoticesNAd
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(177, 287)
+        Me.Button1.Location = New System.Drawing.Point(177, 294)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(86, 34)
         Me.Button1.TabIndex = 3
@@ -70,7 +69,7 @@ Partial Class NoticesNAd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(398, 329)
+        Me.ClientSize = New System.Drawing.Size(398, 340)
         Me.ControlBox = False
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnClose)

@@ -52,18 +52,17 @@ Partial Class editsound
         '
         Me.listAllSounds.AllowDrop = True
         Me.listAllSounds.FormattingEnabled = True
-        Me.listAllSounds.ItemHeight = 12
-        Me.listAllSounds.Location = New System.Drawing.Point(3, 17)
+        Me.listAllSounds.Location = New System.Drawing.Point(3, 18)
         Me.listAllSounds.Name = "listAllSounds"
         Me.listAllSounds.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple
-        Me.listAllSounds.Size = New System.Drawing.Size(285, 232)
+        Me.listAllSounds.Size = New System.Drawing.Size(245, 251)
         Me.listAllSounds.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("맑은 고딕", 12.0!)
-        Me.Label1.Location = New System.Drawing.Point(8, 8)
+        Me.Label1.Location = New System.Drawing.Point(7, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(470, 21)
         Me.Label1.TabIndex = 1
@@ -71,9 +70,9 @@ Partial Class editsound
         '
         'btnSet
         '
-        Me.btnSet.Location = New System.Drawing.Point(529, 268)
+        Me.btnSet.Location = New System.Drawing.Point(453, 290)
         Me.btnSet.Name = "btnSet"
-        Me.btnSet.Size = New System.Drawing.Size(75, 40)
+        Me.btnSet.Size = New System.Drawing.Size(64, 43)
         Me.btnSet.TabIndex = 2
         Me.btnSet.Text = "Okay"
         Me.btnSet.UseVisualStyleBackColor = True
@@ -81,10 +80,9 @@ Partial Class editsound
         'listLoadedSounds
         '
         Me.listLoadedSounds.FormattingEnabled = True
-        Me.listLoadedSounds.ItemHeight = 12
-        Me.listLoadedSounds.Location = New System.Drawing.Point(20, 20)
+        Me.listLoadedSounds.Location = New System.Drawing.Point(17, 22)
         Me.listLoadedSounds.Name = "listLoadedSounds"
-        Me.listLoadedSounds.Size = New System.Drawing.Size(136, 172)
+        Me.listLoadedSounds.Size = New System.Drawing.Size(117, 186)
         Me.listLoadedSounds.TabIndex = 4
         '
         'gbLoaded
@@ -95,9 +93,9 @@ Partial Class editsound
         Me.gbLoaded.Controls.Add(Me.btnPrimDown)
         Me.gbLoaded.Controls.Add(Me.btnPrimUp)
         Me.gbLoaded.Controls.Add(Me.listLoadedSounds)
-        Me.gbLoaded.Location = New System.Drawing.Point(349, 32)
+        Me.gbLoaded.Location = New System.Drawing.Point(299, 35)
         Me.gbLoaded.Name = "gbLoaded"
-        Me.gbLoaded.Size = New System.Drawing.Size(255, 230)
+        Me.gbLoaded.Size = New System.Drawing.Size(219, 249)
         Me.gbLoaded.TabIndex = 6
         Me.gbLoaded.TabStop = False
         Me.gbLoaded.Text = "Loaded Sounds (Button Sound)"
@@ -105,18 +103,18 @@ Partial Class editsound
         'lblLengthLoaded
         '
         Me.lblLengthLoaded.AutoSize = True
-        Me.lblLengthLoaded.Location = New System.Drawing.Point(18, 195)
+        Me.lblLengthLoaded.Location = New System.Drawing.Point(15, 211)
         Me.lblLengthLoaded.Name = "lblLengthLoaded"
-        Me.lblLengthLoaded.Size = New System.Drawing.Size(108, 12)
+        Me.lblLengthLoaded.Size = New System.Drawing.Size(95, 13)
         Me.lblLengthLoaded.TabIndex = 12
         Me.lblLengthLoaded.Text = "Sound Length: NA"
         '
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("굴림", 7.0!)
-        Me.Button2.Location = New System.Drawing.Point(162, 169)
+        Me.Button2.Location = New System.Drawing.Point(139, 183)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(64, 25)
         Me.Button2.TabIndex = 11
         Me.Button2.Text = "Sound Code"
         Me.Button2.UseVisualStyleBackColor = True
@@ -124,27 +122,27 @@ Partial Class editsound
         '
         'btnPlaySound
         '
-        Me.btnPlaySound.Location = New System.Drawing.Point(162, 118)
+        Me.btnPlaySound.Location = New System.Drawing.Point(139, 128)
         Me.btnPlaySound.Name = "btnPlaySound"
-        Me.btnPlaySound.Size = New System.Drawing.Size(75, 23)
+        Me.btnPlaySound.Size = New System.Drawing.Size(64, 25)
         Me.btnPlaySound.TabIndex = 10
         Me.btnPlaySound.Text = "Play"
         Me.btnPlaySound.UseVisualStyleBackColor = True
         '
         'btnPrimDown
         '
-        Me.btnPrimDown.Location = New System.Drawing.Point(162, 49)
+        Me.btnPrimDown.Location = New System.Drawing.Point(139, 53)
         Me.btnPrimDown.Name = "btnPrimDown"
-        Me.btnPrimDown.Size = New System.Drawing.Size(68, 23)
+        Me.btnPrimDown.Size = New System.Drawing.Size(58, 25)
         Me.btnPrimDown.TabIndex = 5
         Me.btnPrimDown.Text = "Down"
         Me.btnPrimDown.UseVisualStyleBackColor = True
         '
         'btnPrimUp
         '
-        Me.btnPrimUp.Location = New System.Drawing.Point(162, 20)
+        Me.btnPrimUp.Location = New System.Drawing.Point(139, 22)
         Me.btnPrimUp.Name = "btnPrimUp"
-        Me.btnPrimUp.Size = New System.Drawing.Size(68, 23)
+        Me.btnPrimUp.Size = New System.Drawing.Size(58, 25)
         Me.btnPrimUp.TabIndex = 5
         Me.btnPrimUp.Text = "Up"
         Me.btnPrimUp.UseVisualStyleBackColor = True
@@ -153,7 +151,7 @@ Partial Class editsound
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("맑은 고딕", 8.0!)
-        Me.Label3.Location = New System.Drawing.Point(306, 306)
+        Me.Label3.Location = New System.Drawing.Point(260, 349)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(216, 13)
         Me.Label3.TabIndex = 7
@@ -161,18 +159,18 @@ Partial Class editsound
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(309, 82)
+        Me.btnAdd.Location = New System.Drawing.Point(265, 89)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(34, 23)
+        Me.btnAdd.Size = New System.Drawing.Size(29, 25)
         Me.btnAdd.TabIndex = 8
         Me.btnAdd.Text = ">>"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
         'btnRemove
         '
-        Me.btnRemove.Location = New System.Drawing.Point(309, 111)
+        Me.btnRemove.Location = New System.Drawing.Point(265, 120)
         Me.btnRemove.Name = "btnRemove"
-        Me.btnRemove.Size = New System.Drawing.Size(34, 23)
+        Me.btnRemove.Size = New System.Drawing.Size(29, 25)
         Me.btnRemove.TabIndex = 8
         Me.btnRemove.Text = "<<"
         Me.btnRemove.UseVisualStyleBackColor = True
@@ -185,9 +183,9 @@ Partial Class editsound
         Me.GroupBox1.Controls.Add(Me.btnAddAll)
         Me.GroupBox1.Controls.Add(Me.btnPlayAll)
         Me.GroupBox1.Controls.Add(Me.listAllSounds)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 32)
+        Me.GroupBox1.Location = New System.Drawing.Point(10, 35)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(291, 310)
+        Me.GroupBox1.Size = New System.Drawing.Size(249, 336)
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "All Sounds"
@@ -195,44 +193,44 @@ Partial Class editsound
         'lblSoundLen
         '
         Me.lblSoundLen.AutoSize = True
-        Me.lblSoundLen.Location = New System.Drawing.Point(6, 252)
+        Me.lblSoundLen.Location = New System.Drawing.Point(5, 273)
         Me.lblSoundLen.Name = "lblSoundLen"
-        Me.lblSoundLen.Size = New System.Drawing.Size(108, 12)
+        Me.lblSoundLen.Size = New System.Drawing.Size(95, 13)
         Me.lblSoundLen.TabIndex = 11
         Me.lblSoundLen.Text = "Sound Length: NA"
         '
         'btnRemoveReload
         '
-        Me.btnRemoveReload.Location = New System.Drawing.Point(228, 279)
+        Me.btnRemoveReload.Location = New System.Drawing.Point(195, 302)
         Me.btnRemoveReload.Name = "btnRemoveReload"
-        Me.btnRemoveReload.Size = New System.Drawing.Size(57, 23)
+        Me.btnRemoveReload.Size = New System.Drawing.Size(49, 25)
         Me.btnRemoveReload.TabIndex = 4
         Me.btnRemoveReload.Text = "Reload"
         Me.btnRemoveReload.UseVisualStyleBackColor = True
         '
         'btnRemoveAll
         '
-        Me.btnRemoveAll.Location = New System.Drawing.Point(120, 279)
+        Me.btnRemoveAll.Location = New System.Drawing.Point(103, 302)
         Me.btnRemoveAll.Name = "btnRemoveAll"
-        Me.btnRemoveAll.Size = New System.Drawing.Size(64, 23)
+        Me.btnRemoveAll.Size = New System.Drawing.Size(55, 25)
         Me.btnRemoveAll.TabIndex = 3
         Me.btnRemoveAll.Text = "Remove"
         Me.btnRemoveAll.UseVisualStyleBackColor = True
         '
         'btnAddAll
         '
-        Me.btnAddAll.Location = New System.Drawing.Point(72, 279)
+        Me.btnAddAll.Location = New System.Drawing.Point(62, 302)
         Me.btnAddAll.Name = "btnAddAll"
-        Me.btnAddAll.Size = New System.Drawing.Size(42, 23)
+        Me.btnAddAll.Size = New System.Drawing.Size(36, 25)
         Me.btnAddAll.TabIndex = 2
         Me.btnAddAll.Text = "Add"
         Me.btnAddAll.UseVisualStyleBackColor = True
         '
         'btnPlayAll
         '
-        Me.btnPlayAll.Location = New System.Drawing.Point(3, 279)
+        Me.btnPlayAll.Location = New System.Drawing.Point(3, 302)
         Me.btnPlayAll.Name = "btnPlayAll"
-        Me.btnPlayAll.Size = New System.Drawing.Size(63, 23)
+        Me.btnPlayAll.Size = New System.Drawing.Size(54, 25)
         Me.btnPlayAll.TabIndex = 1
         Me.btnPlayAll.Text = "Play"
         Me.btnPlayAll.UseVisualStyleBackColor = True
@@ -248,26 +246,26 @@ Partial Class editsound
         Me.Label2.AllowDrop = True
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("맑은 고딕", 8.0!)
-        Me.Label2.Location = New System.Drawing.Point(306, 319)
+        Me.Label2.Location = New System.Drawing.Point(262, 362)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(149, 26)
+        Me.Label2.Size = New System.Drawing.Size(221, 13)
         Me.Label2.TabIndex = 7
-        Me.Label2.Text = "Tip: You can drag and drop" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "       multiple files."
+        Me.Label2.Text = "Tip: You can drag and drop multiple files."
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(529, 314)
+        Me.Button1.Location = New System.Drawing.Point(383, 290)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(64, 25)
         Me.Button1.TabIndex = 10
         Me.Button1.Text = "Cancel"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'editsound
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(617, 354)
+        Me.ClientSize = New System.Drawing.Size(529, 384)
         Me.ControlBox = False
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox1)

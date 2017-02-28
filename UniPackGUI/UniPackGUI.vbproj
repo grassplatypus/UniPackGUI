@@ -58,6 +58,13 @@
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Midi">
+      <HintPath>..\..\..\..\..\Downloads\midi-dot-net_1.1.0\midi-dot-net_1.1.0\Midi.dll</HintPath>
+    </Reference>
+    <Reference Include="MidiServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=1219c26f6acdcd21, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\MidiServices\MidiServices\bin\Debug\MidiServices.dll</HintPath>
+    </Reference>
     <Reference Include="NAudio, Version=1.7.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NAudio.1.7.3\lib\net35\NAudio.dll</HintPath>
       <Private>True</Private>
@@ -115,8 +122,20 @@
     <Compile Include="autoPlayEdit.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ButtonModified.Designer.vb">
+      <DependentUpon>ButtonModified.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonModified.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ColorComboBox.vb">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DebugTable.Designer.vb">
+      <DependentUpon>DebugTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DebugTable.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="dotLEDEdit.Designer.vb">
       <DependentUpon>dotLEDEdit.vb</DependentUpon>
@@ -163,13 +182,24 @@
     <Compile Include="Loadingfrm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LowQualAutoPlay.Designer.vb">
+      <DependentUpon>LowQualAutoPlay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LowQualAutoPlay.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainProjectLoader.Designer.vb">
       <DependentUpon>MainProjectLoader.vb</DependentUpon>
     </Compile>
     <Compile Include="MainProjectLoader.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MultiSounds.vb" />
+    <Compile Include="midiConnect.Designer.vb">
+      <DependentUpon>midiConnect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="midiConnect.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -215,6 +245,12 @@
     <Compile Include="unipackww.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="VerticalTabControl.Designer.vb">
+      <DependentUpon>VerticalTabControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerticalTabControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="wavConvert.Designer.vb">
       <DependentUpon>wavConvert.vb</DependentUpon>
     </Compile>
@@ -233,6 +269,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="autoPlayEdit.resx">
       <DependentUpon>autoPlayEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButtonModified.resx">
+      <DependentUpon>ButtonModified.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DebugTable.resx">
+      <DependentUpon>DebugTable.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dotLEDEdit.resx">
       <DependentUpon>dotLEDEdit.vb</DependentUpon>
@@ -255,8 +297,14 @@
     <EmbeddedResource Include="Loadingfrm.resx">
       <DependentUpon>Loadingfrm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LowQualAutoPlay.resx">
+      <DependentUpon>LowQualAutoPlay.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainProjectLoader.resx">
       <DependentUpon>MainProjectLoader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="midiConnect.resx">
+      <DependentUpon>midiConnect.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -279,6 +327,9 @@
     <EmbeddedResource Include="unipackww.resx">
       <DependentUpon>unipackww.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VerticalTabControl.resx">
+      <DependentUpon>VerticalTabControl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="wavConvert.resx">
       <DependentUpon>wavConvert.vb</DependentUpon>
     </EmbeddedResource>
@@ -299,6 +350,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logounitor_256px.ico" />
+    <None Include="Resources\alarmCtr.png" />
+    <None Include="Resources\ic_access_time_black_36dp.png" />
+    <None Include="Resources\다운로드.jpg" />
+    <None Include="Resources\unitor_start_Ver2.png" />
+    <None Include="Resources\profile_bright 1024p.png" />
     <None Include="Resources\unitorBlur.png" />
     <None Include="Resources\logounitor.png" />
   </ItemGroup>

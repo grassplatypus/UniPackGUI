@@ -10,9 +10,9 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("Unitor")> 
 <Assembly: AssemblyDescription("Welcome to the best UniPack IDE, Unitor.")> 
-<Assembly: AssemblyCompany("UniPad")> 
+<Assembly: AssemblyCompany("UniLab")> 
 <Assembly: AssemblyProduct("UniPad Tool")> 
-<Assembly: AssemblyCopyright("Copyright © UniPad Operation Team (FollowJB/LEE Jaegyun) 2016. All Rights Reserved.")> 
+<Assembly: AssemblyCopyright("Coyright 2015~ UniLab. Developed by FollowJB. Unitor is item of UniLab. All Rights Reserved.")> 
 <Assembly: AssemblyTrademark("Unitor")> 
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' 지정되도록 할 수 있습니다.
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("2.0.5.0")> 
-<Assembly: AssemblyFileVersion("2.0.5.0")> 
+<Assembly: AssemblyVersion("2.1.1.0")> 
+<Assembly: AssemblyFileVersion("2.1.1.0")> 

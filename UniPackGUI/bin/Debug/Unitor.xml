@@ -41,6 +41,101 @@ Unitor
  Gets or sets the amount of positions the closest slider moves when the control is clicked.
  </summary>
 	<returns>The amount of positions the closest slider moves when the control is clicked.</returns>
+</member><member name="F:System.Windows.Forms.VerticalTabControl.TabAlignment.Left">
+	<summary>Aligns tabs on the left side.</summary>
+</member><member name="F:System.Windows.Forms.VerticalTabControl.TabAlignment.Right">
+	<summary>Aligns tabs on the right side.</summary>
+</member><member name="T:System.Windows.Forms.VerticalTabControl.TabAlignment">
+	<summary>Specifies the alignment of the tabs on a <see cref="T:System.Windows.Forms.VerticalTabControl"/>.</summary>
+</member><member name="M:System.Windows.Forms.VerticalTabControl.#ctor">
+	<summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.VerticalTabControl"/> class.</summary>
+</member><member name="P:System.Windows.Forms.VerticalTabControl.Alignment">
+	<summary>
+ Gets or sets the area of the control (for example, along the left) where the tabs are aligned.
+ </summary>
+	<returns>One of the <see cref="T:System.Windows.Forms.VerticalTabControl.TabAlignment"/> values. The default is Left.</returns>
+	<PermissionSet>
+		<IPermission class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true"/>
+		<IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true"/>
+		<IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode, ControlEvidence"/>
+		<IPermission class="System.Diagnostics.PerformanceCounterPermission, System, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true"/>
+	</PermissionSet>
+</member><member name="P:System.Windows.Forms.VerticalTabControl.ImageList">
+	<summary>Gets or sets the images to display on the control's tabs.</summary>
+	<returns>An <see cref="T:System.Windows.Forms.ImageList"/> that specifies the images to display on the tabs.</returns>
+	<PermissionSet>
+		<IPermission class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true"/>
+		<IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true"/>
+		<IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode, ControlEvidence"/>
+		<IPermission class="System.Diagnostics.PerformanceCounterPermission, System, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true"/>
+	</PermissionSet>
+</member><member name="P:System.Windows.Forms.VerticalTabControl.ItemSize">
+	<summary>Gets or sets the size of the control's tabs.</summary>
+	<returns>A <see cref="T:System.Drawing.Size"/> that represents the size of the tabs.</returns>
+	<PermissionSet>
+		<IPermission class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true"/>
+		<IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true"/>
+		<IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode, ControlEvidence"/>
+		<IPermission class="System.Diagnostics.PerformanceCounterPermission, System, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true"/>
+	</PermissionSet>
+</member><member name="M:System.Windows.Forms.VerticalTabControl.ResetItemSize">
+	<summary>Resets the <see cref="P:System.Windows.Forms.VerticalTabControl.ItemSize"/> property.</summary>
+</member><member name="M:System.Windows.Forms.VerticalTabControl.ShouldSerializeItemSize">
+	<summary>
+ Determines whether the <see cref="P:System.Windows.Forms.VerticalTabControl.ItemSize"/> property should be serialized.
+ </summary>
+	<remarks>
+ This method indicates to designers whether the property value is different from the 
+ ambient value, in which case the designer should persist the value.
+ </remarks>
+</member><member name="M:System.Windows.Forms.VerticalTabControl.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)">
+	<summary>
+ Raises the <see cref="E:System.Windows.Forms.TabControl.DrawItem"/> event.
+ </summary>
+	<param name="e">
+ A <see cref="T:System.Windows.Forms.DrawItemEventArgs"/> that contains the event data.
+ </param>
+</member><member name="M:System.Windows.Forms.VerticalTabControl.OnHandleCreated(System.EventArgs)">
+	<summary>
+ This member overrides <see cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)"/>.
+ </summary>
+	<param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+</member><member name="M:System.Windows.Forms.VerticalTabControl.GetDefaultItemSize">
+	<summary>Gets the size of the tab.</summary>
+</member><member name="M:System.Windows.Forms.VerticalTabControl.GetTabImageRect(System.Int32)">
+	<summary>
+ Gets the rectangle which holds the location where the specified tab's image is drawn.
+ </summary>
+	<param name="index">The index of the tab whose image rectangle is to be calculated.</param>
+</member><member name="M:System.Windows.Forms.VerticalTabControl.GetTabTextRect(System.Int32)">
+	<summary>
+ Gets the rectangle which holds the location where the specified tab's text is drawn.
+ </summary>
+	<param name="index">The index of the tab whose text rectangle is to be calculated.</param>
+</member><member name="M:System.Windows.Forms.VerticalTabControl.AnyTabHasValidImage">
+	<summary>Determines if any tab has a valid image.</summary>
+	<returns><c>true</c> if any tabPage has a valid image.</returns>
+</member><member name="M:System.Windows.Forms.VerticalTabControl.TabHasValidImage(System.Int32)">
+	<summary>Determines whether the tabPage with the specified index has valid image.</summary>
+	<param name="index">The index of the tabPage.</param>
+	<returns><c>true</c> if the tabPage has a valid image; otherwise false.</returns>
+</member><member name="M:System.Windows.Forms.VerticalTabControlExtensions.IsInRange``1(``0,``0,``0)">
+	<summary>Determines whether the specified value is in the specified range.</summary>
+	<typeparam name="T">The type of the items to be compared</typeparam>
+	<param name="value">The value to be evaluated.</param>
+	<param name="min">The minimum bounds (inclusive) of the range.</param>
+	<param name="max">The maximum bounds (inclusive) of the range.</param>
+	<returns>
+		<c>true</c> if <paramref name="value"/> is lies within the range specified 
+ <paramref name="min"/> and <paramref name="max"/> (boundaries inclusive).
+ </returns>
+</member><member name="M:System.Windows.Forms.VerticalTabControlExtensions.FlipWH(System.Drawing.Size)">
+	<summary>Flips the width and height of the specified System.Drawing.Size variable.</summary>
+	<param name="sz">The size variable whose width and height are to be flipped.</param>
+</member><member name="T:System.Windows.Forms.VerticalTabControlExtensions">
+	<summary>
+ Extension methods for the <see name="System.Windows.Forms.VerticalTabControl"/> control.
+ </summary>
 </member><member name="P:UniPackGUI.My.Resources.Resources.ResourceManager">
 	<summary>
   이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
@@ -50,11 +145,27 @@ Unitor
   이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
   속성을 재정의합니다.
 </summary>
+</member><member name="P:UniPackGUI.My.Resources.Resources.ic_access_time_black_36dp">
+	<summary>
+  System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+</summary>
 </member><member name="P:UniPackGUI.My.Resources.Resources.logounitor">
 	<summary>
   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
 </summary>
+</member><member name="P:UniPackGUI.My.Resources.Resources.profile_bright_1024p">
+	<summary>
+  System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+</summary>
+</member><member name="P:UniPackGUI.My.Resources.Resources.unitor_start_Ver2">
+	<summary>
+  System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+</summary>
 </member><member name="P:UniPackGUI.My.Resources.Resources.unitorBlur">
+	<summary>
+  System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+</summary>
+</member><member name="P:UniPackGUI.My.Resources.Resources.다운로드">
 	<summary>
   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
 </summary>

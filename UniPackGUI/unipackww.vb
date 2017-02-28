@@ -4,7 +4,7 @@ Imports System.Net
 Imports System.IO
 
 Public Class unipackww
-
+    Dim UploadURL As String
 
     'http://stackoverflow.com/questions/566462/upload-files-with-httpwebrequest-multipart-form-data
     Public Async Sub HttpUploadFile(url As String, file As String, paramName As String, contentType As String, nvc As NameValueCollection)
@@ -89,7 +89,7 @@ Public Class unipackww
             Me.pbUpload.Visible = False
             Me.btnSend.Enabled = True
             Me.txtLink.Visible = True
-            Me.txtLink.Text = "http://share.akaksr.xyz/getdown.php?c=" & result.Split(";").Last
+            Me.txtLink.Text = UploadURL & "/getdown.php?c=" & result.Split(";").Last
         Else
             MessageBox.Show("Failed to Upload! Message from server: " & result.Split(";").Last, "Error Occured", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
             Me.notifyUpload.BalloonTipText = "Uploading Failed!"
@@ -136,7 +136,16 @@ Public Class unipackww
         Dim nvc As New NameValueCollection()
         nvc.Add("pack_name", Me.txttitle.Text)
         nvc.Add("pack_description", Me.txtDescription.Text)
-        HttpUploadFile("http://share.akaksr.xyz/upload_processing.php?unitor-mode=UnitorPCbyFollowJB-" & VersionCode.ToString, MainProjectLoader.tbPackDirInfo.Text, "pack_upload", "application/zip", nvc)
-        'MsgBox(result)
+
+
+
+        If (MainProjectLoader.settings(1) = 0) Then
+            UploadURL = MainProjectLoader.settings(2)
+        Else
+            UploadURL = New System.Net.WebClient().DownloadString("http://unitor.esy.es/UnitorConfig/UniPackWW.txt")
+
+        End If
+        HttpUploadFile(UploadURL & "/upload_processing.php?unitor-mode=UnitorPCbyFollowJB-" & VersionCode.ToString, MainProjectLoader.tbPackDirInfo.Text, "pack_upload", "application/zip", nvc)
+
     End Sub
 End Class

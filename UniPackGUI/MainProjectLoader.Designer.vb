@@ -22,72 +22,8 @@ Partial Class MainProjectLoader
     '코드 편집기를 사용하여 수정하지 마십시오.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainProjectLoader))
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.uni1_1 = New System.Windows.Forms.Button()
-        Me.uni1_2 = New System.Windows.Forms.Button()
-        Me.uni1_3 = New System.Windows.Forms.Button()
-        Me.uni1_4 = New System.Windows.Forms.Button()
-        Me.uni1_5 = New System.Windows.Forms.Button()
-        Me.uni1_6 = New System.Windows.Forms.Button()
-        Me.uni1_7 = New System.Windows.Forms.Button()
-        Me.uni1_8 = New System.Windows.Forms.Button()
-        Me.uni2_1 = New System.Windows.Forms.Button()
-        Me.uni2_2 = New System.Windows.Forms.Button()
-        Me.uni2_3 = New System.Windows.Forms.Button()
-        Me.uni2_4 = New System.Windows.Forms.Button()
-        Me.uni2_5 = New System.Windows.Forms.Button()
-        Me.uni2_6 = New System.Windows.Forms.Button()
-        Me.uni2_7 = New System.Windows.Forms.Button()
-        Me.uni2_8 = New System.Windows.Forms.Button()
-        Me.uni3_1 = New System.Windows.Forms.Button()
-        Me.uni3_2 = New System.Windows.Forms.Button()
-        Me.uni3_3 = New System.Windows.Forms.Button()
-        Me.uni3_4 = New System.Windows.Forms.Button()
-        Me.uni3_5 = New System.Windows.Forms.Button()
-        Me.uni3_6 = New System.Windows.Forms.Button()
-        Me.uni3_7 = New System.Windows.Forms.Button()
-        Me.uni3_8 = New System.Windows.Forms.Button()
-        Me.uni4_1 = New System.Windows.Forms.Button()
-        Me.uni4_2 = New System.Windows.Forms.Button()
-        Me.uni4_3 = New System.Windows.Forms.Button()
-        Me.uni4_4 = New System.Windows.Forms.Button()
-        Me.uni4_5 = New System.Windows.Forms.Button()
-        Me.uni4_6 = New System.Windows.Forms.Button()
-        Me.uni4_7 = New System.Windows.Forms.Button()
-        Me.uni4_8 = New System.Windows.Forms.Button()
-        Me.uni5_1 = New System.Windows.Forms.Button()
-        Me.uni5_2 = New System.Windows.Forms.Button()
-        Me.uni5_3 = New System.Windows.Forms.Button()
-        Me.uni5_4 = New System.Windows.Forms.Button()
-        Me.uni5_5 = New System.Windows.Forms.Button()
-        Me.uni5_6 = New System.Windows.Forms.Button()
-        Me.uni5_7 = New System.Windows.Forms.Button()
-        Me.uni5_8 = New System.Windows.Forms.Button()
-        Me.uni6_1 = New System.Windows.Forms.Button()
-        Me.uni6_2 = New System.Windows.Forms.Button()
-        Me.uni6_3 = New System.Windows.Forms.Button()
-        Me.uni6_4 = New System.Windows.Forms.Button()
-        Me.uni6_5 = New System.Windows.Forms.Button()
-        Me.uni6_6 = New System.Windows.Forms.Button()
-        Me.uni6_7 = New System.Windows.Forms.Button()
-        Me.uni6_8 = New System.Windows.Forms.Button()
-        Me.uni7_1 = New System.Windows.Forms.Button()
-        Me.uni7_2 = New System.Windows.Forms.Button()
-        Me.uni7_3 = New System.Windows.Forms.Button()
-        Me.uni7_4 = New System.Windows.Forms.Button()
-        Me.uni7_5 = New System.Windows.Forms.Button()
-        Me.uni7_6 = New System.Windows.Forms.Button()
-        Me.uni7_7 = New System.Windows.Forms.Button()
-        Me.uni7_8 = New System.Windows.Forms.Button()
-        Me.uni8_1 = New System.Windows.Forms.Button()
-        Me.uni8_2 = New System.Windows.Forms.Button()
-        Me.uni8_3 = New System.Windows.Forms.Button()
-        Me.uni8_4 = New System.Windows.Forms.Button()
-        Me.uni8_5 = New System.Windows.Forms.Button()
-        Me.uni8_6 = New System.Windows.Forms.Button()
-        Me.uni8_7 = New System.Windows.Forms.Button()
-        Me.uni8_8 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.rblededit = New System.Windows.Forms.RadioButton()
         Me.rbEditmode = New System.Windows.Forms.RadioButton()
@@ -106,19 +42,23 @@ Partial Class MainProjectLoader
         Me.SoundCutterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.KeySoundTextEditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AutoPlayTextEditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ledisableenable = New System.Windows.Forms.ToolStripMenuItem()
         Me.TestNReleaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AutoPlayBetaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AutoPlayControlerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.PushToDeviceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConnectMidiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DebugToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ButtonDebugerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MultiMappingDebugerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SettingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenSettingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RestoreDefaultWindowSizeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InformationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.CreditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SettingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OpenSettingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RestoreDefaultWindowSizeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TestMakeCrashToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.groupUniPackInfo = New System.Windows.Forms.GroupBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.labelInfSave = New System.Windows.Forms.Label()
@@ -137,882 +77,100 @@ Partial Class MainProjectLoader
         Me.saveAnothername = New System.Windows.Forms.SaveFileDialog()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.btnFlushLEDColor = New System.Windows.Forms.Button()
         Me.btnFlushSound = New System.Windows.Forms.Button()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.ofdOpenAgain = New System.Windows.Forms.OpenFileDialog()
-        Me.ledisableenable = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TableLayoutPanel1.SuspendLayout()
+        Me.imgMainTab = New System.Windows.Forms.ImageList(Me.components)
+        Me.lblUserName = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.panel_DASH = New System.Windows.Forms.Panel()
+        Me.panel_dashboard_activity = New System.Windows.Forms.Panel()
+        Me.btnTTTTEEEESSSSTTTT = New System.Windows.Forms.Button()
+        Me.lbl_DASH_ACT_FRIENDACT = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.panel_dashboard_activity_friend = New System.Windows.Forms.Panel()
+        Me.pb_DASH_SEPLine = New System.Windows.Forms.PictureBox()
+        Me.panel_dashboard = New System.Windows.Forms.Panel()
+        Me.pb_dashboard_logout = New System.Windows.Forms.PictureBox()
+        Me.pbDASH_MYpage_Select = New System.Windows.Forms.PictureBox()
+        Me.pbDASH_ACT_Select = New System.Windows.Forms.PictureBox()
+        Me.lblDASH_MYPAGE = New System.Windows.Forms.Label()
+        Me.lblDASH_Activity = New System.Windows.Forms.Label()
+        Me.lblUserDescription = New System.Windows.Forms.Label()
+        Me.pbProfImgBig = New System.Windows.Forms.PictureBox()
+        Me.lblProfName = New System.Windows.Forms.Label()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.panel_unitor_panel = New System.Windows.Forms.Panel()
+        Me.pb_unitor_panel_infosetup = New System.Windows.Forms.PictureBox()
+        Me.pb_unitor_panel_unitor = New System.Windows.Forms.PictureBox()
+        Me.lbl_unitor_panel_infosetup = New System.Windows.Forms.Label()
+        Me.lbl_unitor_panel_unitor = New System.Windows.Forms.Label()
+        Me.panel_unitor = New System.Windows.Forms.Panel()
+        Me.panel_unitor_unitor = New System.Windows.Forms.Panel()
+        Me.uni1_2 = New UniPackGUI.ButtonModified()
+        Me.ButtonModified7 = New UniPackGUI.ButtonModified()
+        Me.ButtonModified3 = New UniPackGUI.ButtonModified()
+        Me.ButtonModified6 = New UniPackGUI.ButtonModified()
+        Me.ButtonModified1 = New UniPackGUI.ButtonModified()
+        Me.ButtonModified5 = New UniPackGUI.ButtonModified()
+        Me.ButtonModified2 = New UniPackGUI.ButtonModified()
+        Me.ButtonModified4 = New UniPackGUI.ButtonModified()
+        Me.uni1_1 = New UniPackGUI.ButtonModified()
+        Me.uni1_3 = New UniPackGUI.ButtonModified()
+        Me.uni1_8 = New UniPackGUI.ButtonModified()
+        Me.uni1_7 = New UniPackGUI.ButtonModified()
+        Me.uni1_6 = New UniPackGUI.ButtonModified()
+        Me.uni1_5 = New UniPackGUI.ButtonModified()
+        Me.uni1_4 = New UniPackGUI.ButtonModified()
+        Me.pb_main_search_bar = New System.Windows.Forms.PictureBox()
+        Me.pbMain_Alaram = New System.Windows.Forms.PictureBox()
+        Me.pbMain_MyPage = New System.Windows.Forms.PictureBox()
+        Me.pbBoard = New System.Windows.Forms.PictureBox()
+        Me.pbNoti = New System.Windows.Forms.PictureBox()
+        Me.pbUserProfile = New System.Windows.Forms.PictureBox()
+        Me.pbShadow = New System.Windows.Forms.PictureBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Button11 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.menuMainProj.SuspendLayout()
         Me.groupUniPackInfo.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
+        Me.panel_DASH.SuspendLayout()
+        Me.panel_dashboard_activity.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panel_dashboard_activity_friend.SuspendLayout()
+        CType(Me.pb_DASH_SEPLine, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panel_dashboard.SuspendLayout()
+        CType(Me.pb_dashboard_logout, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDASH_MYpage_Select, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDASH_ACT_Select, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbProfImgBig, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panel_unitor_panel.SuspendLayout()
+        CType(Me.pb_unitor_panel_infosetup, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb_unitor_panel_unitor, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panel_unitor.SuspendLayout()
+        Me.panel_unitor_unitor.SuspendLayout()
+        CType(Me.pb_main_search_bar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbMain_Alaram, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbMain_MyPage, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbBoard, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbNoti, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbUserProfile, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbShadow, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'TableLayoutPanel1
-        '
-        Me.TableLayoutPanel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.TableLayoutPanel1.BackColor = System.Drawing.Color.LightGray
-        Me.TableLayoutPanel1.ColumnCount = 8
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.95972!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.43433!))
-        Me.TableLayoutPanel1.Controls.Add(Me.uni1_1, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni1_2, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni1_3, 2, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni1_4, 3, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni1_5, 4, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni1_6, 5, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni1_7, 6, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni1_8, 7, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni2_1, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni2_2, 1, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni2_3, 2, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni2_4, 3, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni2_5, 4, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni2_6, 5, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni2_7, 6, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni2_8, 7, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni3_1, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni3_2, 1, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni3_3, 2, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni3_4, 3, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni3_5, 4, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni3_6, 5, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni3_7, 6, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni3_8, 7, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni4_1, 0, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni4_2, 1, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni4_3, 2, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni4_4, 3, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni4_5, 4, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni4_6, 5, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni4_7, 6, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni4_8, 7, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni5_1, 0, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni5_2, 1, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni5_3, 2, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni5_4, 3, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni5_5, 4, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni5_6, 5, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni5_7, 6, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni5_8, 7, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni6_1, 0, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni6_2, 1, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni6_3, 2, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni6_4, 3, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni6_5, 4, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni6_6, 5, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni6_7, 6, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni6_8, 7, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni7_1, 0, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni7_2, 1, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni7_3, 2, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni7_4, 3, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni7_5, 4, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni7_6, 5, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni7_7, 6, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni7_8, 7, 6)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni8_1, 0, 7)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni8_2, 1, 7)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni8_3, 2, 7)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni8_4, 3, 7)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni8_5, 4, 7)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni8_6, 5, 7)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni8_7, 6, 7)
-        Me.TableLayoutPanel1.Controls.Add(Me.uni8_8, 7, 7)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(184, 27)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 8
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(568, 609)
-        Me.TableLayoutPanel1.TabIndex = 0
-        '
-        'uni1_1
-        '
-        Me.uni1_1.BackColor = System.Drawing.Color.Gray
-        Me.uni1_1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni1_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni1_1.Location = New System.Drawing.Point(3, 3)
-        Me.uni1_1.Name = "uni1_1"
-        Me.uni1_1.Size = New System.Drawing.Size(64, 70)
-        Me.uni1_1.TabIndex = 0
-        Me.uni1_1.UseVisualStyleBackColor = False
-        '
-        'uni1_2
-        '
-        Me.uni1_2.BackColor = System.Drawing.Color.Gray
-        Me.uni1_2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni1_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni1_2.ForeColor = System.Drawing.Color.Black
-        Me.uni1_2.Location = New System.Drawing.Point(73, 3)
-        Me.uni1_2.Name = "uni1_2"
-        Me.uni1_2.Size = New System.Drawing.Size(64, 70)
-        Me.uni1_2.TabIndex = 1
-        Me.uni1_2.UseVisualStyleBackColor = False
-        '
-        'uni1_3
-        '
-        Me.uni1_3.BackColor = System.Drawing.Color.Gray
-        Me.uni1_3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni1_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni1_3.ForeColor = System.Drawing.Color.Black
-        Me.uni1_3.Location = New System.Drawing.Point(143, 3)
-        Me.uni1_3.Name = "uni1_3"
-        Me.uni1_3.Size = New System.Drawing.Size(64, 70)
-        Me.uni1_3.TabIndex = 1
-        Me.uni1_3.UseVisualStyleBackColor = False
-        '
-        'uni1_4
-        '
-        Me.uni1_4.BackColor = System.Drawing.Color.Gray
-        Me.uni1_4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni1_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni1_4.ForeColor = System.Drawing.Color.Black
-        Me.uni1_4.Location = New System.Drawing.Point(213, 3)
-        Me.uni1_4.Name = "uni1_4"
-        Me.uni1_4.Size = New System.Drawing.Size(64, 70)
-        Me.uni1_4.TabIndex = 1
-        Me.uni1_4.UseVisualStyleBackColor = False
-        '
-        'uni1_5
-        '
-        Me.uni1_5.BackColor = System.Drawing.Color.Gray
-        Me.uni1_5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni1_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni1_5.ForeColor = System.Drawing.Color.Black
-        Me.uni1_5.Location = New System.Drawing.Point(283, 3)
-        Me.uni1_5.Name = "uni1_5"
-        Me.uni1_5.Size = New System.Drawing.Size(64, 70)
-        Me.uni1_5.TabIndex = 1
-        Me.uni1_5.UseVisualStyleBackColor = False
-        '
-        'uni1_6
-        '
-        Me.uni1_6.BackColor = System.Drawing.Color.Gray
-        Me.uni1_6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni1_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni1_6.ForeColor = System.Drawing.Color.Black
-        Me.uni1_6.Location = New System.Drawing.Point(353, 3)
-        Me.uni1_6.Name = "uni1_6"
-        Me.uni1_6.Size = New System.Drawing.Size(64, 70)
-        Me.uni1_6.TabIndex = 1
-        Me.uni1_6.UseVisualStyleBackColor = False
-        '
-        'uni1_7
-        '
-        Me.uni1_7.BackColor = System.Drawing.Color.Gray
-        Me.uni1_7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni1_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni1_7.ForeColor = System.Drawing.Color.Black
-        Me.uni1_7.Location = New System.Drawing.Point(423, 3)
-        Me.uni1_7.Name = "uni1_7"
-        Me.uni1_7.Size = New System.Drawing.Size(67, 70)
-        Me.uni1_7.TabIndex = 1
-        Me.uni1_7.UseVisualStyleBackColor = False
-        '
-        'uni1_8
-        '
-        Me.uni1_8.BackColor = System.Drawing.Color.Gray
-        Me.uni1_8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni1_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni1_8.ForeColor = System.Drawing.Color.Black
-        Me.uni1_8.Location = New System.Drawing.Point(496, 3)
-        Me.uni1_8.Name = "uni1_8"
-        Me.uni1_8.Size = New System.Drawing.Size(69, 70)
-        Me.uni1_8.TabIndex = 1
-        Me.uni1_8.UseVisualStyleBackColor = False
-        '
-        'uni2_1
-        '
-        Me.uni2_1.BackColor = System.Drawing.Color.Gray
-        Me.uni2_1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni2_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni2_1.ForeColor = System.Drawing.Color.Black
-        Me.uni2_1.Location = New System.Drawing.Point(3, 79)
-        Me.uni2_1.Name = "uni2_1"
-        Me.uni2_1.Size = New System.Drawing.Size(64, 70)
-        Me.uni2_1.TabIndex = 1
-        Me.uni2_1.UseVisualStyleBackColor = False
-        '
-        'uni2_2
-        '
-        Me.uni2_2.BackColor = System.Drawing.Color.Gray
-        Me.uni2_2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni2_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni2_2.ForeColor = System.Drawing.Color.Black
-        Me.uni2_2.Location = New System.Drawing.Point(73, 79)
-        Me.uni2_2.Name = "uni2_2"
-        Me.uni2_2.Size = New System.Drawing.Size(64, 70)
-        Me.uni2_2.TabIndex = 1
-        Me.uni2_2.UseVisualStyleBackColor = False
-        '
-        'uni2_3
-        '
-        Me.uni2_3.BackColor = System.Drawing.Color.Gray
-        Me.uni2_3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni2_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni2_3.ForeColor = System.Drawing.Color.Black
-        Me.uni2_3.Location = New System.Drawing.Point(143, 79)
-        Me.uni2_3.Name = "uni2_3"
-        Me.uni2_3.Size = New System.Drawing.Size(64, 70)
-        Me.uni2_3.TabIndex = 1
-        Me.uni2_3.UseVisualStyleBackColor = False
-        '
-        'uni2_4
-        '
-        Me.uni2_4.BackColor = System.Drawing.Color.Gray
-        Me.uni2_4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni2_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni2_4.ForeColor = System.Drawing.Color.Black
-        Me.uni2_4.Location = New System.Drawing.Point(213, 79)
-        Me.uni2_4.Name = "uni2_4"
-        Me.uni2_4.Size = New System.Drawing.Size(64, 70)
-        Me.uni2_4.TabIndex = 1
-        Me.uni2_4.UseVisualStyleBackColor = False
-        '
-        'uni2_5
-        '
-        Me.uni2_5.BackColor = System.Drawing.Color.Gray
-        Me.uni2_5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni2_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni2_5.ForeColor = System.Drawing.Color.Black
-        Me.uni2_5.Location = New System.Drawing.Point(283, 79)
-        Me.uni2_5.Name = "uni2_5"
-        Me.uni2_5.Size = New System.Drawing.Size(64, 70)
-        Me.uni2_5.TabIndex = 1
-        Me.uni2_5.UseVisualStyleBackColor = False
-        '
-        'uni2_6
-        '
-        Me.uni2_6.BackColor = System.Drawing.Color.Gray
-        Me.uni2_6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni2_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni2_6.ForeColor = System.Drawing.Color.Black
-        Me.uni2_6.Location = New System.Drawing.Point(353, 79)
-        Me.uni2_6.Name = "uni2_6"
-        Me.uni2_6.Size = New System.Drawing.Size(64, 70)
-        Me.uni2_6.TabIndex = 1
-        Me.uni2_6.UseVisualStyleBackColor = False
-        '
-        'uni2_7
-        '
-        Me.uni2_7.BackColor = System.Drawing.Color.Gray
-        Me.uni2_7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni2_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni2_7.ForeColor = System.Drawing.Color.Black
-        Me.uni2_7.Location = New System.Drawing.Point(423, 79)
-        Me.uni2_7.Name = "uni2_7"
-        Me.uni2_7.Size = New System.Drawing.Size(67, 70)
-        Me.uni2_7.TabIndex = 1
-        Me.uni2_7.UseVisualStyleBackColor = False
-        '
-        'uni2_8
-        '
-        Me.uni2_8.BackColor = System.Drawing.Color.Gray
-        Me.uni2_8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni2_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni2_8.ForeColor = System.Drawing.Color.Black
-        Me.uni2_8.Location = New System.Drawing.Point(496, 79)
-        Me.uni2_8.Name = "uni2_8"
-        Me.uni2_8.Size = New System.Drawing.Size(69, 70)
-        Me.uni2_8.TabIndex = 1
-        Me.uni2_8.UseVisualStyleBackColor = False
-        '
-        'uni3_1
-        '
-        Me.uni3_1.BackColor = System.Drawing.Color.Gray
-        Me.uni3_1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni3_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni3_1.ForeColor = System.Drawing.Color.Black
-        Me.uni3_1.Location = New System.Drawing.Point(3, 155)
-        Me.uni3_1.Name = "uni3_1"
-        Me.uni3_1.Size = New System.Drawing.Size(64, 70)
-        Me.uni3_1.TabIndex = 1
-        Me.uni3_1.UseVisualStyleBackColor = False
-        '
-        'uni3_2
-        '
-        Me.uni3_2.BackColor = System.Drawing.Color.Gray
-        Me.uni3_2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni3_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni3_2.ForeColor = System.Drawing.Color.Black
-        Me.uni3_2.Location = New System.Drawing.Point(73, 155)
-        Me.uni3_2.Name = "uni3_2"
-        Me.uni3_2.Size = New System.Drawing.Size(64, 70)
-        Me.uni3_2.TabIndex = 1
-        Me.uni3_2.UseVisualStyleBackColor = False
-        '
-        'uni3_3
-        '
-        Me.uni3_3.BackColor = System.Drawing.Color.Gray
-        Me.uni3_3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni3_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni3_3.ForeColor = System.Drawing.Color.Black
-        Me.uni3_3.Location = New System.Drawing.Point(143, 155)
-        Me.uni3_3.Name = "uni3_3"
-        Me.uni3_3.Size = New System.Drawing.Size(64, 70)
-        Me.uni3_3.TabIndex = 1
-        Me.uni3_3.UseVisualStyleBackColor = False
-        '
-        'uni3_4
-        '
-        Me.uni3_4.BackColor = System.Drawing.Color.Gray
-        Me.uni3_4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni3_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni3_4.ForeColor = System.Drawing.Color.Black
-        Me.uni3_4.Location = New System.Drawing.Point(213, 155)
-        Me.uni3_4.Name = "uni3_4"
-        Me.uni3_4.Size = New System.Drawing.Size(64, 70)
-        Me.uni3_4.TabIndex = 1
-        Me.uni3_4.UseVisualStyleBackColor = False
-        '
-        'uni3_5
-        '
-        Me.uni3_5.BackColor = System.Drawing.Color.Gray
-        Me.uni3_5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni3_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni3_5.ForeColor = System.Drawing.Color.Black
-        Me.uni3_5.Location = New System.Drawing.Point(283, 155)
-        Me.uni3_5.Name = "uni3_5"
-        Me.uni3_5.Size = New System.Drawing.Size(64, 70)
-        Me.uni3_5.TabIndex = 1
-        Me.uni3_5.UseVisualStyleBackColor = False
-        '
-        'uni3_6
-        '
-        Me.uni3_6.BackColor = System.Drawing.Color.Gray
-        Me.uni3_6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni3_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni3_6.ForeColor = System.Drawing.Color.Black
-        Me.uni3_6.Location = New System.Drawing.Point(353, 155)
-        Me.uni3_6.Name = "uni3_6"
-        Me.uni3_6.Size = New System.Drawing.Size(64, 70)
-        Me.uni3_6.TabIndex = 1
-        Me.uni3_6.UseVisualStyleBackColor = False
-        '
-        'uni3_7
-        '
-        Me.uni3_7.BackColor = System.Drawing.Color.Gray
-        Me.uni3_7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni3_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni3_7.ForeColor = System.Drawing.Color.Black
-        Me.uni3_7.Location = New System.Drawing.Point(423, 155)
-        Me.uni3_7.Name = "uni3_7"
-        Me.uni3_7.Size = New System.Drawing.Size(67, 70)
-        Me.uni3_7.TabIndex = 1
-        Me.uni3_7.UseVisualStyleBackColor = False
-        '
-        'uni3_8
-        '
-        Me.uni3_8.BackColor = System.Drawing.Color.Gray
-        Me.uni3_8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni3_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni3_8.ForeColor = System.Drawing.Color.Black
-        Me.uni3_8.Location = New System.Drawing.Point(496, 155)
-        Me.uni3_8.Name = "uni3_8"
-        Me.uni3_8.Size = New System.Drawing.Size(69, 70)
-        Me.uni3_8.TabIndex = 1
-        Me.uni3_8.UseVisualStyleBackColor = False
-        '
-        'uni4_1
-        '
-        Me.uni4_1.BackColor = System.Drawing.Color.Gray
-        Me.uni4_1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni4_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni4_1.ForeColor = System.Drawing.Color.Black
-        Me.uni4_1.Location = New System.Drawing.Point(3, 231)
-        Me.uni4_1.Name = "uni4_1"
-        Me.uni4_1.Size = New System.Drawing.Size(64, 70)
-        Me.uni4_1.TabIndex = 1
-        Me.uni4_1.UseVisualStyleBackColor = False
-        '
-        'uni4_2
-        '
-        Me.uni4_2.BackColor = System.Drawing.Color.Gray
-        Me.uni4_2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni4_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni4_2.ForeColor = System.Drawing.Color.Black
-        Me.uni4_2.Location = New System.Drawing.Point(73, 231)
-        Me.uni4_2.Name = "uni4_2"
-        Me.uni4_2.Size = New System.Drawing.Size(64, 70)
-        Me.uni4_2.TabIndex = 1
-        Me.uni4_2.UseVisualStyleBackColor = False
-        '
-        'uni4_3
-        '
-        Me.uni4_3.BackColor = System.Drawing.Color.Gray
-        Me.uni4_3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni4_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni4_3.ForeColor = System.Drawing.Color.Black
-        Me.uni4_3.Location = New System.Drawing.Point(143, 231)
-        Me.uni4_3.Name = "uni4_3"
-        Me.uni4_3.Size = New System.Drawing.Size(64, 70)
-        Me.uni4_3.TabIndex = 1
-        Me.uni4_3.UseVisualStyleBackColor = False
-        '
-        'uni4_4
-        '
-        Me.uni4_4.BackColor = System.Drawing.Color.Gray
-        Me.uni4_4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni4_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni4_4.ForeColor = System.Drawing.Color.Black
-        Me.uni4_4.Location = New System.Drawing.Point(213, 231)
-        Me.uni4_4.Name = "uni4_4"
-        Me.uni4_4.Size = New System.Drawing.Size(64, 70)
-        Me.uni4_4.TabIndex = 1
-        Me.uni4_4.UseVisualStyleBackColor = False
-        '
-        'uni4_5
-        '
-        Me.uni4_5.BackColor = System.Drawing.Color.Gray
-        Me.uni4_5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni4_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni4_5.ForeColor = System.Drawing.Color.Black
-        Me.uni4_5.Location = New System.Drawing.Point(283, 231)
-        Me.uni4_5.Name = "uni4_5"
-        Me.uni4_5.Size = New System.Drawing.Size(64, 70)
-        Me.uni4_5.TabIndex = 1
-        Me.uni4_5.UseVisualStyleBackColor = False
-        '
-        'uni4_6
-        '
-        Me.uni4_6.BackColor = System.Drawing.Color.Gray
-        Me.uni4_6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni4_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni4_6.ForeColor = System.Drawing.Color.Black
-        Me.uni4_6.Location = New System.Drawing.Point(353, 231)
-        Me.uni4_6.Name = "uni4_6"
-        Me.uni4_6.Size = New System.Drawing.Size(64, 70)
-        Me.uni4_6.TabIndex = 1
-        Me.uni4_6.UseVisualStyleBackColor = False
-        '
-        'uni4_7
-        '
-        Me.uni4_7.BackColor = System.Drawing.Color.Gray
-        Me.uni4_7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni4_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni4_7.ForeColor = System.Drawing.Color.Black
-        Me.uni4_7.Location = New System.Drawing.Point(423, 231)
-        Me.uni4_7.Name = "uni4_7"
-        Me.uni4_7.Size = New System.Drawing.Size(67, 70)
-        Me.uni4_7.TabIndex = 1
-        Me.uni4_7.UseVisualStyleBackColor = False
-        '
-        'uni4_8
-        '
-        Me.uni4_8.BackColor = System.Drawing.Color.Gray
-        Me.uni4_8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni4_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni4_8.ForeColor = System.Drawing.Color.Black
-        Me.uni4_8.Location = New System.Drawing.Point(496, 231)
-        Me.uni4_8.Name = "uni4_8"
-        Me.uni4_8.Size = New System.Drawing.Size(69, 70)
-        Me.uni4_8.TabIndex = 1
-        Me.uni4_8.UseVisualStyleBackColor = False
-        '
-        'uni5_1
-        '
-        Me.uni5_1.BackColor = System.Drawing.Color.Gray
-        Me.uni5_1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni5_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni5_1.ForeColor = System.Drawing.Color.Black
-        Me.uni5_1.Location = New System.Drawing.Point(3, 307)
-        Me.uni5_1.Name = "uni5_1"
-        Me.uni5_1.Size = New System.Drawing.Size(64, 70)
-        Me.uni5_1.TabIndex = 1
-        Me.uni5_1.UseVisualStyleBackColor = False
-        '
-        'uni5_2
-        '
-        Me.uni5_2.BackColor = System.Drawing.Color.Gray
-        Me.uni5_2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni5_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni5_2.ForeColor = System.Drawing.Color.Black
-        Me.uni5_2.Location = New System.Drawing.Point(73, 307)
-        Me.uni5_2.Name = "uni5_2"
-        Me.uni5_2.Size = New System.Drawing.Size(64, 70)
-        Me.uni5_2.TabIndex = 1
-        Me.uni5_2.UseVisualStyleBackColor = False
-        '
-        'uni5_3
-        '
-        Me.uni5_3.BackColor = System.Drawing.Color.Gray
-        Me.uni5_3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni5_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni5_3.ForeColor = System.Drawing.Color.Black
-        Me.uni5_3.Location = New System.Drawing.Point(143, 307)
-        Me.uni5_3.Name = "uni5_3"
-        Me.uni5_3.Size = New System.Drawing.Size(64, 70)
-        Me.uni5_3.TabIndex = 1
-        Me.uni5_3.UseVisualStyleBackColor = False
-        '
-        'uni5_4
-        '
-        Me.uni5_4.BackColor = System.Drawing.Color.Gray
-        Me.uni5_4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni5_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni5_4.ForeColor = System.Drawing.Color.Black
-        Me.uni5_4.Location = New System.Drawing.Point(213, 307)
-        Me.uni5_4.Name = "uni5_4"
-        Me.uni5_4.Size = New System.Drawing.Size(64, 70)
-        Me.uni5_4.TabIndex = 1
-        Me.uni5_4.UseVisualStyleBackColor = False
-        '
-        'uni5_5
-        '
-        Me.uni5_5.BackColor = System.Drawing.Color.Gray
-        Me.uni5_5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni5_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni5_5.ForeColor = System.Drawing.Color.Black
-        Me.uni5_5.Location = New System.Drawing.Point(283, 307)
-        Me.uni5_5.Name = "uni5_5"
-        Me.uni5_5.Size = New System.Drawing.Size(64, 70)
-        Me.uni5_5.TabIndex = 1
-        Me.uni5_5.UseVisualStyleBackColor = False
-        '
-        'uni5_6
-        '
-        Me.uni5_6.BackColor = System.Drawing.Color.Gray
-        Me.uni5_6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni5_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni5_6.ForeColor = System.Drawing.Color.Black
-        Me.uni5_6.Location = New System.Drawing.Point(353, 307)
-        Me.uni5_6.Name = "uni5_6"
-        Me.uni5_6.Size = New System.Drawing.Size(64, 70)
-        Me.uni5_6.TabIndex = 1
-        Me.uni5_6.UseVisualStyleBackColor = False
-        '
-        'uni5_7
-        '
-        Me.uni5_7.BackColor = System.Drawing.Color.Gray
-        Me.uni5_7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni5_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni5_7.ForeColor = System.Drawing.Color.Black
-        Me.uni5_7.Location = New System.Drawing.Point(423, 307)
-        Me.uni5_7.Name = "uni5_7"
-        Me.uni5_7.Size = New System.Drawing.Size(67, 70)
-        Me.uni5_7.TabIndex = 1
-        Me.uni5_7.UseVisualStyleBackColor = False
-        '
-        'uni5_8
-        '
-        Me.uni5_8.BackColor = System.Drawing.Color.Gray
-        Me.uni5_8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni5_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni5_8.ForeColor = System.Drawing.Color.Black
-        Me.uni5_8.Location = New System.Drawing.Point(496, 307)
-        Me.uni5_8.Name = "uni5_8"
-        Me.uni5_8.Size = New System.Drawing.Size(69, 70)
-        Me.uni5_8.TabIndex = 1
-        Me.uni5_8.UseVisualStyleBackColor = False
-        '
-        'uni6_1
-        '
-        Me.uni6_1.BackColor = System.Drawing.Color.Gray
-        Me.uni6_1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni6_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni6_1.ForeColor = System.Drawing.Color.Black
-        Me.uni6_1.Location = New System.Drawing.Point(3, 383)
-        Me.uni6_1.Name = "uni6_1"
-        Me.uni6_1.Size = New System.Drawing.Size(64, 70)
-        Me.uni6_1.TabIndex = 1
-        Me.uni6_1.UseVisualStyleBackColor = False
-        '
-        'uni6_2
-        '
-        Me.uni6_2.BackColor = System.Drawing.Color.Gray
-        Me.uni6_2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni6_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni6_2.ForeColor = System.Drawing.Color.Black
-        Me.uni6_2.Location = New System.Drawing.Point(73, 383)
-        Me.uni6_2.Name = "uni6_2"
-        Me.uni6_2.Size = New System.Drawing.Size(64, 70)
-        Me.uni6_2.TabIndex = 1
-        Me.uni6_2.UseVisualStyleBackColor = False
-        '
-        'uni6_3
-        '
-        Me.uni6_3.BackColor = System.Drawing.Color.Gray
-        Me.uni6_3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni6_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni6_3.ForeColor = System.Drawing.Color.Black
-        Me.uni6_3.Location = New System.Drawing.Point(143, 383)
-        Me.uni6_3.Name = "uni6_3"
-        Me.uni6_3.Size = New System.Drawing.Size(64, 70)
-        Me.uni6_3.TabIndex = 1
-        Me.uni6_3.UseVisualStyleBackColor = False
-        '
-        'uni6_4
-        '
-        Me.uni6_4.BackColor = System.Drawing.Color.Gray
-        Me.uni6_4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni6_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni6_4.ForeColor = System.Drawing.Color.Black
-        Me.uni6_4.Location = New System.Drawing.Point(213, 383)
-        Me.uni6_4.Name = "uni6_4"
-        Me.uni6_4.Size = New System.Drawing.Size(64, 70)
-        Me.uni6_4.TabIndex = 1
-        Me.uni6_4.UseVisualStyleBackColor = False
-        '
-        'uni6_5
-        '
-        Me.uni6_5.BackColor = System.Drawing.Color.Gray
-        Me.uni6_5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni6_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni6_5.ForeColor = System.Drawing.Color.Black
-        Me.uni6_5.Location = New System.Drawing.Point(283, 383)
-        Me.uni6_5.Name = "uni6_5"
-        Me.uni6_5.Size = New System.Drawing.Size(64, 70)
-        Me.uni6_5.TabIndex = 1
-        Me.uni6_5.UseVisualStyleBackColor = False
-        '
-        'uni6_6
-        '
-        Me.uni6_6.BackColor = System.Drawing.Color.Gray
-        Me.uni6_6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni6_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni6_6.ForeColor = System.Drawing.Color.Black
-        Me.uni6_6.Location = New System.Drawing.Point(353, 383)
-        Me.uni6_6.Name = "uni6_6"
-        Me.uni6_6.Size = New System.Drawing.Size(64, 70)
-        Me.uni6_6.TabIndex = 1
-        Me.uni6_6.UseVisualStyleBackColor = False
-        '
-        'uni6_7
-        '
-        Me.uni6_7.BackColor = System.Drawing.Color.Gray
-        Me.uni6_7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni6_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni6_7.ForeColor = System.Drawing.Color.Black
-        Me.uni6_7.Location = New System.Drawing.Point(423, 383)
-        Me.uni6_7.Name = "uni6_7"
-        Me.uni6_7.Size = New System.Drawing.Size(67, 70)
-        Me.uni6_7.TabIndex = 1
-        Me.uni6_7.UseVisualStyleBackColor = False
-        '
-        'uni6_8
-        '
-        Me.uni6_8.BackColor = System.Drawing.Color.Gray
-        Me.uni6_8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni6_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni6_8.ForeColor = System.Drawing.Color.Black
-        Me.uni6_8.Location = New System.Drawing.Point(496, 383)
-        Me.uni6_8.Name = "uni6_8"
-        Me.uni6_8.Size = New System.Drawing.Size(69, 70)
-        Me.uni6_8.TabIndex = 1
-        Me.uni6_8.UseVisualStyleBackColor = False
-        '
-        'uni7_1
-        '
-        Me.uni7_1.BackColor = System.Drawing.Color.Gray
-        Me.uni7_1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni7_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni7_1.ForeColor = System.Drawing.Color.Black
-        Me.uni7_1.Location = New System.Drawing.Point(3, 459)
-        Me.uni7_1.Name = "uni7_1"
-        Me.uni7_1.Size = New System.Drawing.Size(64, 70)
-        Me.uni7_1.TabIndex = 1
-        Me.uni7_1.UseVisualStyleBackColor = False
-        '
-        'uni7_2
-        '
-        Me.uni7_2.BackColor = System.Drawing.Color.Gray
-        Me.uni7_2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni7_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni7_2.ForeColor = System.Drawing.Color.Black
-        Me.uni7_2.Location = New System.Drawing.Point(73, 459)
-        Me.uni7_2.Name = "uni7_2"
-        Me.uni7_2.Size = New System.Drawing.Size(64, 70)
-        Me.uni7_2.TabIndex = 1
-        Me.uni7_2.UseVisualStyleBackColor = False
-        '
-        'uni7_3
-        '
-        Me.uni7_3.BackColor = System.Drawing.Color.Gray
-        Me.uni7_3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni7_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni7_3.ForeColor = System.Drawing.Color.Black
-        Me.uni7_3.Location = New System.Drawing.Point(143, 459)
-        Me.uni7_3.Name = "uni7_3"
-        Me.uni7_3.Size = New System.Drawing.Size(64, 70)
-        Me.uni7_3.TabIndex = 1
-        Me.uni7_3.UseVisualStyleBackColor = False
-        '
-        'uni7_4
-        '
-        Me.uni7_4.BackColor = System.Drawing.Color.Gray
-        Me.uni7_4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni7_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni7_4.ForeColor = System.Drawing.Color.Black
-        Me.uni7_4.Location = New System.Drawing.Point(213, 459)
-        Me.uni7_4.Name = "uni7_4"
-        Me.uni7_4.Size = New System.Drawing.Size(64, 70)
-        Me.uni7_4.TabIndex = 1
-        Me.uni7_4.UseVisualStyleBackColor = False
-        '
-        'uni7_5
-        '
-        Me.uni7_5.BackColor = System.Drawing.Color.Gray
-        Me.uni7_5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni7_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni7_5.ForeColor = System.Drawing.Color.Black
-        Me.uni7_5.Location = New System.Drawing.Point(283, 459)
-        Me.uni7_5.Name = "uni7_5"
-        Me.uni7_5.Size = New System.Drawing.Size(64, 70)
-        Me.uni7_5.TabIndex = 1
-        Me.uni7_5.UseVisualStyleBackColor = False
-        '
-        'uni7_6
-        '
-        Me.uni7_6.BackColor = System.Drawing.Color.Gray
-        Me.uni7_6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni7_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni7_6.ForeColor = System.Drawing.Color.Black
-        Me.uni7_6.Location = New System.Drawing.Point(353, 459)
-        Me.uni7_6.Name = "uni7_6"
-        Me.uni7_6.Size = New System.Drawing.Size(64, 70)
-        Me.uni7_6.TabIndex = 1
-        Me.uni7_6.UseVisualStyleBackColor = False
-        '
-        'uni7_7
-        '
-        Me.uni7_7.BackColor = System.Drawing.Color.Gray
-        Me.uni7_7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni7_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni7_7.ForeColor = System.Drawing.Color.Black
-        Me.uni7_7.Location = New System.Drawing.Point(423, 459)
-        Me.uni7_7.Name = "uni7_7"
-        Me.uni7_7.Size = New System.Drawing.Size(67, 70)
-        Me.uni7_7.TabIndex = 1
-        Me.uni7_7.UseVisualStyleBackColor = False
-        '
-        'uni7_8
-        '
-        Me.uni7_8.BackColor = System.Drawing.Color.Gray
-        Me.uni7_8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni7_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni7_8.ForeColor = System.Drawing.Color.Black
-        Me.uni7_8.Location = New System.Drawing.Point(496, 459)
-        Me.uni7_8.Name = "uni7_8"
-        Me.uni7_8.Size = New System.Drawing.Size(69, 70)
-        Me.uni7_8.TabIndex = 1
-        Me.uni7_8.UseVisualStyleBackColor = False
-        '
-        'uni8_1
-        '
-        Me.uni8_1.BackColor = System.Drawing.Color.Gray
-        Me.uni8_1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni8_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni8_1.ForeColor = System.Drawing.Color.Black
-        Me.uni8_1.Location = New System.Drawing.Point(3, 535)
-        Me.uni8_1.Name = "uni8_1"
-        Me.uni8_1.Size = New System.Drawing.Size(64, 71)
-        Me.uni8_1.TabIndex = 1
-        Me.uni8_1.UseVisualStyleBackColor = False
-        '
-        'uni8_2
-        '
-        Me.uni8_2.BackColor = System.Drawing.Color.Gray
-        Me.uni8_2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni8_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni8_2.ForeColor = System.Drawing.Color.Black
-        Me.uni8_2.Location = New System.Drawing.Point(73, 535)
-        Me.uni8_2.Name = "uni8_2"
-        Me.uni8_2.Size = New System.Drawing.Size(64, 71)
-        Me.uni8_2.TabIndex = 1
-        Me.uni8_2.UseVisualStyleBackColor = False
-        '
-        'uni8_3
-        '
-        Me.uni8_3.BackColor = System.Drawing.Color.Gray
-        Me.uni8_3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni8_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni8_3.ForeColor = System.Drawing.Color.Black
-        Me.uni8_3.Location = New System.Drawing.Point(143, 535)
-        Me.uni8_3.Name = "uni8_3"
-        Me.uni8_3.Size = New System.Drawing.Size(64, 71)
-        Me.uni8_3.TabIndex = 1
-        Me.uni8_3.UseVisualStyleBackColor = False
-        '
-        'uni8_4
-        '
-        Me.uni8_4.BackColor = System.Drawing.Color.Gray
-        Me.uni8_4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni8_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni8_4.ForeColor = System.Drawing.Color.Black
-        Me.uni8_4.Location = New System.Drawing.Point(213, 535)
-        Me.uni8_4.Name = "uni8_4"
-        Me.uni8_4.Size = New System.Drawing.Size(64, 71)
-        Me.uni8_4.TabIndex = 1
-        Me.uni8_4.UseVisualStyleBackColor = False
-        '
-        'uni8_5
-        '
-        Me.uni8_5.BackColor = System.Drawing.Color.Gray
-        Me.uni8_5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni8_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni8_5.ForeColor = System.Drawing.Color.Black
-        Me.uni8_5.Location = New System.Drawing.Point(283, 535)
-        Me.uni8_5.Name = "uni8_5"
-        Me.uni8_5.Size = New System.Drawing.Size(64, 71)
-        Me.uni8_5.TabIndex = 1
-        Me.uni8_5.UseVisualStyleBackColor = False
-        '
-        'uni8_6
-        '
-        Me.uni8_6.BackColor = System.Drawing.Color.Gray
-        Me.uni8_6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni8_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni8_6.ForeColor = System.Drawing.Color.Black
-        Me.uni8_6.Location = New System.Drawing.Point(353, 535)
-        Me.uni8_6.Name = "uni8_6"
-        Me.uni8_6.Size = New System.Drawing.Size(64, 71)
-        Me.uni8_6.TabIndex = 1
-        Me.uni8_6.UseVisualStyleBackColor = False
-        '
-        'uni8_7
-        '
-        Me.uni8_7.BackColor = System.Drawing.Color.Gray
-        Me.uni8_7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni8_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni8_7.ForeColor = System.Drawing.Color.Black
-        Me.uni8_7.Location = New System.Drawing.Point(423, 535)
-        Me.uni8_7.Name = "uni8_7"
-        Me.uni8_7.Size = New System.Drawing.Size(67, 71)
-        Me.uni8_7.TabIndex = 1
-        Me.uni8_7.UseVisualStyleBackColor = False
-        '
-        'uni8_8
-        '
-        Me.uni8_8.BackColor = System.Drawing.Color.Gray
-        Me.uni8_8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.uni8_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.uni8_8.ForeColor = System.Drawing.Color.Black
-        Me.uni8_8.Location = New System.Drawing.Point(496, 535)
-        Me.uni8_8.Name = "uni8_8"
-        Me.uni8_8.Size = New System.Drawing.Size(69, 71)
-        Me.uni8_8.TabIndex = 1
-        Me.uni8_8.UseVisualStyleBackColor = False
         '
         'GroupBox1
         '
@@ -1021,9 +179,9 @@ Partial Class MainProjectLoader
         Me.GroupBox1.Controls.Add(Me.rbEditmode)
         Me.GroupBox1.Controls.Add(Me.rbPlaymode)
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 425)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, -14)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(172, 116)
+        Me.GroupBox1.Size = New System.Drawing.Size(50, 1)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mode"
@@ -1063,10 +221,10 @@ Partial Class MainProjectLoader
         'menuMainProj
         '
         Me.menuMainProj.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.menuMainProj.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.TestNReleaseToolStripMenuItem, Me.HelpToolStripMenuItem, Me.SettingToolStripMenuItem})
+        Me.menuMainProj.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.TestNReleaseToolStripMenuItem, Me.DebugToolStripMenuItem, Me.SettingToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.menuMainProj.Location = New System.Drawing.Point(0, 0)
         Me.menuMainProj.Name = "menuMainProj"
-        Me.menuMainProj.Size = New System.Drawing.Size(907, 24)
+        Me.menuMainProj.Size = New System.Drawing.Size(1354, 24)
         Me.menuMainProj.TabIndex = 3
         Me.menuMainProj.Text = "MenuStrip1"
         '
@@ -1149,9 +307,15 @@ Partial Class MainProjectLoader
         Me.AutoPlayTextEditorToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
         Me.AutoPlayTextEditorToolStripMenuItem.Text = "autoPlay Text Editor"
         '
+        'ledisableenable
+        '
+        Me.ledisableenable.Name = "ledisableenable"
+        Me.ledisableenable.Size = New System.Drawing.Size(188, 22)
+        Me.ledisableenable.Text = "LED En/Dis"
+        '
         'TestNReleaseToolStripMenuItem
         '
-        Me.TestNReleaseToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AutoPlayBetaToolStripMenuItem, Me.AutoPlayControlerToolStripMenuItem, Me.ToolStripSeparator1, Me.PushToDeviceToolStripMenuItem})
+        Me.TestNReleaseToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AutoPlayBetaToolStripMenuItem, Me.AutoPlayControlerToolStripMenuItem, Me.ToolStripSeparator1, Me.PushToDeviceToolStripMenuItem, Me.ConnectMidiToolStripMenuItem})
         Me.TestNReleaseToolStripMenuItem.Name = "TestNReleaseToolStripMenuItem"
         Me.TestNReleaseToolStripMenuItem.Size = New System.Drawing.Size(40, 20)
         Me.TestNReleaseToolStripMenuItem.Text = "Test"
@@ -1178,6 +342,50 @@ Partial Class MainProjectLoader
         Me.PushToDeviceToolStripMenuItem.Name = "PushToDeviceToolStripMenuItem"
         Me.PushToDeviceToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PushToDeviceToolStripMenuItem.Text = "Push to Device"
+        '
+        'ConnectMidiToolStripMenuItem
+        '
+        Me.ConnectMidiToolStripMenuItem.Name = "ConnectMidiToolStripMenuItem"
+        Me.ConnectMidiToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ConnectMidiToolStripMenuItem.Text = "connect midi"
+        '
+        'DebugToolStripMenuItem
+        '
+        Me.DebugToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ButtonDebugerToolStripMenuItem, Me.MultiMappingDebugerToolStripMenuItem})
+        Me.DebugToolStripMenuItem.Name = "DebugToolStripMenuItem"
+        Me.DebugToolStripMenuItem.Size = New System.Drawing.Size(55, 20)
+        Me.DebugToolStripMenuItem.Text = "Debug"
+        '
+        'ButtonDebugerToolStripMenuItem
+        '
+        Me.ButtonDebugerToolStripMenuItem.Name = "ButtonDebugerToolStripMenuItem"
+        Me.ButtonDebugerToolStripMenuItem.Size = New System.Drawing.Size(203, 22)
+        Me.ButtonDebugerToolStripMenuItem.Text = "Button LED Watcher"
+        '
+        'MultiMappingDebugerToolStripMenuItem
+        '
+        Me.MultiMappingDebugerToolStripMenuItem.Name = "MultiMappingDebugerToolStripMenuItem"
+        Me.MultiMappingDebugerToolStripMenuItem.Size = New System.Drawing.Size(203, 22)
+        Me.MultiMappingDebugerToolStripMenuItem.Text = "Multi-Mapping Watcher"
+        '
+        'SettingToolStripMenuItem
+        '
+        Me.SettingToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenSettingToolStripMenuItem, Me.RestoreDefaultWindowSizeToolStripMenuItem})
+        Me.SettingToolStripMenuItem.Name = "SettingToolStripMenuItem"
+        Me.SettingToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.SettingToolStripMenuItem.Text = "Setting"
+        '
+        'OpenSettingToolStripMenuItem
+        '
+        Me.OpenSettingToolStripMenuItem.Name = "OpenSettingToolStripMenuItem"
+        Me.OpenSettingToolStripMenuItem.Size = New System.Drawing.Size(230, 22)
+        Me.OpenSettingToolStripMenuItem.Text = "Open Setting"
+        '
+        'RestoreDefaultWindowSizeToolStripMenuItem
+        '
+        Me.RestoreDefaultWindowSizeToolStripMenuItem.Name = "RestoreDefaultWindowSizeToolStripMenuItem"
+        Me.RestoreDefaultWindowSizeToolStripMenuItem.Size = New System.Drawing.Size(230, 22)
+        Me.RestoreDefaultWindowSizeToolStripMenuItem.Text = "Restore Default Window Size"
         '
         'HelpToolStripMenuItem
         '
@@ -1206,32 +414,6 @@ Partial Class MainProjectLoader
         Me.CreditToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.CreditToolStripMenuItem.Text = "Credit"
         '
-        'SettingToolStripMenuItem
-        '
-        Me.SettingToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenSettingToolStripMenuItem, Me.RestoreDefaultWindowSizeToolStripMenuItem, Me.TestMakeCrashToolStripMenuItem})
-        Me.SettingToolStripMenuItem.Name = "SettingToolStripMenuItem"
-        Me.SettingToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
-        Me.SettingToolStripMenuItem.Text = "Setting"
-        '
-        'OpenSettingToolStripMenuItem
-        '
-        Me.OpenSettingToolStripMenuItem.Name = "OpenSettingToolStripMenuItem"
-        Me.OpenSettingToolStripMenuItem.Size = New System.Drawing.Size(230, 22)
-        Me.OpenSettingToolStripMenuItem.Text = "Open Setting"
-        '
-        'RestoreDefaultWindowSizeToolStripMenuItem
-        '
-        Me.RestoreDefaultWindowSizeToolStripMenuItem.Name = "RestoreDefaultWindowSizeToolStripMenuItem"
-        Me.RestoreDefaultWindowSizeToolStripMenuItem.Size = New System.Drawing.Size(230, 22)
-        Me.RestoreDefaultWindowSizeToolStripMenuItem.Text = "Restore Default Window Size"
-        '
-        'TestMakeCrashToolStripMenuItem
-        '
-        Me.TestMakeCrashToolStripMenuItem.Name = "TestMakeCrashToolStripMenuItem"
-        Me.TestMakeCrashToolStripMenuItem.Size = New System.Drawing.Size(230, 22)
-        Me.TestMakeCrashToolStripMenuItem.Text = "Test: Make Crash"
-        Me.TestMakeCrashToolStripMenuItem.Visible = False
-        '
         'groupUniPackInfo
         '
         Me.groupUniPackInfo.BackColor = System.Drawing.Color.LightGray
@@ -1247,10 +429,9 @@ Partial Class MainProjectLoader
         Me.groupUniPackInfo.Controls.Add(Me.tbPackDirInfo)
         Me.groupUniPackInfo.Controls.Add(Me.tbPackName)
         Me.groupUniPackInfo.Controls.Add(Me.btnSavePackInfo)
-        Me.groupUniPackInfo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.groupUniPackInfo.Location = New System.Drawing.Point(3, 3)
         Me.groupUniPackInfo.Name = "groupUniPackInfo"
-        Me.groupUniPackInfo.Size = New System.Drawing.Size(172, 416)
+        Me.groupUniPackInfo.Size = New System.Drawing.Size(50, 1)
         Me.groupUniPackInfo.TabIndex = 2
         Me.groupUniPackInfo.TabStop = False
         Me.groupUniPackInfo.Text = "UniPack Information"
@@ -1268,7 +449,7 @@ Partial Class MainProjectLoader
         'labelInfSave
         '
         Me.labelInfSave.AutoSize = True
-        Me.labelInfSave.Location = New System.Drawing.Point(81, 195)
+        Me.labelInfSave.Location = New System.Drawing.Point(80, 195)
         Me.labelInfSave.Name = "labelInfSave"
         Me.labelInfSave.Size = New System.Drawing.Size(55, 12)
         Me.labelInfSave.TabIndex = 9
@@ -1354,7 +535,7 @@ Partial Class MainProjectLoader
         '
         Me.btnSavePackInfo.Location = New System.Drawing.Point(17, 264)
         Me.btnSavePackInfo.Name = "btnSavePackInfo"
-        Me.btnSavePackInfo.Size = New System.Drawing.Size(123, 20)
+        Me.btnSavePackInfo.Size = New System.Drawing.Size(122, 20)
         Me.btnSavePackInfo.TabIndex = 2
         Me.btnSavePackInfo.Text = "Save Information"
         Me.btnSavePackInfo.UseVisualStyleBackColor = True
@@ -1369,7 +550,7 @@ Partial Class MainProjectLoader
         Me.listChain.ItemHeight = 37
         Me.listChain.Location = New System.Drawing.Point(3, 15)
         Me.listChain.Name = "listChain"
-        Me.listChain.Size = New System.Drawing.Size(140, 448)
+        Me.listChain.Size = New System.Drawing.Size(140, 485)
         Me.listChain.TabIndex = 9
         '
         'Label6
@@ -1384,7 +565,7 @@ Partial Class MainProjectLoader
         'Button1
         '
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button1.Location = New System.Drawing.Point(3, 498)
+        Me.Button1.Location = New System.Drawing.Point(3, 534)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(140, 49)
         Me.Button1.TabIndex = 11
@@ -1394,29 +575,19 @@ Partial Class MainProjectLoader
         'Button2
         '
         Me.Button2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button2.Location = New System.Drawing.Point(3, 553)
+        Me.Button2.Location = New System.Drawing.Point(3, 589)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(140, 23)
         Me.Button2.TabIndex = 12
         Me.Button2.Text = "Delete Chain"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label8.Location = New System.Drawing.Point(3, 579)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(140, 36)
-        Me.Label8.TabIndex = 14
-        Me.Label8.Text = "*Tip: You must save" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "any sounds to save" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "new chain."
-        '
         'btnFlushLEDColor
         '
         Me.btnFlushLEDColor.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.btnFlushLEDColor.Location = New System.Drawing.Point(3, 589)
+        Me.btnFlushLEDColor.Location = New System.Drawing.Point(3, 23)
         Me.btnFlushLEDColor.Name = "btnFlushLEDColor"
-        Me.btnFlushLEDColor.Size = New System.Drawing.Size(172, 23)
+        Me.btnFlushLEDColor.Size = New System.Drawing.Size(50, 23)
         Me.btnFlushLEDColor.TabIndex = 15
         Me.btnFlushLEDColor.Text = "Flush LED Board"
         Me.btnFlushLEDColor.UseVisualStyleBackColor = True
@@ -1424,9 +595,9 @@ Partial Class MainProjectLoader
         'btnFlushSound
         '
         Me.btnFlushSound.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.btnFlushSound.Location = New System.Drawing.Point(3, 553)
+        Me.btnFlushSound.Location = New System.Drawing.Point(3, -12)
         Me.btnFlushSound.Name = "btnFlushSound"
-        Me.btnFlushSound.Size = New System.Drawing.Size(172, 23)
+        Me.btnFlushSound.Size = New System.Drawing.Size(50, 23)
         Me.btnFlushSound.TabIndex = 15
         Me.btnFlushSound.Text = "Flush Multi Mapper"
         Me.btnFlushSound.UseVisualStyleBackColor = True
@@ -1439,16 +610,15 @@ Partial Class MainProjectLoader
         Me.TableLayoutPanel2.Controls.Add(Me.btnFlushLEDColor, 0, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.btnFlushSound, 0, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.GroupBox1, 0, 1)
-        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 24)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(345, 338)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
-        Me.TableLayoutPanel2.RowCount = 4
+        Me.TableLayoutPanel2.RowCount = 5
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.61105!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.38895!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(178, 615)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(56, 68)
         Me.TableLayoutPanel2.TabIndex = 16
         '
         'TableLayoutPanel3
@@ -1456,12 +626,10 @@ Partial Class MainProjectLoader
         Me.TableLayoutPanel3.ColumnCount = 1
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.Label6, 0, 0)
-        Me.TableLayoutPanel3.Controls.Add(Me.listChain, 0, 1)
-        Me.TableLayoutPanel3.Controls.Add(Me.Label8, 0, 4)
         Me.TableLayoutPanel3.Controls.Add(Me.Button1, 0, 2)
         Me.TableLayoutPanel3.Controls.Add(Me.Button2, 0, 3)
-        Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Right
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(761, 24)
+        Me.TableLayoutPanel3.Controls.Add(Me.listChain, 0, 1)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(1126, 70)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 5
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle())
@@ -1472,26 +640,748 @@ Partial Class MainProjectLoader
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(146, 615)
         Me.TableLayoutPanel3.TabIndex = 17
         '
-        'ledisableenable
+        'imgMainTab
         '
-        Me.ledisableenable.Name = "ledisableenable"
-        Me.ledisableenable.Size = New System.Drawing.Size(188, 22)
-        Me.ledisableenable.Text = "LED En/Dis"
+        Me.imgMainTab.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
+        Me.imgMainTab.ImageSize = New System.Drawing.Size(16, 16)
+        Me.imgMainTab.TransparentColor = System.Drawing.Color.Transparent
+        '
+        'lblUserName
+        '
+        Me.lblUserName.AutoSize = True
+        Me.lblUserName.BackColor = System.Drawing.Color.Transparent
+        Me.lblUserName.Font = New System.Drawing.Font("맑은 고딕", 10.0!)
+        Me.lblUserName.ForeColor = System.Drawing.Color.Transparent
+        Me.lblUserName.Location = New System.Drawing.Point(72, 26)
+        Me.lblUserName.Name = "lblUserName"
+        Me.lblUserName.Size = New System.Drawing.Size(93, 19)
+        Me.lblUserName.TabIndex = 21
+        Me.lblUserName.Text = "Barak Obama"
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.Transparent
+        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("맑은 고딕", 15.0!)
+        Me.Button3.ForeColor = System.Drawing.Color.White
+        Me.Button3.ImageList = Me.imgMainTab
+        Me.Button3.Location = New System.Drawing.Point(3, 22)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(200, 45)
+        Me.Button3.TabIndex = 22
+        Me.Button3.Text = "      DASHBOARD"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.Transparent
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("맑은 고딕", 15.0!)
+        Me.Button4.ForeColor = System.Drawing.Color.White
+        Me.Button4.Location = New System.Drawing.Point(35, 73)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(143, 45)
+        Me.Button4.TabIndex = 22
+        Me.Button4.Text = "      UNITOR"
+        Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.Transparent
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Font = New System.Drawing.Font("맑은 고딕", 15.0!)
+        Me.Button5.ForeColor = System.Drawing.Color.White
+        Me.Button5.Location = New System.Drawing.Point(12, 124)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(202, 45)
+        Me.Button5.TabIndex = 22
+        Me.Button5.Text = "      FILE"
+        Me.Button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.Transparent
+        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("맑은 고딕", 15.0!)
+        Me.Button6.ForeColor = System.Drawing.Color.White
+        Me.Button6.Location = New System.Drawing.Point(12, 175)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(200, 45)
+        Me.Button6.TabIndex = 22
+        Me.Button6.Text = "      EDIT"
+        Me.Button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.Color.Transparent
+        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Font = New System.Drawing.Font("맑은 고딕", 15.0!)
+        Me.Button7.ForeColor = System.Drawing.Color.White
+        Me.Button7.Location = New System.Drawing.Point(15, 244)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(200, 45)
+        Me.Button7.TabIndex = 22
+        Me.Button7.Text = "      TEST"
+        Me.Button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.Color.Transparent
+        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Font = New System.Drawing.Font("맑은 고딕", 15.0!)
+        Me.Button8.ForeColor = System.Drawing.Color.White
+        Me.Button8.Location = New System.Drawing.Point(26, 302)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(202, 45)
+        Me.Button8.TabIndex = 22
+        Me.Button8.Text = "      NOTICE"
+        Me.Button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button8.UseVisualStyleBackColor = False
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.Transparent
+        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Font = New System.Drawing.Font("맑은 고딕", 15.0!)
+        Me.Button9.ForeColor = System.Drawing.Color.White
+        Me.Button9.Location = New System.Drawing.Point(34, 353)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(200, 45)
+        Me.Button9.TabIndex = 22
+        Me.Button9.Text = "      UPLOAD"
+        Me.Button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button9.UseVisualStyleBackColor = False
+        '
+        'Button10
+        '
+        Me.Button10.BackColor = System.Drawing.Color.Transparent
+        Me.Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button10.FlatAppearance.BorderSize = 0
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Font = New System.Drawing.Font("맑은 고딕", 15.0!)
+        Me.Button10.ForeColor = System.Drawing.Color.White
+        Me.Button10.Location = New System.Drawing.Point(-3, 404)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(200, 45)
+        Me.Button10.TabIndex = 22
+        Me.Button10.Text = "      SETTINGS"
+        Me.Button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button10.UseVisualStyleBackColor = False
+        '
+        'panel_DASH
+        '
+        Me.panel_DASH.Controls.Add(Me.panel_dashboard_activity)
+        Me.panel_DASH.Controls.Add(Me.panel_dashboard)
+        Me.panel_DASH.Location = New System.Drawing.Point(200, 101)
+        Me.panel_DASH.Name = "panel_DASH"
+        Me.panel_DASH.Size = New System.Drawing.Size(884, 581)
+        Me.panel_DASH.TabIndex = 1
+        '
+        'panel_dashboard_activity
+        '
+        Me.panel_dashboard_activity.Controls.Add(Me.btnTTTTEEEESSSSTTTT)
+        Me.panel_dashboard_activity.Controls.Add(Me.lbl_DASH_ACT_FRIENDACT)
+        Me.panel_dashboard_activity.Controls.Add(Me.PictureBox2)
+        Me.panel_dashboard_activity.Controls.Add(Me.panel_dashboard_activity_friend)
+        Me.panel_dashboard_activity.Controls.Add(Me.TableLayoutPanel2)
+        Me.panel_dashboard_activity.Location = New System.Drawing.Point(0, 178)
+        Me.panel_dashboard_activity.Name = "panel_dashboard_activity"
+        Me.panel_dashboard_activity.Size = New System.Drawing.Size(884, 415)
+        Me.panel_dashboard_activity.TabIndex = 1
+        '
+        'btnTTTTEEEESSSSTTTT
+        '
+        Me.btnTTTTEEEESSSSTTTT.Location = New System.Drawing.Point(39, 316)
+        Me.btnTTTTEEEESSSSTTTT.Name = "btnTTTTEEEESSSSTTTT"
+        Me.btnTTTTEEEESSSSTTTT.Size = New System.Drawing.Size(222, 23)
+        Me.btnTTTTEEEESSSSTTTT.TabIndex = 29
+        Me.btnTTTTEEEESSSSTTTT.Text = "TestMSGADD"
+        Me.btnTTTTEEEESSSSTTTT.UseVisualStyleBackColor = True
+        '
+        'lbl_DASH_ACT_FRIENDACT
+        '
+        Me.lbl_DASH_ACT_FRIENDACT.AutoSize = True
+        Me.lbl_DASH_ACT_FRIENDACT.BackColor = System.Drawing.Color.White
+        Me.lbl_DASH_ACT_FRIENDACT.Font = New System.Drawing.Font("맑은 고딕", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.lbl_DASH_ACT_FRIENDACT.ForeColor = System.Drawing.Color.DimGray
+        Me.lbl_DASH_ACT_FRIENDACT.Location = New System.Drawing.Point(36, 43)
+        Me.lbl_DASH_ACT_FRIENDACT.Name = "lbl_DASH_ACT_FRIENDACT"
+        Me.lbl_DASH_ACT_FRIENDACT.Size = New System.Drawing.Size(143, 21)
+        Me.lbl_DASH_ACT_FRIENDACT.TabIndex = 28
+        Me.lbl_DASH_ACT_FRIENDACT.Text = "FRIEND ACTIVITY"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.White
+        Me.PictureBox2.Location = New System.Drawing.Point(26, 32)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(833, 38)
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
+        '
+        'panel_dashboard_activity_friend
+        '
+        Me.panel_dashboard_activity_friend.AutoScroll = True
+        Me.panel_dashboard_activity_friend.BackColor = System.Drawing.Color.White
+        Me.panel_dashboard_activity_friend.Controls.Add(Me.pb_DASH_SEPLine)
+        Me.panel_dashboard_activity_friend.Location = New System.Drawing.Point(26, 71)
+        Me.panel_dashboard_activity_friend.Name = "panel_dashboard_activity_friend"
+        Me.panel_dashboard_activity_friend.Size = New System.Drawing.Size(833, 238)
+        Me.panel_dashboard_activity_friend.TabIndex = 0
+        '
+        'pb_DASH_SEPLine
+        '
+        Me.pb_DASH_SEPLine.BackColor = System.Drawing.Color.LightGray
+        Me.pb_DASH_SEPLine.Location = New System.Drawing.Point(0, 3)
+        Me.pb_DASH_SEPLine.Name = "pb_DASH_SEPLine"
+        Me.pb_DASH_SEPLine.Size = New System.Drawing.Size(833, 3)
+        Me.pb_DASH_SEPLine.TabIndex = 1
+        Me.pb_DASH_SEPLine.TabStop = False
+        '
+        'panel_dashboard
+        '
+        Me.panel_dashboard.BackColor = System.Drawing.Color.White
+        Me.panel_dashboard.Controls.Add(Me.pb_dashboard_logout)
+        Me.panel_dashboard.Controls.Add(Me.pbDASH_MYpage_Select)
+        Me.panel_dashboard.Controls.Add(Me.pbDASH_ACT_Select)
+        Me.panel_dashboard.Controls.Add(Me.lblDASH_MYPAGE)
+        Me.panel_dashboard.Controls.Add(Me.lblDASH_Activity)
+        Me.panel_dashboard.Controls.Add(Me.lblUserDescription)
+        Me.panel_dashboard.Controls.Add(Me.pbProfImgBig)
+        Me.panel_dashboard.Controls.Add(Me.lblProfName)
+        Me.panel_dashboard.Location = New System.Drawing.Point(0, 0)
+        Me.panel_dashboard.Name = "panel_dashboard"
+        Me.panel_dashboard.Size = New System.Drawing.Size(884, 175)
+        Me.panel_dashboard.TabIndex = 0
+        '
+        'pb_dashboard_logout
+        '
+        Me.pb_dashboard_logout.Location = New System.Drawing.Point(819, 56)
+        Me.pb_dashboard_logout.Name = "pb_dashboard_logout"
+        Me.pb_dashboard_logout.Size = New System.Drawing.Size(40, 40)
+        Me.pb_dashboard_logout.TabIndex = 24
+        Me.pb_dashboard_logout.TabStop = False
+        '
+        'pbDASH_MYpage_Select
+        '
+        Me.pbDASH_MYpage_Select.BackColor = System.Drawing.Color.White
+        Me.pbDASH_MYpage_Select.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pbDASH_MYpage_Select.Location = New System.Drawing.Point(152, 168)
+        Me.pbDASH_MYpage_Select.Name = "pbDASH_MYpage_Select"
+        Me.pbDASH_MYpage_Select.Size = New System.Drawing.Size(67, 7)
+        Me.pbDASH_MYpage_Select.TabIndex = 23
+        Me.pbDASH_MYpage_Select.TabStop = False
+        '
+        'pbDASH_ACT_Select
+        '
+        Me.pbDASH_ACT_Select.BackColor = System.Drawing.Color.ForestGreen
+        Me.pbDASH_ACT_Select.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pbDASH_ACT_Select.Location = New System.Drawing.Point(50, 168)
+        Me.pbDASH_ACT_Select.Name = "pbDASH_ACT_Select"
+        Me.pbDASH_ACT_Select.Size = New System.Drawing.Size(66, 7)
+        Me.pbDASH_ACT_Select.TabIndex = 23
+        Me.pbDASH_ACT_Select.TabStop = False
+        '
+        'lblDASH_MYPAGE
+        '
+        Me.lblDASH_MYPAGE.AutoSize = True
+        Me.lblDASH_MYPAGE.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblDASH_MYPAGE.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblDASH_MYPAGE.Location = New System.Drawing.Point(152, 143)
+        Me.lblDASH_MYPAGE.Name = "lblDASH_MYPAGE"
+        Me.lblDASH_MYPAGE.Size = New System.Drawing.Size(67, 17)
+        Me.lblDASH_MYPAGE.TabIndex = 1
+        Me.lblDASH_MYPAGE.Text = "MY PAGE"
+        '
+        'lblDASH_Activity
+        '
+        Me.lblDASH_Activity.AutoSize = True
+        Me.lblDASH_Activity.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblDASH_Activity.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblDASH_Activity.Location = New System.Drawing.Point(50, 143)
+        Me.lblDASH_Activity.Name = "lblDASH_Activity"
+        Me.lblDASH_Activity.Size = New System.Drawing.Size(66, 17)
+        Me.lblDASH_Activity.TabIndex = 1
+        Me.lblDASH_Activity.Text = "ACTIVITY"
+        '
+        'lblUserDescription
+        '
+        Me.lblUserDescription.AutoSize = True
+        Me.lblUserDescription.Font = New System.Drawing.Font("맑은 고딕", 9.0!)
+        Me.lblUserDescription.Location = New System.Drawing.Point(156, 69)
+        Me.lblUserDescription.Name = "lblUserDescription"
+        Me.lblUserDescription.Size = New System.Drawing.Size(155, 15)
+        Me.lblUserDescription.TabIndex = 22
+        Me.lblUserDescription.Text = "I was a president of USA :D"
+        '
+        'pbProfImgBig
+        '
+        Me.pbProfImgBig.BackColor = System.Drawing.Color.Green
+        Me.pbProfImgBig.Image = CType(resources.GetObject("pbProfImgBig.Image"), System.Drawing.Image)
+        Me.pbProfImgBig.Location = New System.Drawing.Point(26, 22)
+        Me.pbProfImgBig.Name = "pbProfImgBig"
+        Me.pbProfImgBig.Size = New System.Drawing.Size(100, 100)
+        Me.pbProfImgBig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbProfImgBig.TabIndex = 20
+        Me.pbProfImgBig.TabStop = False
+        '
+        'lblProfName
+        '
+        Me.lblProfName.AutoSize = True
+        Me.lblProfName.BackColor = System.Drawing.Color.Transparent
+        Me.lblProfName.Font = New System.Drawing.Font("맑은 고딕", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.lblProfName.ForeColor = System.Drawing.Color.Black
+        Me.lblProfName.Location = New System.Drawing.Point(149, 27)
+        Me.lblProfName.Name = "lblProfName"
+        Me.lblProfName.Size = New System.Drawing.Size(168, 32)
+        Me.lblProfName.TabIndex = 21
+        Me.lblProfName.Text = "Barak Obama"
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
+        'panel_unitor_panel
+        '
+        Me.panel_unitor_panel.BackColor = System.Drawing.Color.White
+        Me.panel_unitor_panel.Controls.Add(Me.pb_unitor_panel_infosetup)
+        Me.panel_unitor_panel.Controls.Add(Me.pb_unitor_panel_unitor)
+        Me.panel_unitor_panel.Controls.Add(Me.lbl_unitor_panel_infosetup)
+        Me.panel_unitor_panel.Controls.Add(Me.lbl_unitor_panel_unitor)
+        Me.panel_unitor_panel.Location = New System.Drawing.Point(0, 0)
+        Me.panel_unitor_panel.Name = "panel_unitor_panel"
+        Me.panel_unitor_panel.Size = New System.Drawing.Size(884, 41)
+        Me.panel_unitor_panel.TabIndex = 2
+        '
+        'pb_unitor_panel_infosetup
+        '
+        Me.pb_unitor_panel_infosetup.BackColor = System.Drawing.Color.White
+        Me.pb_unitor_panel_infosetup.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pb_unitor_panel_infosetup.Location = New System.Drawing.Point(118, 31)
+        Me.pb_unitor_panel_infosetup.Name = "pb_unitor_panel_infosetup"
+        Me.pb_unitor_panel_infosetup.Size = New System.Drawing.Size(135, 10)
+        Me.pb_unitor_panel_infosetup.TabIndex = 26
+        Me.pb_unitor_panel_infosetup.TabStop = False
+        '
+        'pb_unitor_panel_unitor
+        '
+        Me.pb_unitor_panel_unitor.BackColor = System.Drawing.Color.ForestGreen
+        Me.pb_unitor_panel_unitor.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pb_unitor_panel_unitor.Location = New System.Drawing.Point(22, 30)
+        Me.pb_unitor_panel_unitor.Name = "pb_unitor_panel_unitor"
+        Me.pb_unitor_panel_unitor.Size = New System.Drawing.Size(58, 10)
+        Me.pb_unitor_panel_unitor.TabIndex = 27
+        Me.pb_unitor_panel_unitor.TabStop = False
+        '
+        'lbl_unitor_panel_infosetup
+        '
+        Me.lbl_unitor_panel_infosetup.AutoSize = True
+        Me.lbl_unitor_panel_infosetup.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lbl_unitor_panel_infosetup.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lbl_unitor_panel_infosetup.Location = New System.Drawing.Point(115, 10)
+        Me.lbl_unitor_panel_infosetup.Name = "lbl_unitor_panel_infosetup"
+        Me.lbl_unitor_panel_infosetup.Size = New System.Drawing.Size(146, 17)
+        Me.lbl_unitor_panel_infosetup.TabIndex = 24
+        Me.lbl_unitor_panel_infosetup.Text = "INFORMATION SETUP"
+        '
+        'lbl_unitor_panel_unitor
+        '
+        Me.lbl_unitor_panel_unitor.AutoSize = True
+        Me.lbl_unitor_panel_unitor.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lbl_unitor_panel_unitor.Font = New System.Drawing.Font("맑은 고딕", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lbl_unitor_panel_unitor.Location = New System.Drawing.Point(22, 10)
+        Me.lbl_unitor_panel_unitor.Name = "lbl_unitor_panel_unitor"
+        Me.lbl_unitor_panel_unitor.Size = New System.Drawing.Size(58, 17)
+        Me.lbl_unitor_panel_unitor.TabIndex = 25
+        Me.lbl_unitor_panel_unitor.Text = "UNITOR"
+        '
+        'panel_unitor
+        '
+        Me.panel_unitor.Controls.Add(Me.panel_unitor_panel)
+        Me.panel_unitor.Location = New System.Drawing.Point(200, 101)
+        Me.panel_unitor.Name = "panel_unitor"
+        Me.panel_unitor.Size = New System.Drawing.Size(884, 581)
+        Me.panel_unitor.TabIndex = 29
+        '
+        'panel_unitor_unitor
+        '
+        Me.panel_unitor_unitor.Controls.Add(Me.uni1_2)
+        Me.panel_unitor_unitor.Controls.Add(Me.ButtonModified7)
+        Me.panel_unitor_unitor.Controls.Add(Me.ButtonModified3)
+        Me.panel_unitor_unitor.Controls.Add(Me.ButtonModified6)
+        Me.panel_unitor_unitor.Controls.Add(Me.ButtonModified1)
+        Me.panel_unitor_unitor.Controls.Add(Me.ButtonModified5)
+        Me.panel_unitor_unitor.Controls.Add(Me.ButtonModified2)
+        Me.panel_unitor_unitor.Controls.Add(Me.ButtonModified4)
+        Me.panel_unitor_unitor.Controls.Add(Me.uni1_1)
+        Me.panel_unitor_unitor.Controls.Add(Me.uni1_3)
+        Me.panel_unitor_unitor.Controls.Add(Me.uni1_8)
+        Me.panel_unitor_unitor.Controls.Add(Me.uni1_7)
+        Me.panel_unitor_unitor.Controls.Add(Me.uni1_6)
+        Me.panel_unitor_unitor.Controls.Add(Me.uni1_5)
+        Me.panel_unitor_unitor.Controls.Add(Me.uni1_4)
+        Me.panel_unitor_unitor.Location = New System.Drawing.Point(200, 142)
+        Me.panel_unitor_unitor.Name = "panel_unitor_unitor"
+        Me.panel_unitor_unitor.Size = New System.Drawing.Size(881, 538)
+        Me.panel_unitor_unitor.TabIndex = 3
+        '
+        'uni1_2
+        '
+        Me.uni1_2.BackColor = System.Drawing.Color.White
+        Me.uni1_2.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.uni1_2.FlatAppearance.BorderSize = 5
+        Me.uni1_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.uni1_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.uni1_2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.uni1_2.Location = New System.Drawing.Point(102, 5)
+        Me.uni1_2.Name = "uni1_2"
+        Me.uni1_2.Size = New System.Drawing.Size(65, 65)
+        Me.uni1_2.TabIndex = 2
+        Me.uni1_2.UseVisualStyleBackColor = False
+        '
+        'ButtonModified7
+        '
+        Me.ButtonModified7.BackColor = System.Drawing.Color.White
+        Me.ButtonModified7.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.ButtonModified7.FlatAppearance.BorderSize = 5
+        Me.ButtonModified7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonModified7.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.ButtonModified7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.ButtonModified7.Location = New System.Drawing.Point(19, 517)
+        Me.ButtonModified7.Name = "ButtonModified7"
+        Me.ButtonModified7.Size = New System.Drawing.Size(65, 65)
+        Me.ButtonModified7.TabIndex = 2
+        Me.ButtonModified7.UseVisualStyleBackColor = False
+        '
+        'ButtonModified3
+        '
+        Me.ButtonModified3.BackColor = System.Drawing.Color.White
+        Me.ButtonModified3.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.ButtonModified3.FlatAppearance.BorderSize = 5
+        Me.ButtonModified3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonModified3.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.ButtonModified3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.ButtonModified3.Location = New System.Drawing.Point(20, 223)
+        Me.ButtonModified3.Name = "ButtonModified3"
+        Me.ButtonModified3.Size = New System.Drawing.Size(65, 65)
+        Me.ButtonModified3.TabIndex = 2
+        Me.ButtonModified3.UseVisualStyleBackColor = False
+        '
+        'ButtonModified6
+        '
+        Me.ButtonModified6.BackColor = System.Drawing.Color.White
+        Me.ButtonModified6.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.ButtonModified6.FlatAppearance.BorderSize = 5
+        Me.ButtonModified6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonModified6.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.ButtonModified6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.ButtonModified6.Location = New System.Drawing.Point(19, 370)
+        Me.ButtonModified6.Name = "ButtonModified6"
+        Me.ButtonModified6.Size = New System.Drawing.Size(65, 65)
+        Me.ButtonModified6.TabIndex = 2
+        Me.ButtonModified6.UseVisualStyleBackColor = False
+        '
+        'ButtonModified1
+        '
+        Me.ButtonModified1.BackColor = System.Drawing.Color.White
+        Me.ButtonModified1.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.ButtonModified1.FlatAppearance.BorderSize = 5
+        Me.ButtonModified1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonModified1.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.ButtonModified1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.ButtonModified1.Location = New System.Drawing.Point(20, 76)
+        Me.ButtonModified1.Name = "ButtonModified1"
+        Me.ButtonModified1.Size = New System.Drawing.Size(65, 65)
+        Me.ButtonModified1.TabIndex = 2
+        Me.ButtonModified1.UseVisualStyleBackColor = False
+        '
+        'ButtonModified5
+        '
+        Me.ButtonModified5.BackColor = System.Drawing.Color.White
+        Me.ButtonModified5.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.ButtonModified5.FlatAppearance.BorderSize = 5
+        Me.ButtonModified5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonModified5.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.ButtonModified5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.ButtonModified5.Location = New System.Drawing.Point(20, 446)
+        Me.ButtonModified5.Name = "ButtonModified5"
+        Me.ButtonModified5.Size = New System.Drawing.Size(65, 65)
+        Me.ButtonModified5.TabIndex = 2
+        Me.ButtonModified5.UseVisualStyleBackColor = False
+        '
+        'ButtonModified2
+        '
+        Me.ButtonModified2.BackColor = System.Drawing.Color.White
+        Me.ButtonModified2.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.ButtonModified2.FlatAppearance.BorderSize = 5
+        Me.ButtonModified2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonModified2.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.ButtonModified2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.ButtonModified2.Location = New System.Drawing.Point(21, 152)
+        Me.ButtonModified2.Name = "ButtonModified2"
+        Me.ButtonModified2.Size = New System.Drawing.Size(65, 65)
+        Me.ButtonModified2.TabIndex = 2
+        Me.ButtonModified2.UseVisualStyleBackColor = False
+        '
+        'ButtonModified4
+        '
+        Me.ButtonModified4.BackColor = System.Drawing.Color.White
+        Me.ButtonModified4.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.ButtonModified4.FlatAppearance.BorderSize = 5
+        Me.ButtonModified4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonModified4.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.ButtonModified4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.ButtonModified4.Location = New System.Drawing.Point(20, 299)
+        Me.ButtonModified4.Name = "ButtonModified4"
+        Me.ButtonModified4.Size = New System.Drawing.Size(65, 65)
+        Me.ButtonModified4.TabIndex = 2
+        Me.ButtonModified4.UseVisualStyleBackColor = False
+        '
+        'uni1_1
+        '
+        Me.uni1_1.BackColor = System.Drawing.Color.White
+        Me.uni1_1.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.uni1_1.FlatAppearance.BorderSize = 5
+        Me.uni1_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.uni1_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.uni1_1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.uni1_1.Location = New System.Drawing.Point(21, 5)
+        Me.uni1_1.Name = "uni1_1"
+        Me.uni1_1.Size = New System.Drawing.Size(65, 65)
+        Me.uni1_1.TabIndex = 2
+        Me.uni1_1.UseVisualStyleBackColor = False
+        '
+        'uni1_3
+        '
+        Me.uni1_3.BackColor = System.Drawing.Color.White
+        Me.uni1_3.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.uni1_3.FlatAppearance.BorderSize = 5
+        Me.uni1_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.uni1_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.uni1_3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.uni1_3.Location = New System.Drawing.Point(183, 5)
+        Me.uni1_3.Name = "uni1_3"
+        Me.uni1_3.Size = New System.Drawing.Size(65, 65)
+        Me.uni1_3.TabIndex = 2
+        Me.uni1_3.UseVisualStyleBackColor = False
+        '
+        'uni1_8
+        '
+        Me.uni1_8.BackColor = System.Drawing.Color.White
+        Me.uni1_8.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.uni1_8.FlatAppearance.BorderSize = 5
+        Me.uni1_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.uni1_8.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.uni1_8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.uni1_8.Location = New System.Drawing.Point(588, 5)
+        Me.uni1_8.Name = "uni1_8"
+        Me.uni1_8.Size = New System.Drawing.Size(65, 65)
+        Me.uni1_8.TabIndex = 2
+        Me.uni1_8.UseVisualStyleBackColor = False
+        '
+        'uni1_7
+        '
+        Me.uni1_7.BackColor = System.Drawing.Color.White
+        Me.uni1_7.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.uni1_7.FlatAppearance.BorderSize = 5
+        Me.uni1_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.uni1_7.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.uni1_7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.uni1_7.Location = New System.Drawing.Point(507, 5)
+        Me.uni1_7.Name = "uni1_7"
+        Me.uni1_7.Size = New System.Drawing.Size(65, 65)
+        Me.uni1_7.TabIndex = 2
+        Me.uni1_7.UseVisualStyleBackColor = False
+        '
+        'uni1_6
+        '
+        Me.uni1_6.BackColor = System.Drawing.Color.White
+        Me.uni1_6.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.uni1_6.FlatAppearance.BorderSize = 5
+        Me.uni1_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.uni1_6.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.uni1_6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.uni1_6.Location = New System.Drawing.Point(426, 5)
+        Me.uni1_6.Name = "uni1_6"
+        Me.uni1_6.Size = New System.Drawing.Size(65, 65)
+        Me.uni1_6.TabIndex = 2
+        Me.uni1_6.UseVisualStyleBackColor = False
+        '
+        'uni1_5
+        '
+        Me.uni1_5.BackColor = System.Drawing.Color.White
+        Me.uni1_5.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.uni1_5.FlatAppearance.BorderSize = 5
+        Me.uni1_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.uni1_5.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.uni1_5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.uni1_5.Location = New System.Drawing.Point(345, 5)
+        Me.uni1_5.Name = "uni1_5"
+        Me.uni1_5.Size = New System.Drawing.Size(65, 65)
+        Me.uni1_5.TabIndex = 2
+        Me.uni1_5.UseVisualStyleBackColor = False
+        '
+        'uni1_4
+        '
+        Me.uni1_4.BackColor = System.Drawing.Color.White
+        Me.uni1_4.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.uni1_4.FlatAppearance.BorderSize = 5
+        Me.uni1_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.uni1_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.uni1_4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.uni1_4.Location = New System.Drawing.Point(264, 5)
+        Me.uni1_4.Name = "uni1_4"
+        Me.uni1_4.Size = New System.Drawing.Size(65, 65)
+        Me.uni1_4.TabIndex = 2
+        Me.uni1_4.UseVisualStyleBackColor = False
+        '
+        'pb_main_search_bar
+        '
+        Me.pb_main_search_bar.Location = New System.Drawing.Point(1019, 32)
+        Me.pb_main_search_bar.Name = "pb_main_search_bar"
+        Me.pb_main_search_bar.Size = New System.Drawing.Size(50, 50)
+        Me.pb_main_search_bar.TabIndex = 28
+        Me.pb_main_search_bar.TabStop = False
+        '
+        'pbMain_Alaram
+        '
+        Me.pbMain_Alaram.Location = New System.Drawing.Point(280, 37)
+        Me.pbMain_Alaram.Name = "pbMain_Alaram"
+        Me.pbMain_Alaram.Size = New System.Drawing.Size(46, 45)
+        Me.pbMain_Alaram.TabIndex = 0
+        Me.pbMain_Alaram.TabStop = False
+        '
+        'pbMain_MyPage
+        '
+        Me.pbMain_MyPage.BackColor = System.Drawing.Color.Transparent
+        Me.pbMain_MyPage.BackgroundImage = Global.UniPackGUI.My.Resources.Resources.alarmCtr
+        Me.pbMain_MyPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.pbMain_MyPage.Location = New System.Drawing.Point(208, 37)
+        Me.pbMain_MyPage.Name = "pbMain_MyPage"
+        Me.pbMain_MyPage.Size = New System.Drawing.Size(46, 45)
+        Me.pbMain_MyPage.TabIndex = 0
+        Me.pbMain_MyPage.TabStop = False
+        '
+        'pbBoard
+        '
+        Me.pbBoard.BackColor = System.Drawing.Color.White
+        Me.pbBoard.Location = New System.Drawing.Point(200, 120)
+        Me.pbBoard.Name = "pbBoard"
+        Me.pbBoard.Size = New System.Drawing.Size(682, 362)
+        Me.pbBoard.TabIndex = 25
+        Me.pbBoard.TabStop = False
+        '
+        'pbNoti
+        '
+        Me.pbNoti.BackColor = System.Drawing.Color.White
+        Me.pbNoti.Location = New System.Drawing.Point(200, 24)
+        Me.pbNoti.Name = "pbNoti"
+        Me.pbNoti.Size = New System.Drawing.Size(884, 67)
+        Me.pbNoti.TabIndex = 23
+        Me.pbNoti.TabStop = False
+        '
+        'pbUserProfile
+        '
+        Me.pbUserProfile.BackColor = System.Drawing.Color.Transparent
+        Me.pbUserProfile.Image = CType(resources.GetObject("pbUserProfile.Image"), System.Drawing.Image)
+        Me.pbUserProfile.Location = New System.Drawing.Point(12, 14)
+        Me.pbUserProfile.Name = "pbUserProfile"
+        Me.pbUserProfile.Size = New System.Drawing.Size(40, 40)
+        Me.pbUserProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbUserProfile.TabIndex = 20
+        Me.pbUserProfile.TabStop = False
+        '
+        'pbShadow
+        '
+        Me.pbShadow.BackColor = System.Drawing.Color.Silver
+        Me.pbShadow.Location = New System.Drawing.Point(200, 66)
+        Me.pbShadow.Name = "pbShadow"
+        Me.pbShadow.Size = New System.Drawing.Size(884, 29)
+        Me.pbShadow.TabIndex = 24
+        Me.pbShadow.TabStop = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(73, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.Button7)
+        Me.Panel2.Controls.Add(Me.Button3)
+        Me.Panel2.Controls.Add(Me.Button4)
+        Me.Panel2.Controls.Add(Me.Button5)
+        Me.Panel2.Controls.Add(Me.Button6)
+        Me.Panel2.Controls.Add(Me.Button8)
+        Me.Panel2.Controls.Add(Me.Button9)
+        Me.Panel2.Controls.Add(Me.Button10)
+        Me.Panel2.Location = New System.Drawing.Point(2, 88)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(200, 471)
+        Me.Panel2.TabIndex = 3
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(168, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.pbUserProfile)
+        Me.Panel3.Controls.Add(Me.lblUserName)
+        Me.Panel3.Location = New System.Drawing.Point(2, 24)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(200, 67)
+        Me.Panel3.TabIndex = 23
+        '
+        'Button11
+        '
+        Me.Button11.BackColor = System.Drawing.Color.Transparent
+        Me.Button11.BackgroundImage = Global.UniPackGUI.My.Resources.Resources.alarmCtr
+        Me.Button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.ForeColor = System.Drawing.Color.Transparent
+        Me.Button11.Location = New System.Drawing.Point(306, 37)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(20, 20)
+        Me.Button11.TabIndex = 2
+        Me.Button11.UseVisualStyleBackColor = False
         '
         'MainProjectLoader
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightGray
-        Me.ClientSize = New System.Drawing.Size(907, 639)
+        Me.ClientSize = New System.Drawing.Size(1354, 718)
+        Me.Controls.Add(Me.Button11)
+        Me.Controls.Add(Me.panel_DASH)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.panel_unitor_unitor)
+        Me.Controls.Add(Me.panel_unitor)
+        Me.Controls.Add(Me.pb_main_search_bar)
+        Me.Controls.Add(Me.pbMain_Alaram)
+        Me.Controls.Add(Me.pbMain_MyPage)
+        Me.Controls.Add(Me.pbBoard)
+        Me.Controls.Add(Me.pbNoti)
         Me.Controls.Add(Me.TableLayoutPanel3)
-        Me.Controls.Add(Me.TableLayoutPanel2)
-        Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.menuMainProj)
+        Me.Controls.Add(Me.pbShadow)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MainProjectLoader"
         Me.Text = "UniPack Loader Main"
-        Me.TableLayoutPanel1.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.menuMainProj.ResumeLayout(False)
@@ -1501,75 +1391,38 @@ Partial Class MainProjectLoader
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
+        Me.panel_DASH.ResumeLayout(False)
+        Me.panel_dashboard_activity.ResumeLayout(False)
+        Me.panel_dashboard_activity.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panel_dashboard_activity_friend.ResumeLayout(False)
+        CType(Me.pb_DASH_SEPLine, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panel_dashboard.ResumeLayout(False)
+        Me.panel_dashboard.PerformLayout()
+        CType(Me.pb_dashboard_logout, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDASH_MYpage_Select, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDASH_ACT_Select, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbProfImgBig, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panel_unitor_panel.ResumeLayout(False)
+        Me.panel_unitor_panel.PerformLayout()
+        CType(Me.pb_unitor_panel_infosetup, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb_unitor_panel_unitor, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panel_unitor.ResumeLayout(False)
+        Me.panel_unitor_unitor.ResumeLayout(False)
+        CType(Me.pb_main_search_bar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbMain_Alaram, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbMain_MyPage, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbBoard, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbNoti, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbUserProfile, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbShadow, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents uni1_1 As System.Windows.Forms.Button
-    Friend WithEvents uni1_2 As System.Windows.Forms.Button
-    Friend WithEvents uni1_3 As System.Windows.Forms.Button
-    Friend WithEvents uni1_4 As System.Windows.Forms.Button
-    Friend WithEvents uni1_5 As System.Windows.Forms.Button
-    Friend WithEvents uni1_6 As System.Windows.Forms.Button
-    Friend WithEvents uni1_7 As System.Windows.Forms.Button
-    Friend WithEvents uni1_8 As System.Windows.Forms.Button
-    Friend WithEvents uni2_1 As System.Windows.Forms.Button
-    Friend WithEvents uni2_2 As System.Windows.Forms.Button
-    Friend WithEvents uni2_3 As System.Windows.Forms.Button
-    Friend WithEvents uni2_4 As System.Windows.Forms.Button
-    Friend WithEvents uni2_5 As System.Windows.Forms.Button
-    Friend WithEvents uni2_6 As System.Windows.Forms.Button
-    Friend WithEvents uni2_7 As System.Windows.Forms.Button
-    Friend WithEvents uni2_8 As System.Windows.Forms.Button
-    Friend WithEvents uni3_1 As System.Windows.Forms.Button
-    Friend WithEvents uni3_2 As System.Windows.Forms.Button
-    Friend WithEvents uni3_3 As System.Windows.Forms.Button
-    Friend WithEvents uni3_4 As System.Windows.Forms.Button
-    Friend WithEvents uni3_5 As System.Windows.Forms.Button
-    Friend WithEvents uni3_6 As System.Windows.Forms.Button
-    Friend WithEvents uni3_7 As System.Windows.Forms.Button
-    Friend WithEvents uni3_8 As System.Windows.Forms.Button
-    Friend WithEvents uni4_1 As System.Windows.Forms.Button
-    Friend WithEvents uni4_2 As System.Windows.Forms.Button
-    Friend WithEvents uni4_3 As System.Windows.Forms.Button
-    Friend WithEvents uni4_4 As System.Windows.Forms.Button
-    Friend WithEvents uni4_5 As System.Windows.Forms.Button
-    Friend WithEvents uni4_6 As System.Windows.Forms.Button
-    Friend WithEvents uni4_7 As System.Windows.Forms.Button
-    Friend WithEvents uni4_8 As System.Windows.Forms.Button
-    Friend WithEvents uni5_1 As System.Windows.Forms.Button
-    Friend WithEvents uni5_2 As System.Windows.Forms.Button
-    Friend WithEvents uni5_3 As System.Windows.Forms.Button
-    Friend WithEvents uni5_4 As System.Windows.Forms.Button
-    Friend WithEvents uni5_5 As System.Windows.Forms.Button
-    Friend WithEvents uni5_6 As System.Windows.Forms.Button
-    Friend WithEvents uni5_7 As System.Windows.Forms.Button
-    Friend WithEvents uni5_8 As System.Windows.Forms.Button
-    Friend WithEvents uni6_1 As System.Windows.Forms.Button
-    Friend WithEvents uni6_2 As System.Windows.Forms.Button
-    Friend WithEvents uni6_3 As System.Windows.Forms.Button
-    Friend WithEvents uni6_4 As System.Windows.Forms.Button
-    Friend WithEvents uni6_5 As System.Windows.Forms.Button
-    Friend WithEvents uni6_6 As System.Windows.Forms.Button
-    Friend WithEvents uni6_7 As System.Windows.Forms.Button
-    Friend WithEvents uni6_8 As System.Windows.Forms.Button
-    Friend WithEvents uni7_1 As System.Windows.Forms.Button
-    Friend WithEvents uni7_2 As System.Windows.Forms.Button
-    Friend WithEvents uni7_3 As System.Windows.Forms.Button
-    Friend WithEvents uni7_4 As System.Windows.Forms.Button
-    Friend WithEvents uni7_5 As System.Windows.Forms.Button
-    Friend WithEvents uni7_6 As System.Windows.Forms.Button
-    Friend WithEvents uni7_7 As System.Windows.Forms.Button
-    Friend WithEvents uni8_1 As System.Windows.Forms.Button
-    Friend WithEvents uni8_2 As System.Windows.Forms.Button
-    Friend WithEvents uni8_3 As System.Windows.Forms.Button
-    Friend WithEvents uni8_4 As System.Windows.Forms.Button
-    Friend WithEvents uni8_5 As System.Windows.Forms.Button
-    Friend WithEvents uni8_6 As System.Windows.Forms.Button
-    Friend WithEvents uni8_7 As System.Windows.Forms.Button
-    Friend WithEvents uni8_8 As System.Windows.Forms.Button
-    Friend WithEvents uni7_8 As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents rbEditmode As System.Windows.Forms.RadioButton
     Friend WithEvents rbPlaymode As System.Windows.Forms.RadioButton
@@ -1604,7 +1457,6 @@ Partial Class MainProjectLoader
     Friend WithEvents saveAnothername As System.Windows.Forms.SaveFileDialog
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents SettingToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents rblededit As System.Windows.Forms.RadioButton
     Friend WithEvents btnFlushLEDColor As System.Windows.Forms.Button
@@ -1621,9 +1473,71 @@ Partial Class MainProjectLoader
     Friend WithEvents SoundCutterToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents KeySoundTextEditorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AutoPlayTextEditorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents TestMakeCrashToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator3 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents UploadToUniPackWWToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CreditToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ledisableenable As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ConnectMidiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents DebugToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ButtonDebugerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MultiMappingDebugerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents imgMainTab As System.Windows.Forms.ImageList
+    Friend WithEvents pbUserProfile As System.Windows.Forms.PictureBox
+    Friend WithEvents lblUserName As System.Windows.Forms.Label
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents Button10 As System.Windows.Forms.Button
+    Friend WithEvents pbNoti As System.Windows.Forms.PictureBox
+    Friend WithEvents pbShadow As System.Windows.Forms.PictureBox
+    Friend WithEvents pbBoard As System.Windows.Forms.PictureBox
+    Friend WithEvents panel_DASH As System.Windows.Forms.Panel
+    Friend WithEvents panel_dashboard As System.Windows.Forms.Panel
+    Friend WithEvents pbDASH_MYpage_Select As System.Windows.Forms.PictureBox
+    Friend WithEvents pbDASH_ACT_Select As System.Windows.Forms.PictureBox
+    Friend WithEvents lblDASH_MYPAGE As System.Windows.Forms.Label
+    Friend WithEvents lblDASH_Activity As System.Windows.Forms.Label
+    Friend WithEvents lblUserDescription As System.Windows.Forms.Label
+    Friend WithEvents pbProfImgBig As System.Windows.Forms.PictureBox
+    Friend WithEvents lblProfName As System.Windows.Forms.Label
+    Friend WithEvents pbMain_MyPage As System.Windows.Forms.PictureBox
+    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents panel_dashboard_activity As System.Windows.Forms.Panel
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents btnTTTTEEEESSSSTTTT As System.Windows.Forms.Button
+    Friend WithEvents lbl_DASH_ACT_FRIENDACT As System.Windows.Forms.Label
+    Friend WithEvents panel_dashboard_activity_friend As System.Windows.Forms.Panel
+    Friend WithEvents pb_DASH_SEPLine As System.Windows.Forms.PictureBox
+    Friend WithEvents pbMain_Alaram As System.Windows.Forms.PictureBox
+    Friend WithEvents pb_dashboard_logout As System.Windows.Forms.PictureBox
+    Friend WithEvents pb_main_search_bar As System.Windows.Forms.PictureBox
+    Friend WithEvents panel_unitor_panel As System.Windows.Forms.Panel
+    Friend WithEvents pb_unitor_panel_infosetup As System.Windows.Forms.PictureBox
+    Friend WithEvents pb_unitor_panel_unitor As System.Windows.Forms.PictureBox
+    Friend WithEvents lbl_unitor_panel_infosetup As System.Windows.Forms.Label
+    Friend WithEvents lbl_unitor_panel_unitor As System.Windows.Forms.Label
+    Friend WithEvents panel_unitor As System.Windows.Forms.Panel
+    Friend WithEvents panel_unitor_unitor As System.Windows.Forms.Panel
+    Friend WithEvents uni1_4 As UniPackGUI.ButtonModified
+    Friend WithEvents uni1_3 As UniPackGUI.ButtonModified
+    Friend WithEvents uni1_2 As UniPackGUI.ButtonModified
+    Friend WithEvents uni1_1 As UniPackGUI.ButtonModified
+    Friend WithEvents uni1_8 As UniPackGUI.ButtonModified
+    Friend WithEvents uni1_7 As UniPackGUI.ButtonModified
+    Friend WithEvents uni1_6 As UniPackGUI.ButtonModified
+    Friend WithEvents uni1_5 As UniPackGUI.ButtonModified
+    Friend WithEvents ButtonModified1 As UniPackGUI.ButtonModified
+    Friend WithEvents ButtonModified7 As UniPackGUI.ButtonModified
+    Friend WithEvents ButtonModified3 As UniPackGUI.ButtonModified
+    Friend WithEvents ButtonModified6 As UniPackGUI.ButtonModified
+    Friend WithEvents ButtonModified5 As UniPackGUI.ButtonModified
+    Friend WithEvents ButtonModified2 As UniPackGUI.ButtonModified
+    Friend WithEvents ButtonModified4 As UniPackGUI.ButtonModified
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents Button11 As System.Windows.Forms.Button
 End Class

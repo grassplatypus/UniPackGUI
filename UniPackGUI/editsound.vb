@@ -58,19 +58,15 @@ Public Class editsound
             'MsgBox(MainProjectLoader.keysounds_max(nowChain, uniX, uniY))
             'msgbox("1")
 
-            For index = 0 To MainProjectLoader.keysounds_max(nowChain, uniX, uniY)
+            For index = 0 To MainProjectLoader.keysounds_max(nowChain, uniX, uniY) - 1
                 'MsgBox(MainProjectLoader.keysounds_max(nowChain, uniX, uniY))
                 Loadingfrm.workPgLabel.Text = "Loading sounds data... (" & index & "/" & MainProjectLoader.keysounds_max(nowChain, uniX, uniY) & ")"
                 Loadingfrm.Update()
-                If (index = MainProjectLoader.keysounds_max(nowChain, uniX, uniY)) Then
-                    Exit For
-                Else
-                    tmp = MainProjectLoader.soundfiles(nowChain, uniX, uniY, index).Split("\")
-                End If
-                soundcounter = soundcounter + 1
-                tmpint = tmp.Length
 
-                Me.listLoadedSounds.Items.Add(tmp(tmpint - 1))
+                soundcounter = soundcounter + 1
+
+
+                Me.listLoadedSounds.Items.Add(MainProjectLoader.soundfiles(nowChain, uniX, uniY, index).Split(" ").Last)
 
                 Loadingfrm.LoadingPg.Value += 1
 
@@ -145,13 +141,13 @@ Public Class editsound
 
 
             For i = 0 To MainProjectLoader.keysounds_max(chainnow, XC, YC)
-                MainProjectLoader.Snds.Close(chainnow & " " & XC & " " & YC & " " & i)
+                MainProjectLoader.CloseSound(chainnow & " " & XC & " " & YC & " " & i)
                 MainProjectLoader.soundfiles(chainnow, XC, YC, i) = ""
             Next
             MainProjectLoader.keysounds_max(chainnow, XC, YC) = Me.listLoadedSounds.Items.Count
             For i = 0 To Me.listLoadedSounds.Items.Count - 1
-                MainProjectLoader.Snds.AddSound(chainnow & " " & XC & " " & YC & " " & i, "Workspace\sounds\" & Me.listLoadedSounds.Items(i).ToString)
-                MainProjectLoader.soundfiles(chainnow, XC, YC, i) = "Workspace\sounds\" & Me.listLoadedSounds.Items(i).ToString
+                MainProjectLoader.AddSound(chainnow & " " & XC & " " & YC & " " & i, "Workspace\sounds\" & Me.listLoadedSounds.Items(i).ToString)
+                MainProjectLoader.soundfiles(chainnow, XC, YC, i) = Me.listLoadedSounds.Items(i).ToString
             Next
             
         End If
@@ -296,9 +292,5 @@ Public Class editsound
                 End If
             End Try
         End If
-    End Sub
-
-    Private Sub lblSoundLen_Click(sender As Object, e As EventArgs) Handles lblSoundLen.Click
-
     End Sub
 End Class

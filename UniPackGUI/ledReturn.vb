@@ -271,5 +271,6 @@
                     Return "5CD100"
             End Select
         End If
+        Return "FFFFFF"
     End Function
 End Class

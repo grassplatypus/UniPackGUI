@@ -123,7 +123,6 @@ Partial Class frmLED
         Me.btnRemove = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.ToolTIP = New System.Windows.Forms.ToolTip(Me.components)
-        Me.btnAdd0 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.lblTimePassed = New System.Windows.Forms.Label()
         Me.pbLNum = New System.Windows.Forms.PictureBox()
@@ -147,7 +146,7 @@ Partial Class frmLED
         '
         'txtOn_X
         '
-        Me.txtOn_X.Location = New System.Drawing.Point(25, 11)
+        Me.txtOn_X.Location = New System.Drawing.Point(24, 11)
         Me.txtOn_X.Name = "txtOn_X"
         Me.txtOn_X.Size = New System.Drawing.Size(40, 21)
         Me.txtOn_X.TabIndex = 0
@@ -169,7 +168,7 @@ Partial Class frmLED
         Me.tabHelper.Location = New System.Drawing.Point(359, 12)
         Me.tabHelper.Name = "tabHelper"
         Me.tabHelper.SelectedIndex = 0
-        Me.tabHelper.Size = New System.Drawing.Size(200, 295)
+        Me.tabHelper.Size = New System.Drawing.Size(199, 295)
         Me.tabHelper.TabIndex = 8
         '
         'tabOn
@@ -189,7 +188,7 @@ Partial Class frmLED
         Me.tabOn.Location = New System.Drawing.Point(4, 22)
         Me.tabOn.Name = "tabOn"
         Me.tabOn.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabOn.Size = New System.Drawing.Size(192, 269)
+        Me.tabOn.Size = New System.Drawing.Size(191, 269)
         Me.tabOn.TabIndex = 0
         Me.tabOn.Text = "Turn On"
         Me.tabOn.UseVisualStyleBackColor = True
@@ -267,7 +266,7 @@ Partial Class frmLED
         '
         'txtOn_Y
         '
-        Me.txtOn_Y.Location = New System.Drawing.Point(25, 38)
+        Me.txtOn_Y.Location = New System.Drawing.Point(24, 38)
         Me.txtOn_Y.Name = "txtOn_Y"
         Me.txtOn_Y.Size = New System.Drawing.Size(40, 21)
         Me.txtOn_Y.TabIndex = 0
@@ -282,14 +281,14 @@ Partial Class frmLED
         Me.tabOff.Location = New System.Drawing.Point(4, 22)
         Me.tabOff.Name = "tabOff"
         Me.tabOff.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabOff.Size = New System.Drawing.Size(192, 269)
+        Me.tabOff.Size = New System.Drawing.Size(191, 269)
         Me.tabOff.TabIndex = 1
         Me.tabOff.Text = "Turn Off"
         Me.tabOff.UseVisualStyleBackColor = True
         '
         'btnAddTurnOff
         '
-        Me.btnAddTurnOff.Location = New System.Drawing.Point(114, 240)
+        Me.btnAddTurnOff.Location = New System.Drawing.Point(96, 226)
         Me.btnAddTurnOff.Name = "btnAddTurnOff"
         Me.btnAddTurnOff.Size = New System.Drawing.Size(75, 23)
         Me.btnAddTurnOff.TabIndex = 11
@@ -299,7 +298,7 @@ Partial Class frmLED
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(6, 45)
+        Me.Label5.Location = New System.Drawing.Point(6, 41)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(13, 12)
         Me.Label5.TabIndex = 7
@@ -307,7 +306,7 @@ Partial Class frmLED
         '
         'tbTurnOffY
         '
-        Me.tbTurnOffY.Location = New System.Drawing.Point(25, 42)
+        Me.tbTurnOffY.Location = New System.Drawing.Point(24, 38)
         Me.tbTurnOffY.Name = "tbTurnOffY"
         Me.tbTurnOffY.Size = New System.Drawing.Size(40, 21)
         Me.tbTurnOffY.TabIndex = 5
@@ -315,7 +314,7 @@ Partial Class frmLED
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(6, 18)
+        Me.Label6.Location = New System.Drawing.Point(6, 14)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(13, 12)
         Me.Label6.TabIndex = 8
@@ -323,7 +322,7 @@ Partial Class frmLED
         '
         'tbTurnOffX
         '
-        Me.tbTurnOffX.Location = New System.Drawing.Point(25, 15)
+        Me.tbTurnOffX.Location = New System.Drawing.Point(24, 11)
         Me.tbTurnOffX.Name = "tbTurnOffX"
         Me.tbTurnOffX.Size = New System.Drawing.Size(40, 21)
         Me.tbTurnOffX.TabIndex = 6
@@ -335,14 +334,14 @@ Partial Class frmLED
         Me.tabWait.Controls.Add(Me.tbWaitMSec)
         Me.tabWait.Location = New System.Drawing.Point(4, 22)
         Me.tabWait.Name = "tabWait"
-        Me.tabWait.Size = New System.Drawing.Size(192, 269)
+        Me.tabWait.Size = New System.Drawing.Size(191, 269)
         Me.tabWait.TabIndex = 2
         Me.tabWait.Text = "Wait"
         Me.tabWait.UseVisualStyleBackColor = True
         '
         'btnAddWait
         '
-        Me.btnAddWait.Location = New System.Drawing.Point(114, 240)
+        Me.btnAddWait.Location = New System.Drawing.Point(96, 226)
         Me.btnAddWait.Name = "btnAddWait"
         Me.btnAddWait.Size = New System.Drawing.Size(75, 23)
         Me.btnAddWait.TabIndex = 11
@@ -362,7 +361,7 @@ Partial Class frmLED
         '
         Me.tbWaitMSec.Location = New System.Drawing.Point(90, 27)
         Me.tbWaitMSec.Name = "tbWaitMSec"
-        Me.tbWaitMSec.Size = New System.Drawing.Size(40, 21)
+        Me.tbWaitMSec.Size = New System.Drawing.Size(66, 21)
         Me.tbWaitMSec.TabIndex = 9
         '
         'TableLayoutPanel1
@@ -454,7 +453,7 @@ Partial Class frmLED
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(280, 280)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(280, 258)
         Me.TableLayoutPanel1.TabIndex = 9
         '
         'uni1_1
@@ -464,7 +463,7 @@ Partial Class frmLED
         Me.uni1_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni1_1.Location = New System.Drawing.Point(3, 3)
         Me.uni1_1.Name = "uni1_1"
-        Me.uni1_1.Size = New System.Drawing.Size(29, 29)
+        Me.uni1_1.Size = New System.Drawing.Size(29, 26)
         Me.uni1_1.TabIndex = 0
         Me.uni1_1.UseVisualStyleBackColor = False
         '
@@ -476,7 +475,7 @@ Partial Class frmLED
         Me.uni1_2.ForeColor = System.Drawing.Color.Black
         Me.uni1_2.Location = New System.Drawing.Point(38, 3)
         Me.uni1_2.Name = "uni1_2"
-        Me.uni1_2.Size = New System.Drawing.Size(29, 29)
+        Me.uni1_2.Size = New System.Drawing.Size(29, 26)
         Me.uni1_2.TabIndex = 1
         Me.uni1_2.UseVisualStyleBackColor = False
         '
@@ -488,7 +487,7 @@ Partial Class frmLED
         Me.uni1_3.ForeColor = System.Drawing.Color.Black
         Me.uni1_3.Location = New System.Drawing.Point(73, 3)
         Me.uni1_3.Name = "uni1_3"
-        Me.uni1_3.Size = New System.Drawing.Size(29, 29)
+        Me.uni1_3.Size = New System.Drawing.Size(29, 26)
         Me.uni1_3.TabIndex = 1
         Me.uni1_3.UseVisualStyleBackColor = False
         '
@@ -500,7 +499,7 @@ Partial Class frmLED
         Me.uni1_4.ForeColor = System.Drawing.Color.Black
         Me.uni1_4.Location = New System.Drawing.Point(108, 3)
         Me.uni1_4.Name = "uni1_4"
-        Me.uni1_4.Size = New System.Drawing.Size(29, 29)
+        Me.uni1_4.Size = New System.Drawing.Size(29, 26)
         Me.uni1_4.TabIndex = 1
         Me.uni1_4.UseVisualStyleBackColor = False
         '
@@ -512,7 +511,7 @@ Partial Class frmLED
         Me.uni1_5.ForeColor = System.Drawing.Color.Black
         Me.uni1_5.Location = New System.Drawing.Point(143, 3)
         Me.uni1_5.Name = "uni1_5"
-        Me.uni1_5.Size = New System.Drawing.Size(29, 29)
+        Me.uni1_5.Size = New System.Drawing.Size(29, 26)
         Me.uni1_5.TabIndex = 1
         Me.uni1_5.UseVisualStyleBackColor = False
         '
@@ -524,7 +523,7 @@ Partial Class frmLED
         Me.uni1_6.ForeColor = System.Drawing.Color.Black
         Me.uni1_6.Location = New System.Drawing.Point(178, 3)
         Me.uni1_6.Name = "uni1_6"
-        Me.uni1_6.Size = New System.Drawing.Size(29, 29)
+        Me.uni1_6.Size = New System.Drawing.Size(29, 26)
         Me.uni1_6.TabIndex = 1
         Me.uni1_6.UseVisualStyleBackColor = False
         '
@@ -536,7 +535,7 @@ Partial Class frmLED
         Me.uni1_7.ForeColor = System.Drawing.Color.Black
         Me.uni1_7.Location = New System.Drawing.Point(213, 3)
         Me.uni1_7.Name = "uni1_7"
-        Me.uni1_7.Size = New System.Drawing.Size(29, 29)
+        Me.uni1_7.Size = New System.Drawing.Size(29, 26)
         Me.uni1_7.TabIndex = 1
         Me.uni1_7.UseVisualStyleBackColor = False
         '
@@ -548,7 +547,7 @@ Partial Class frmLED
         Me.uni1_8.ForeColor = System.Drawing.Color.Black
         Me.uni1_8.Location = New System.Drawing.Point(248, 3)
         Me.uni1_8.Name = "uni1_8"
-        Me.uni1_8.Size = New System.Drawing.Size(29, 29)
+        Me.uni1_8.Size = New System.Drawing.Size(29, 26)
         Me.uni1_8.TabIndex = 1
         Me.uni1_8.UseVisualStyleBackColor = False
         '
@@ -558,9 +557,9 @@ Partial Class frmLED
         Me.uni2_1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni2_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni2_1.ForeColor = System.Drawing.Color.Black
-        Me.uni2_1.Location = New System.Drawing.Point(3, 38)
+        Me.uni2_1.Location = New System.Drawing.Point(3, 35)
         Me.uni2_1.Name = "uni2_1"
-        Me.uni2_1.Size = New System.Drawing.Size(29, 29)
+        Me.uni2_1.Size = New System.Drawing.Size(29, 26)
         Me.uni2_1.TabIndex = 1
         Me.uni2_1.UseVisualStyleBackColor = False
         '
@@ -570,9 +569,9 @@ Partial Class frmLED
         Me.uni2_2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni2_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni2_2.ForeColor = System.Drawing.Color.Black
-        Me.uni2_2.Location = New System.Drawing.Point(38, 38)
+        Me.uni2_2.Location = New System.Drawing.Point(38, 35)
         Me.uni2_2.Name = "uni2_2"
-        Me.uni2_2.Size = New System.Drawing.Size(29, 29)
+        Me.uni2_2.Size = New System.Drawing.Size(29, 26)
         Me.uni2_2.TabIndex = 1
         Me.uni2_2.UseVisualStyleBackColor = False
         '
@@ -582,9 +581,9 @@ Partial Class frmLED
         Me.uni2_3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni2_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni2_3.ForeColor = System.Drawing.Color.Black
-        Me.uni2_3.Location = New System.Drawing.Point(73, 38)
+        Me.uni2_3.Location = New System.Drawing.Point(73, 35)
         Me.uni2_3.Name = "uni2_3"
-        Me.uni2_3.Size = New System.Drawing.Size(29, 29)
+        Me.uni2_3.Size = New System.Drawing.Size(29, 26)
         Me.uni2_3.TabIndex = 1
         Me.uni2_3.UseVisualStyleBackColor = False
         '
@@ -594,9 +593,9 @@ Partial Class frmLED
         Me.uni2_4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni2_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni2_4.ForeColor = System.Drawing.Color.Black
-        Me.uni2_4.Location = New System.Drawing.Point(108, 38)
+        Me.uni2_4.Location = New System.Drawing.Point(108, 35)
         Me.uni2_4.Name = "uni2_4"
-        Me.uni2_4.Size = New System.Drawing.Size(29, 29)
+        Me.uni2_4.Size = New System.Drawing.Size(29, 26)
         Me.uni2_4.TabIndex = 1
         Me.uni2_4.UseVisualStyleBackColor = False
         '
@@ -606,9 +605,9 @@ Partial Class frmLED
         Me.uni2_5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni2_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni2_5.ForeColor = System.Drawing.Color.Black
-        Me.uni2_5.Location = New System.Drawing.Point(143, 38)
+        Me.uni2_5.Location = New System.Drawing.Point(143, 35)
         Me.uni2_5.Name = "uni2_5"
-        Me.uni2_5.Size = New System.Drawing.Size(29, 29)
+        Me.uni2_5.Size = New System.Drawing.Size(29, 26)
         Me.uni2_5.TabIndex = 1
         Me.uni2_5.UseVisualStyleBackColor = False
         '
@@ -618,9 +617,9 @@ Partial Class frmLED
         Me.uni2_6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni2_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni2_6.ForeColor = System.Drawing.Color.Black
-        Me.uni2_6.Location = New System.Drawing.Point(178, 38)
+        Me.uni2_6.Location = New System.Drawing.Point(178, 35)
         Me.uni2_6.Name = "uni2_6"
-        Me.uni2_6.Size = New System.Drawing.Size(29, 29)
+        Me.uni2_6.Size = New System.Drawing.Size(29, 26)
         Me.uni2_6.TabIndex = 1
         Me.uni2_6.UseVisualStyleBackColor = False
         '
@@ -630,9 +629,9 @@ Partial Class frmLED
         Me.uni2_7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni2_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni2_7.ForeColor = System.Drawing.Color.Black
-        Me.uni2_7.Location = New System.Drawing.Point(213, 38)
+        Me.uni2_7.Location = New System.Drawing.Point(213, 35)
         Me.uni2_7.Name = "uni2_7"
-        Me.uni2_7.Size = New System.Drawing.Size(29, 29)
+        Me.uni2_7.Size = New System.Drawing.Size(29, 26)
         Me.uni2_7.TabIndex = 1
         Me.uni2_7.UseVisualStyleBackColor = False
         '
@@ -642,9 +641,9 @@ Partial Class frmLED
         Me.uni2_8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni2_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni2_8.ForeColor = System.Drawing.Color.Black
-        Me.uni2_8.Location = New System.Drawing.Point(248, 38)
+        Me.uni2_8.Location = New System.Drawing.Point(248, 35)
         Me.uni2_8.Name = "uni2_8"
-        Me.uni2_8.Size = New System.Drawing.Size(29, 29)
+        Me.uni2_8.Size = New System.Drawing.Size(29, 26)
         Me.uni2_8.TabIndex = 1
         Me.uni2_8.UseVisualStyleBackColor = False
         '
@@ -654,9 +653,9 @@ Partial Class frmLED
         Me.uni3_1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni3_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni3_1.ForeColor = System.Drawing.Color.Black
-        Me.uni3_1.Location = New System.Drawing.Point(3, 73)
+        Me.uni3_1.Location = New System.Drawing.Point(3, 67)
         Me.uni3_1.Name = "uni3_1"
-        Me.uni3_1.Size = New System.Drawing.Size(29, 29)
+        Me.uni3_1.Size = New System.Drawing.Size(29, 26)
         Me.uni3_1.TabIndex = 1
         Me.uni3_1.UseVisualStyleBackColor = False
         '
@@ -666,9 +665,9 @@ Partial Class frmLED
         Me.uni3_2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni3_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni3_2.ForeColor = System.Drawing.Color.Black
-        Me.uni3_2.Location = New System.Drawing.Point(38, 73)
+        Me.uni3_2.Location = New System.Drawing.Point(38, 67)
         Me.uni3_2.Name = "uni3_2"
-        Me.uni3_2.Size = New System.Drawing.Size(29, 29)
+        Me.uni3_2.Size = New System.Drawing.Size(29, 26)
         Me.uni3_2.TabIndex = 1
         Me.uni3_2.UseVisualStyleBackColor = False
         '
@@ -678,9 +677,9 @@ Partial Class frmLED
         Me.uni3_3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni3_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni3_3.ForeColor = System.Drawing.Color.Black
-        Me.uni3_3.Location = New System.Drawing.Point(73, 73)
+        Me.uni3_3.Location = New System.Drawing.Point(73, 67)
         Me.uni3_3.Name = "uni3_3"
-        Me.uni3_3.Size = New System.Drawing.Size(29, 29)
+        Me.uni3_3.Size = New System.Drawing.Size(29, 26)
         Me.uni3_3.TabIndex = 1
         Me.uni3_3.UseVisualStyleBackColor = False
         '
@@ -690,9 +689,9 @@ Partial Class frmLED
         Me.uni3_4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni3_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni3_4.ForeColor = System.Drawing.Color.Black
-        Me.uni3_4.Location = New System.Drawing.Point(108, 73)
+        Me.uni3_4.Location = New System.Drawing.Point(108, 67)
         Me.uni3_4.Name = "uni3_4"
-        Me.uni3_4.Size = New System.Drawing.Size(29, 29)
+        Me.uni3_4.Size = New System.Drawing.Size(29, 26)
         Me.uni3_4.TabIndex = 1
         Me.uni3_4.UseVisualStyleBackColor = False
         '
@@ -702,9 +701,9 @@ Partial Class frmLED
         Me.uni3_5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni3_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni3_5.ForeColor = System.Drawing.Color.Black
-        Me.uni3_5.Location = New System.Drawing.Point(143, 73)
+        Me.uni3_5.Location = New System.Drawing.Point(143, 67)
         Me.uni3_5.Name = "uni3_5"
-        Me.uni3_5.Size = New System.Drawing.Size(29, 29)
+        Me.uni3_5.Size = New System.Drawing.Size(29, 26)
         Me.uni3_5.TabIndex = 1
         Me.uni3_5.UseVisualStyleBackColor = False
         '
@@ -714,9 +713,9 @@ Partial Class frmLED
         Me.uni3_6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni3_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni3_6.ForeColor = System.Drawing.Color.Black
-        Me.uni3_6.Location = New System.Drawing.Point(178, 73)
+        Me.uni3_6.Location = New System.Drawing.Point(178, 67)
         Me.uni3_6.Name = "uni3_6"
-        Me.uni3_6.Size = New System.Drawing.Size(29, 29)
+        Me.uni3_6.Size = New System.Drawing.Size(29, 26)
         Me.uni3_6.TabIndex = 1
         Me.uni3_6.UseVisualStyleBackColor = False
         '
@@ -726,9 +725,9 @@ Partial Class frmLED
         Me.uni3_7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni3_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni3_7.ForeColor = System.Drawing.Color.Black
-        Me.uni3_7.Location = New System.Drawing.Point(213, 73)
+        Me.uni3_7.Location = New System.Drawing.Point(213, 67)
         Me.uni3_7.Name = "uni3_7"
-        Me.uni3_7.Size = New System.Drawing.Size(29, 29)
+        Me.uni3_7.Size = New System.Drawing.Size(29, 26)
         Me.uni3_7.TabIndex = 1
         Me.uni3_7.UseVisualStyleBackColor = False
         '
@@ -738,9 +737,9 @@ Partial Class frmLED
         Me.uni3_8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni3_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni3_8.ForeColor = System.Drawing.Color.Black
-        Me.uni3_8.Location = New System.Drawing.Point(248, 73)
+        Me.uni3_8.Location = New System.Drawing.Point(248, 67)
         Me.uni3_8.Name = "uni3_8"
-        Me.uni3_8.Size = New System.Drawing.Size(29, 29)
+        Me.uni3_8.Size = New System.Drawing.Size(29, 26)
         Me.uni3_8.TabIndex = 1
         Me.uni3_8.UseVisualStyleBackColor = False
         '
@@ -750,9 +749,9 @@ Partial Class frmLED
         Me.uni4_1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni4_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni4_1.ForeColor = System.Drawing.Color.Black
-        Me.uni4_1.Location = New System.Drawing.Point(3, 108)
+        Me.uni4_1.Location = New System.Drawing.Point(3, 99)
         Me.uni4_1.Name = "uni4_1"
-        Me.uni4_1.Size = New System.Drawing.Size(29, 29)
+        Me.uni4_1.Size = New System.Drawing.Size(29, 26)
         Me.uni4_1.TabIndex = 1
         Me.uni4_1.UseVisualStyleBackColor = False
         '
@@ -762,9 +761,9 @@ Partial Class frmLED
         Me.uni4_2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni4_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni4_2.ForeColor = System.Drawing.Color.Black
-        Me.uni4_2.Location = New System.Drawing.Point(38, 108)
+        Me.uni4_2.Location = New System.Drawing.Point(38, 99)
         Me.uni4_2.Name = "uni4_2"
-        Me.uni4_2.Size = New System.Drawing.Size(29, 29)
+        Me.uni4_2.Size = New System.Drawing.Size(29, 26)
         Me.uni4_2.TabIndex = 1
         Me.uni4_2.UseVisualStyleBackColor = False
         '
@@ -774,9 +773,9 @@ Partial Class frmLED
         Me.uni4_3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni4_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni4_3.ForeColor = System.Drawing.Color.Black
-        Me.uni4_3.Location = New System.Drawing.Point(73, 108)
+        Me.uni4_3.Location = New System.Drawing.Point(73, 99)
         Me.uni4_3.Name = "uni4_3"
-        Me.uni4_3.Size = New System.Drawing.Size(29, 29)
+        Me.uni4_3.Size = New System.Drawing.Size(29, 26)
         Me.uni4_3.TabIndex = 1
         Me.uni4_3.UseVisualStyleBackColor = False
         '
@@ -786,9 +785,9 @@ Partial Class frmLED
         Me.uni4_4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni4_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni4_4.ForeColor = System.Drawing.Color.Black
-        Me.uni4_4.Location = New System.Drawing.Point(108, 108)
+        Me.uni4_4.Location = New System.Drawing.Point(108, 99)
         Me.uni4_4.Name = "uni4_4"
-        Me.uni4_4.Size = New System.Drawing.Size(29, 29)
+        Me.uni4_4.Size = New System.Drawing.Size(29, 26)
         Me.uni4_4.TabIndex = 1
         Me.uni4_4.UseVisualStyleBackColor = False
         '
@@ -798,9 +797,9 @@ Partial Class frmLED
         Me.uni4_5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni4_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni4_5.ForeColor = System.Drawing.Color.Black
-        Me.uni4_5.Location = New System.Drawing.Point(143, 108)
+        Me.uni4_5.Location = New System.Drawing.Point(143, 99)
         Me.uni4_5.Name = "uni4_5"
-        Me.uni4_5.Size = New System.Drawing.Size(29, 29)
+        Me.uni4_5.Size = New System.Drawing.Size(29, 26)
         Me.uni4_5.TabIndex = 1
         Me.uni4_5.UseVisualStyleBackColor = False
         '
@@ -810,9 +809,9 @@ Partial Class frmLED
         Me.uni4_6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni4_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni4_6.ForeColor = System.Drawing.Color.Black
-        Me.uni4_6.Location = New System.Drawing.Point(178, 108)
+        Me.uni4_6.Location = New System.Drawing.Point(178, 99)
         Me.uni4_6.Name = "uni4_6"
-        Me.uni4_6.Size = New System.Drawing.Size(29, 29)
+        Me.uni4_6.Size = New System.Drawing.Size(29, 26)
         Me.uni4_6.TabIndex = 1
         Me.uni4_6.UseVisualStyleBackColor = False
         '
@@ -822,9 +821,9 @@ Partial Class frmLED
         Me.uni4_7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni4_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni4_7.ForeColor = System.Drawing.Color.Black
-        Me.uni4_7.Location = New System.Drawing.Point(213, 108)
+        Me.uni4_7.Location = New System.Drawing.Point(213, 99)
         Me.uni4_7.Name = "uni4_7"
-        Me.uni4_7.Size = New System.Drawing.Size(29, 29)
+        Me.uni4_7.Size = New System.Drawing.Size(29, 26)
         Me.uni4_7.TabIndex = 1
         Me.uni4_7.UseVisualStyleBackColor = False
         '
@@ -834,9 +833,9 @@ Partial Class frmLED
         Me.uni4_8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni4_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni4_8.ForeColor = System.Drawing.Color.Black
-        Me.uni4_8.Location = New System.Drawing.Point(248, 108)
+        Me.uni4_8.Location = New System.Drawing.Point(248, 99)
         Me.uni4_8.Name = "uni4_8"
-        Me.uni4_8.Size = New System.Drawing.Size(29, 29)
+        Me.uni4_8.Size = New System.Drawing.Size(29, 26)
         Me.uni4_8.TabIndex = 1
         Me.uni4_8.UseVisualStyleBackColor = False
         '
@@ -846,9 +845,9 @@ Partial Class frmLED
         Me.uni5_1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni5_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni5_1.ForeColor = System.Drawing.Color.Black
-        Me.uni5_1.Location = New System.Drawing.Point(3, 143)
+        Me.uni5_1.Location = New System.Drawing.Point(3, 131)
         Me.uni5_1.Name = "uni5_1"
-        Me.uni5_1.Size = New System.Drawing.Size(29, 29)
+        Me.uni5_1.Size = New System.Drawing.Size(29, 26)
         Me.uni5_1.TabIndex = 1
         Me.uni5_1.UseVisualStyleBackColor = False
         '
@@ -858,9 +857,9 @@ Partial Class frmLED
         Me.uni5_2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni5_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni5_2.ForeColor = System.Drawing.Color.Black
-        Me.uni5_2.Location = New System.Drawing.Point(38, 143)
+        Me.uni5_2.Location = New System.Drawing.Point(38, 131)
         Me.uni5_2.Name = "uni5_2"
-        Me.uni5_2.Size = New System.Drawing.Size(29, 29)
+        Me.uni5_2.Size = New System.Drawing.Size(29, 26)
         Me.uni5_2.TabIndex = 1
         Me.uni5_2.UseVisualStyleBackColor = False
         '
@@ -870,9 +869,9 @@ Partial Class frmLED
         Me.uni5_3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni5_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni5_3.ForeColor = System.Drawing.Color.Black
-        Me.uni5_3.Location = New System.Drawing.Point(73, 143)
+        Me.uni5_3.Location = New System.Drawing.Point(73, 131)
         Me.uni5_3.Name = "uni5_3"
-        Me.uni5_3.Size = New System.Drawing.Size(29, 29)
+        Me.uni5_3.Size = New System.Drawing.Size(29, 26)
         Me.uni5_3.TabIndex = 1
         Me.uni5_3.UseVisualStyleBackColor = False
         '
@@ -882,9 +881,9 @@ Partial Class frmLED
         Me.uni5_4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni5_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni5_4.ForeColor = System.Drawing.Color.Black
-        Me.uni5_4.Location = New System.Drawing.Point(108, 143)
+        Me.uni5_4.Location = New System.Drawing.Point(108, 131)
         Me.uni5_4.Name = "uni5_4"
-        Me.uni5_4.Size = New System.Drawing.Size(29, 29)
+        Me.uni5_4.Size = New System.Drawing.Size(29, 26)
         Me.uni5_4.TabIndex = 1
         Me.uni5_4.UseVisualStyleBackColor = False
         '
@@ -894,9 +893,9 @@ Partial Class frmLED
         Me.uni5_5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni5_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni5_5.ForeColor = System.Drawing.Color.Black
-        Me.uni5_5.Location = New System.Drawing.Point(143, 143)
+        Me.uni5_5.Location = New System.Drawing.Point(143, 131)
         Me.uni5_5.Name = "uni5_5"
-        Me.uni5_5.Size = New System.Drawing.Size(29, 29)
+        Me.uni5_5.Size = New System.Drawing.Size(29, 26)
         Me.uni5_5.TabIndex = 1
         Me.uni5_5.UseVisualStyleBackColor = False
         '
@@ -906,9 +905,9 @@ Partial Class frmLED
         Me.uni5_6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni5_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni5_6.ForeColor = System.Drawing.Color.Black
-        Me.uni5_6.Location = New System.Drawing.Point(178, 143)
+        Me.uni5_6.Location = New System.Drawing.Point(178, 131)
         Me.uni5_6.Name = "uni5_6"
-        Me.uni5_6.Size = New System.Drawing.Size(29, 29)
+        Me.uni5_6.Size = New System.Drawing.Size(29, 26)
         Me.uni5_6.TabIndex = 1
         Me.uni5_6.UseVisualStyleBackColor = False
         '
@@ -918,9 +917,9 @@ Partial Class frmLED
         Me.uni5_7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni5_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni5_7.ForeColor = System.Drawing.Color.Black
-        Me.uni5_7.Location = New System.Drawing.Point(213, 143)
+        Me.uni5_7.Location = New System.Drawing.Point(213, 131)
         Me.uni5_7.Name = "uni5_7"
-        Me.uni5_7.Size = New System.Drawing.Size(29, 29)
+        Me.uni5_7.Size = New System.Drawing.Size(29, 26)
         Me.uni5_7.TabIndex = 1
         Me.uni5_7.UseVisualStyleBackColor = False
         '
@@ -930,9 +929,9 @@ Partial Class frmLED
         Me.uni5_8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni5_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni5_8.ForeColor = System.Drawing.Color.Black
-        Me.uni5_8.Location = New System.Drawing.Point(248, 143)
+        Me.uni5_8.Location = New System.Drawing.Point(248, 131)
         Me.uni5_8.Name = "uni5_8"
-        Me.uni5_8.Size = New System.Drawing.Size(29, 29)
+        Me.uni5_8.Size = New System.Drawing.Size(29, 26)
         Me.uni5_8.TabIndex = 1
         Me.uni5_8.UseVisualStyleBackColor = False
         '
@@ -942,9 +941,9 @@ Partial Class frmLED
         Me.uni6_1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni6_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni6_1.ForeColor = System.Drawing.Color.Black
-        Me.uni6_1.Location = New System.Drawing.Point(3, 178)
+        Me.uni6_1.Location = New System.Drawing.Point(3, 163)
         Me.uni6_1.Name = "uni6_1"
-        Me.uni6_1.Size = New System.Drawing.Size(29, 29)
+        Me.uni6_1.Size = New System.Drawing.Size(29, 26)
         Me.uni6_1.TabIndex = 1
         Me.uni6_1.UseVisualStyleBackColor = False
         '
@@ -954,9 +953,9 @@ Partial Class frmLED
         Me.uni6_2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni6_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni6_2.ForeColor = System.Drawing.Color.Black
-        Me.uni6_2.Location = New System.Drawing.Point(38, 178)
+        Me.uni6_2.Location = New System.Drawing.Point(38, 163)
         Me.uni6_2.Name = "uni6_2"
-        Me.uni6_2.Size = New System.Drawing.Size(29, 29)
+        Me.uni6_2.Size = New System.Drawing.Size(29, 26)
         Me.uni6_2.TabIndex = 1
         Me.uni6_2.UseVisualStyleBackColor = False
         '
@@ -966,9 +965,9 @@ Partial Class frmLED
         Me.uni6_3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni6_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni6_3.ForeColor = System.Drawing.Color.Black
-        Me.uni6_3.Location = New System.Drawing.Point(73, 178)
+        Me.uni6_3.Location = New System.Drawing.Point(73, 163)
         Me.uni6_3.Name = "uni6_3"
-        Me.uni6_3.Size = New System.Drawing.Size(29, 29)
+        Me.uni6_3.Size = New System.Drawing.Size(29, 26)
         Me.uni6_3.TabIndex = 1
         Me.uni6_3.UseVisualStyleBackColor = False
         '
@@ -978,9 +977,9 @@ Partial Class frmLED
         Me.uni6_4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni6_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni6_4.ForeColor = System.Drawing.Color.Black
-        Me.uni6_4.Location = New System.Drawing.Point(108, 178)
+        Me.uni6_4.Location = New System.Drawing.Point(108, 163)
         Me.uni6_4.Name = "uni6_4"
-        Me.uni6_4.Size = New System.Drawing.Size(29, 29)
+        Me.uni6_4.Size = New System.Drawing.Size(29, 26)
         Me.uni6_4.TabIndex = 1
         Me.uni6_4.UseVisualStyleBackColor = False
         '
@@ -990,9 +989,9 @@ Partial Class frmLED
         Me.uni6_5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni6_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni6_5.ForeColor = System.Drawing.Color.Black
-        Me.uni6_5.Location = New System.Drawing.Point(143, 178)
+        Me.uni6_5.Location = New System.Drawing.Point(143, 163)
         Me.uni6_5.Name = "uni6_5"
-        Me.uni6_5.Size = New System.Drawing.Size(29, 29)
+        Me.uni6_5.Size = New System.Drawing.Size(29, 26)
         Me.uni6_5.TabIndex = 1
         Me.uni6_5.UseVisualStyleBackColor = False
         '
@@ -1002,9 +1001,9 @@ Partial Class frmLED
         Me.uni6_6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni6_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni6_6.ForeColor = System.Drawing.Color.Black
-        Me.uni6_6.Location = New System.Drawing.Point(178, 178)
+        Me.uni6_6.Location = New System.Drawing.Point(178, 163)
         Me.uni6_6.Name = "uni6_6"
-        Me.uni6_6.Size = New System.Drawing.Size(29, 29)
+        Me.uni6_6.Size = New System.Drawing.Size(29, 26)
         Me.uni6_6.TabIndex = 1
         Me.uni6_6.UseVisualStyleBackColor = False
         '
@@ -1014,9 +1013,9 @@ Partial Class frmLED
         Me.uni6_7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni6_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni6_7.ForeColor = System.Drawing.Color.Black
-        Me.uni6_7.Location = New System.Drawing.Point(213, 178)
+        Me.uni6_7.Location = New System.Drawing.Point(213, 163)
         Me.uni6_7.Name = "uni6_7"
-        Me.uni6_7.Size = New System.Drawing.Size(29, 29)
+        Me.uni6_7.Size = New System.Drawing.Size(29, 26)
         Me.uni6_7.TabIndex = 1
         Me.uni6_7.UseVisualStyleBackColor = False
         '
@@ -1026,9 +1025,9 @@ Partial Class frmLED
         Me.uni6_8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni6_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni6_8.ForeColor = System.Drawing.Color.Black
-        Me.uni6_8.Location = New System.Drawing.Point(248, 178)
+        Me.uni6_8.Location = New System.Drawing.Point(248, 163)
         Me.uni6_8.Name = "uni6_8"
-        Me.uni6_8.Size = New System.Drawing.Size(29, 29)
+        Me.uni6_8.Size = New System.Drawing.Size(29, 26)
         Me.uni6_8.TabIndex = 1
         Me.uni6_8.UseVisualStyleBackColor = False
         '
@@ -1038,9 +1037,9 @@ Partial Class frmLED
         Me.uni7_1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni7_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni7_1.ForeColor = System.Drawing.Color.Black
-        Me.uni7_1.Location = New System.Drawing.Point(3, 213)
+        Me.uni7_1.Location = New System.Drawing.Point(3, 195)
         Me.uni7_1.Name = "uni7_1"
-        Me.uni7_1.Size = New System.Drawing.Size(29, 29)
+        Me.uni7_1.Size = New System.Drawing.Size(29, 26)
         Me.uni7_1.TabIndex = 1
         Me.uni7_1.UseVisualStyleBackColor = False
         '
@@ -1050,9 +1049,9 @@ Partial Class frmLED
         Me.uni7_2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni7_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni7_2.ForeColor = System.Drawing.Color.Black
-        Me.uni7_2.Location = New System.Drawing.Point(38, 213)
+        Me.uni7_2.Location = New System.Drawing.Point(38, 195)
         Me.uni7_2.Name = "uni7_2"
-        Me.uni7_2.Size = New System.Drawing.Size(29, 29)
+        Me.uni7_2.Size = New System.Drawing.Size(29, 26)
         Me.uni7_2.TabIndex = 1
         Me.uni7_2.UseVisualStyleBackColor = False
         '
@@ -1062,9 +1061,9 @@ Partial Class frmLED
         Me.uni7_3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni7_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni7_3.ForeColor = System.Drawing.Color.Black
-        Me.uni7_3.Location = New System.Drawing.Point(73, 213)
+        Me.uni7_3.Location = New System.Drawing.Point(73, 195)
         Me.uni7_3.Name = "uni7_3"
-        Me.uni7_3.Size = New System.Drawing.Size(29, 29)
+        Me.uni7_3.Size = New System.Drawing.Size(29, 26)
         Me.uni7_3.TabIndex = 1
         Me.uni7_3.UseVisualStyleBackColor = False
         '
@@ -1074,9 +1073,9 @@ Partial Class frmLED
         Me.uni7_4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni7_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni7_4.ForeColor = System.Drawing.Color.Black
-        Me.uni7_4.Location = New System.Drawing.Point(108, 213)
+        Me.uni7_4.Location = New System.Drawing.Point(108, 195)
         Me.uni7_4.Name = "uni7_4"
-        Me.uni7_4.Size = New System.Drawing.Size(29, 29)
+        Me.uni7_4.Size = New System.Drawing.Size(29, 26)
         Me.uni7_4.TabIndex = 1
         Me.uni7_4.UseVisualStyleBackColor = False
         '
@@ -1086,9 +1085,9 @@ Partial Class frmLED
         Me.uni7_5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni7_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni7_5.ForeColor = System.Drawing.Color.Black
-        Me.uni7_5.Location = New System.Drawing.Point(143, 213)
+        Me.uni7_5.Location = New System.Drawing.Point(143, 195)
         Me.uni7_5.Name = "uni7_5"
-        Me.uni7_5.Size = New System.Drawing.Size(29, 29)
+        Me.uni7_5.Size = New System.Drawing.Size(29, 26)
         Me.uni7_5.TabIndex = 1
         Me.uni7_5.UseVisualStyleBackColor = False
         '
@@ -1098,9 +1097,9 @@ Partial Class frmLED
         Me.uni7_6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni7_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni7_6.ForeColor = System.Drawing.Color.Black
-        Me.uni7_6.Location = New System.Drawing.Point(178, 213)
+        Me.uni7_6.Location = New System.Drawing.Point(178, 195)
         Me.uni7_6.Name = "uni7_6"
-        Me.uni7_6.Size = New System.Drawing.Size(29, 29)
+        Me.uni7_6.Size = New System.Drawing.Size(29, 26)
         Me.uni7_6.TabIndex = 1
         Me.uni7_6.UseVisualStyleBackColor = False
         '
@@ -1110,9 +1109,9 @@ Partial Class frmLED
         Me.uni7_7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni7_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni7_7.ForeColor = System.Drawing.Color.Black
-        Me.uni7_7.Location = New System.Drawing.Point(213, 213)
+        Me.uni7_7.Location = New System.Drawing.Point(213, 195)
         Me.uni7_7.Name = "uni7_7"
-        Me.uni7_7.Size = New System.Drawing.Size(29, 29)
+        Me.uni7_7.Size = New System.Drawing.Size(29, 26)
         Me.uni7_7.TabIndex = 1
         Me.uni7_7.UseVisualStyleBackColor = False
         '
@@ -1122,9 +1121,9 @@ Partial Class frmLED
         Me.uni7_8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni7_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni7_8.ForeColor = System.Drawing.Color.Black
-        Me.uni7_8.Location = New System.Drawing.Point(248, 213)
+        Me.uni7_8.Location = New System.Drawing.Point(248, 195)
         Me.uni7_8.Name = "uni7_8"
-        Me.uni7_8.Size = New System.Drawing.Size(29, 29)
+        Me.uni7_8.Size = New System.Drawing.Size(29, 26)
         Me.uni7_8.TabIndex = 1
         Me.uni7_8.UseVisualStyleBackColor = False
         '
@@ -1134,9 +1133,9 @@ Partial Class frmLED
         Me.uni8_1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni8_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni8_1.ForeColor = System.Drawing.Color.Black
-        Me.uni8_1.Location = New System.Drawing.Point(3, 248)
+        Me.uni8_1.Location = New System.Drawing.Point(3, 227)
         Me.uni8_1.Name = "uni8_1"
-        Me.uni8_1.Size = New System.Drawing.Size(29, 29)
+        Me.uni8_1.Size = New System.Drawing.Size(29, 28)
         Me.uni8_1.TabIndex = 1
         Me.uni8_1.UseVisualStyleBackColor = False
         '
@@ -1146,9 +1145,9 @@ Partial Class frmLED
         Me.uni8_2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni8_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni8_2.ForeColor = System.Drawing.Color.Black
-        Me.uni8_2.Location = New System.Drawing.Point(38, 248)
+        Me.uni8_2.Location = New System.Drawing.Point(38, 227)
         Me.uni8_2.Name = "uni8_2"
-        Me.uni8_2.Size = New System.Drawing.Size(29, 29)
+        Me.uni8_2.Size = New System.Drawing.Size(29, 28)
         Me.uni8_2.TabIndex = 1
         Me.uni8_2.UseVisualStyleBackColor = False
         '
@@ -1158,9 +1157,9 @@ Partial Class frmLED
         Me.uni8_3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni8_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni8_3.ForeColor = System.Drawing.Color.Black
-        Me.uni8_3.Location = New System.Drawing.Point(73, 248)
+        Me.uni8_3.Location = New System.Drawing.Point(73, 227)
         Me.uni8_3.Name = "uni8_3"
-        Me.uni8_3.Size = New System.Drawing.Size(29, 29)
+        Me.uni8_3.Size = New System.Drawing.Size(29, 28)
         Me.uni8_3.TabIndex = 1
         Me.uni8_3.UseVisualStyleBackColor = False
         '
@@ -1170,9 +1169,9 @@ Partial Class frmLED
         Me.uni8_4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni8_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni8_4.ForeColor = System.Drawing.Color.Black
-        Me.uni8_4.Location = New System.Drawing.Point(108, 248)
+        Me.uni8_4.Location = New System.Drawing.Point(108, 227)
         Me.uni8_4.Name = "uni8_4"
-        Me.uni8_4.Size = New System.Drawing.Size(29, 29)
+        Me.uni8_4.Size = New System.Drawing.Size(29, 28)
         Me.uni8_4.TabIndex = 1
         Me.uni8_4.UseVisualStyleBackColor = False
         '
@@ -1182,9 +1181,9 @@ Partial Class frmLED
         Me.uni8_5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni8_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni8_5.ForeColor = System.Drawing.Color.Black
-        Me.uni8_5.Location = New System.Drawing.Point(143, 248)
+        Me.uni8_5.Location = New System.Drawing.Point(143, 227)
         Me.uni8_5.Name = "uni8_5"
-        Me.uni8_5.Size = New System.Drawing.Size(29, 29)
+        Me.uni8_5.Size = New System.Drawing.Size(29, 28)
         Me.uni8_5.TabIndex = 1
         Me.uni8_5.UseVisualStyleBackColor = False
         '
@@ -1194,9 +1193,9 @@ Partial Class frmLED
         Me.uni8_6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni8_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni8_6.ForeColor = System.Drawing.Color.Black
-        Me.uni8_6.Location = New System.Drawing.Point(178, 248)
+        Me.uni8_6.Location = New System.Drawing.Point(178, 227)
         Me.uni8_6.Name = "uni8_6"
-        Me.uni8_6.Size = New System.Drawing.Size(29, 29)
+        Me.uni8_6.Size = New System.Drawing.Size(29, 28)
         Me.uni8_6.TabIndex = 1
         Me.uni8_6.UseVisualStyleBackColor = False
         '
@@ -1206,9 +1205,9 @@ Partial Class frmLED
         Me.uni8_7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni8_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni8_7.ForeColor = System.Drawing.Color.Black
-        Me.uni8_7.Location = New System.Drawing.Point(213, 248)
+        Me.uni8_7.Location = New System.Drawing.Point(213, 227)
         Me.uni8_7.Name = "uni8_7"
-        Me.uni8_7.Size = New System.Drawing.Size(29, 29)
+        Me.uni8_7.Size = New System.Drawing.Size(29, 28)
         Me.uni8_7.TabIndex = 1
         Me.uni8_7.UseVisualStyleBackColor = False
         '
@@ -1218,15 +1217,15 @@ Partial Class frmLED
         Me.uni8_8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.uni8_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.uni8_8.ForeColor = System.Drawing.Color.Black
-        Me.uni8_8.Location = New System.Drawing.Point(248, 248)
+        Me.uni8_8.Location = New System.Drawing.Point(248, 227)
         Me.uni8_8.Name = "uni8_8"
-        Me.uni8_8.Size = New System.Drawing.Size(29, 29)
+        Me.uni8_8.Size = New System.Drawing.Size(29, 28)
         Me.uni8_8.TabIndex = 1
         Me.uni8_8.UseVisualStyleBackColor = False
         '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(399, 313)
+        Me.btnCancel.Location = New System.Drawing.Point(479, 309)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(75, 53)
         Me.btnCancel.TabIndex = 10
@@ -1237,7 +1236,7 @@ Partial Class frmLED
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("굴림", 8.0!)
-        Me.Label4.Location = New System.Drawing.Point(578, 314)
+        Me.Label4.Location = New System.Drawing.Point(577, 314)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(254, 22)
         Me.Label4.TabIndex = 11
@@ -1263,7 +1262,7 @@ Partial Class frmLED
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(209, 313)
+        Me.btnAdd.Location = New System.Drawing.Point(209, 314)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(63, 23)
         Me.btnAdd.TabIndex = 14
@@ -1273,7 +1272,7 @@ Partial Class frmLED
         '
         'btnRemove
         '
-        Me.btnRemove.Location = New System.Drawing.Point(280, 345)
+        Me.btnRemove.Location = New System.Drawing.Point(387, 345)
         Me.btnRemove.Name = "btnRemove"
         Me.btnRemove.Size = New System.Drawing.Size(63, 23)
         Me.btnRemove.TabIndex = 14
@@ -1285,25 +1284,13 @@ Partial Class frmLED
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("굴림", 7.0!)
         Me.Label7.ForeColor = System.Drawing.Color.Red
-        Me.Label7.Location = New System.Drawing.Point(788, 352)
+        Me.Label7.Location = New System.Drawing.Point(787, 352)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(88, 20)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "What the hell" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "is this Text Editor?"
         Me.ToolTIP.SetToolTip(Me.Label7, "We're Developing Dot based LED Editor. (Like Pixel Art!)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "We know that this ""Text" & _
         " Editor"" is really trash! But Please wait..")
-        '
-        'btnAdd0
-        '
-        Me.btnAdd0.Location = New System.Drawing.Point(211, 343)
-        Me.btnAdd0.Name = "btnAdd0"
-        Me.btnAdd0.Size = New System.Drawing.Size(63, 23)
-        Me.btnAdd0.TabIndex = 14
-        Me.btnAdd0.Text = "Add (0)"
-        Me.ToolTIP.SetToolTip(Me.btnAdd0, "As Unitor is Windows Forms Program, We doesn't support LED file whose loop number" & _
-        " is 0. So we added code that automatically add waiting time for 50ms and turn it" & _
-        " off.")
-        Me.btnAdd0.UseVisualStyleBackColor = True
         '
         'Label8
         '
@@ -1347,13 +1334,12 @@ Partial Class frmLED
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(873, 374)
+        Me.ClientSize = New System.Drawing.Size(873, 378)
         Me.Controls.Add(Me.pbLNum)
         Me.Controls.Add(Me.lblTimePassed)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.btnRemove)
-        Me.Controls.Add(Me.btnAdd0)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.listMultiMaps)
         Me.Controls.Add(Me.btnLEDtest)
@@ -1363,6 +1349,7 @@ Partial Class frmLED
         Me.Controls.Add(Me.tabHelper)
         Me.Controls.Add(Me.rtbLED)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.KeyPreview = True
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmLED"
@@ -1481,7 +1468,6 @@ Partial Class frmLED
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents ToolTIP As System.Windows.Forms.ToolTip
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents btnAdd0 As System.Windows.Forms.Button
     Friend WithEvents cbLaunchPadColor As UniPackGUI.ColorComboBox
     Friend WithEvents lblTimePassed As System.Windows.Forms.Label
     Friend WithEvents pbLNum As System.Windows.Forms.PictureBox

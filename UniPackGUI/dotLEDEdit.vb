@@ -32,64 +32,8 @@ Public Class dotLEDEdit
     End Function
 
 
-    Private Function readLED(order As Integer)
-        For Each filename In Directory.GetFiles("LEDWorkspace\", "*", SearchOption.TopDirectoryOnly)
-            IO.File.Delete(filename)
-        Next
-        'Dim lines As New List(Of String)(IO.File.ReadAllLines("Workspace\keyLED\" & chain & " " & xc & " " & yc & " " & loop_num & " " & Chr(96 + order)))
-        ' lines.RemoveAll(Function(s) s.Trim = "")
-        ' Dim str() As String = lines.ToArray
-        ' Dim ctr As Integer = str.Length
-        Dim splited() As String
-        Dim ledCtr As Integer = 0
-        Dim endLED As Boolean = False
-        Dim LEDtxt As String = ""
-        For i = 0 To MainProjectLoader.LEDlinesCtr(chain, xc, yc, order) - 1
-            splited = MainProjectLoader.LEDloads(chain, xc, yc, order, i).Split(" ")
-            If (splited(0) = "o" Or splited(0) = "on") Then
-                If endLED = False Then
-
-                    Me.listLEDs.Items.Add("LED(on):" & ledCtr)
-                    endLED = True
-
-                End If
-                If (splited(3) = "a" Or splited(3) = "auto") Then
-                    'ctrlDict(splited(1)&splited(2)).BackColor = 
-                    'ColorDic(order, ledCtr, splited(1), splited(2)) = Drawing.ColorTranslator.FromHtml(led.returnLED(splited(4)))
-                    If (My.Computer.FileSystem.FileExists("LEDWorkspace\" & order & " on " & ledCtr) = False) Then
-                        LEDtxt = vbNewLine & splited(1) & splited(2) & ":auto:" & splited(4)
-                    Else
-                        LEDtxt = splited(1) & splited(2) & ":auto:" & splited(4)
-                    End If
-
-                    IO.File.AppendAllText("LEDWorkspace\" & order & " on " & ledCtr, LEDtxt)
-                Else
-                    If (My.Computer.FileSystem.FileExists("LEDWorkspace\" & order & " on " & ledCtr) = False) Then
-                        LEDtxt = vbNewLine & splited(1) & splited(2) & ":html:" & splited(3)
-                    Else
-                        LEDtxt = splited(1) & splited(2) & ":html:" & splited(3)
-                    End If
-                    IO.File.AppendAllText("LEDWorkspace\" & order & " on " & ledCtr, LEDtxt)
-                End If
-            ElseIf (splited(0) = "f" Or splited(0) = "off") Then
-                If endLED = True Then
-
-                    Me.listLEDs.Items.Add("LED(on):" & ledCtr)
-                    endLED = True
-
-                End If
-                endLED = False
-                Me.listLEDs.Items.Add("LED(off):" & ledCtr)
-                ledCtr += 1
-            ElseIf (splited(0) = "d" Or splited(0) = "delay") Then
-                endLED = False
-                ledCtr += 1
-                Me.listLEDs.Items.Add("WAIT(ms):" & splited(1))
-            End If
-
-        Next
-        Me.listorder.SelectedIndex = 0
-    End Function
+  
+       
 
     Private Sub FlushLED()
         For i = 1 To 8
@@ -131,6 +75,6 @@ Public Class dotLEDEdit
 
     Private Sub listLEDs_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles listLEDs.SelectedIndexChanged
         FlushLED()
-        readLED(Me.listLEDs.SelectedIndex)
+        'readLED(Me.listLEDs.SelectedIndex)
     End Sub
 End Class

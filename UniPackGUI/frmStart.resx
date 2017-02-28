@@ -125,7 +125,7 @@
   </metadata>
   <data name="rtbInfoMain.Text" xml:space="preserve">
     <value>[[UniPackWW]]
-You can upload your UniPack to UniPackWW! You can visit http://share.akaksr.xyz
+You can upload your UniPack to UniPackWW directly using Unitor!!
 (Thanks to KSR for providing server.)
 
 (We have updates and issues in this version! Please READ ME!)
@@ -134,8 +134,19 @@ Welcome to Unitor! It is a IDE for UniPack!
 You are using....
 [S] Channel [[Stable]].
 
-Latest Update (v2.0.5.0)
--Fixed LED Problems.
+Latest Update (v2.1.1.0)
+-Added FULL support for LED loop number 0(Zero).
+-Added function to customize UniPackWW UniPack Upload Server.
+-Added some settings
+
+v2.1.0.1 ~ v2.1.0.2
+-Fixed bugs
+
+v2.1.0.0
+-Fixed LED Editor Problems.
+-Added UniPackWW UniPack Upload function
+-Fixed Saving Error while make a new project
+-Other improvements
 
 v2.0.4.0
 -For your opinion, Raw Text Editor (keySound and autoPlay) added! (Not very recommended..)
